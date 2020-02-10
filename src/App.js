@@ -1,19 +1,28 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Navbar'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Error from './components/Error';
+import Faq from './components/Faq'
+
 function App() {
   return (
-    <div className="App">
-        <div className="content">
+    <BrowserRouter>
+        <div>
           <Navbar/>
-          <p className="title">
-            The Life Cycle of Plastic
-          </p>
-          <p className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          </p>
+            <Switch>
+             <Route path="/" component={Home} exact/>
+             <Route path="/about" component={About}/>
+             <Route path="/contact" component={Contact}/>
+             <Route path="/faq" component={Faq}/>
+            <Route component={Error}/>
+           </Switch>
         </div>
-    </div>
+      </BrowserRouter>
   );
 }
 
