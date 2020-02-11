@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Error from './components/Error';
 import Faq from './components/Faq';
 import Adventure from './components/Adventure';
+import Activist from './components/Activist';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
              <Route path="/contact" component={Contact}/>
              <Route path="/faq" component={Faq}/>
              <Route path="/adventure" component={Adventure}/>
+             <Route path="/activist" component={Activist}/>
              <Route component={Error}/>
            </Switch>
         </div>

@@ -19,6 +19,7 @@ class Navigation extends React.Component{
 								<Nav.Link href="/faq">FAQ</Nav.Link>
 								<Nav.Link href="/Contact">Contact</Nav.Link>
 								<Nav.Link href="/Adventure">Start an Adventure</Nav.Link>
+								<Nav.Link href="/Activist">Become an Activist</Nav.Link>
 					    </Nav>
 					  </Navbar.Collapse>
 					</Navbar>
