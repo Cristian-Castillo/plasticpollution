@@ -2,10 +2,10 @@ import React from 'react';
 
 const faq = () => {
     return (
-       <div>
-          <h1>Frequently Asked Questions</h1>
-           <p>Questions go here!</p>
-       </div>
+      <div className="content">
+       <h1>Frequently Asked Questions</h1>
+        <p>FAQ information</p>
+    </div>
     );
 }
 

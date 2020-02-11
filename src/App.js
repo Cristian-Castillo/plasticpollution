@@ -19,12 +19,11 @@ function App() {
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
              <Route path="/faq" component={Faq}/>
-            <Route component={Error}/>
+             <Route component={Error}/>
            </Switch>
         </div>
       </BrowserRouter>
   );
 }
-
 
 export default App;
