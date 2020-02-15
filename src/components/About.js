@@ -13,16 +13,13 @@ import AboutPg from './About.css'
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
-
 const About = () => {
 
-    return (
+    return(
       <div className ="mainText">
       <Jumbotron fluid className ="jumboHeight">
     <h1>Meet The Banana Slug Team</h1>
-    <p>
-      UCSC Plastic Pollution
-    </p>
+    <p>UCSC Plastic Pollution</p>
 </Jumbotron>
       <CardGroup>
       <Card>
@@ -90,7 +87,7 @@ const About = () => {
 <Card.Body>
 <Card.Title>Benji Weaver</Card.Title>
 <Card.Text>
-Client
+React Developer
 </Card.Text>
 </Card.Body>
 <Card.Footer>
