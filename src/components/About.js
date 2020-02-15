@@ -16,21 +16,16 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const About = () => {
 
-  function changeBackground(e) {
-     e.target.style.background = 'red';
-   }
-
     return (
-      <div>
+      <div className ="mainText">
       <Jumbotron fluid className ="jumboHeight">
-
     <h1>Meet The Banana Slug Team</h1>
     <p>
       UCSC Plastic Pollution
     </p>
 </Jumbotron>
       <CardGroup>
-      <Card  onMouseOver={changeBackground}>
+      <Card>
     <Card.Img className ="pictureHeight" src={Berkeley} />
     <Card.Body>
       <Card.Title>Collin Hurst</Card.Title>
@@ -103,6 +98,11 @@ Client
 </Card.Footer>
 </Card>
 </CardGroup>
+<Jumbotron fluid className ="jumboHeightTwo">
+<p>
+UCSC Plastic Pollution ©
+</p>
+</Jumbotron>
 </div>
     );
 }
