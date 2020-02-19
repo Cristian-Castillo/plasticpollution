@@ -36,7 +36,7 @@ const About = () => {
     </Card.Footer>
   </Card>
   <Card>
-    <Card.Img variant="top" src={Ucr} />
+    <Card.Img className = "pictureHeight" src={Ucr} />
     <Card.Body>
       <Card.Title>Cristian Castillo</Card.Title>
       <Card.Text>
