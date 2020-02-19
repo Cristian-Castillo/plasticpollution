@@ -20,6 +20,7 @@ const About = () => {
       <Jumbotron fluid className ="jumboHeight">
     <h1>Meet The Banana Slug Team</h1>
     <p>UCSC Plastic Pollution</p>
+    <p>Some words of introduction here about team....Some words of introduction here....Some words of introduction here....Some words of introduction here....Some words of introduction here..</p>
 </Jumbotron>
       <CardGroup>
       <Card>
