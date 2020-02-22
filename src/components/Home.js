@@ -66,7 +66,7 @@ const home = () => {
 }
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
- 
+
 const slider = (
   <AutoplaySlider
     play={true}

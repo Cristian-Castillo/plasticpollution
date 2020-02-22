@@ -11,6 +11,9 @@ import Error from './components/Error';
 import Faq from './components/Faq';
 import Adventure from './components/Adventure';
 import Activist from './components/Activist';
+import Macro from "./components/Macro";
+import Micro from "./components/Micro";
+import Nano from "./components/Nano";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
              <Route path="/contact" component={Contact}/>
              <Route path="/faq" component={Faq}/>
              <Route path="/adventure" component={Adventure}/>
+             <Route path="/Macro" component={Macro}/>
+             <Route path="/Micro" component={Micro}/>
+              <Route path="/Nano" component={Nano}/>
              <Route path="/activist" component={Activist}/>
              <Route component={Error}/>
            </Switch>
