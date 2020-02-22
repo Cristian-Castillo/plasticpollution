@@ -1,0 +1,10 @@
+.buttonColor{
+  color:#4a4d4f;
+}
+
+.backgroundButtonColor{
+  background-color:lightblue;
+  width:fit-content;
+  border-radius:50px 50px 50px 50px;
+  border-width: 50px 50px 50px 50px;
+}

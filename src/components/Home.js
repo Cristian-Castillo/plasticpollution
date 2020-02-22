@@ -4,7 +4,10 @@ import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import Nav from 'react-bootstrap/Nav';
 import 'react-awesome-slider/dist/styles.css';
+import Home from './Home.css'
+
 
 
 const home = () => {
@@ -28,9 +31,11 @@ const home = () => {
                     <div class="article">
                         <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Macros</h3>
                         <p>words</p>
-                        <Button variant="outlined" color="white">
-                            Start Macro Adventure
+                        <p className ="backgroundButtonColor">
+                        <Button color="light" >
+                          <Nav.Link href="/Macro" className ="buttonColor">Start Macro Adventure</Nav.Link>
                         </Button>
+                        </p>
                     </div>
                     <div class="article">
                         <img style = {{height: '100%', width: '100%'}} src ={require('../assets/macro.jpg')} ></img>
@@ -43,18 +48,22 @@ const home = () => {
                     <div class="article">
                         <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Micros</h3>
                         <p>words</p>
-                        <Button variant="outlined" color="white">
-                            Start Micro Adventure
+                        <p className ="backgroundButtonColor">
+                        <Button color ="white" >
+                              <Nav.Link href="/Micro" className ="buttonColor">Start Micro Adventure</Nav.Link>
                         </Button>
+                        </p>
                     </div>
                 </div>
                 <div class="article-container">
                     <div class="article">
                         <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Nanos</h3>
                         <p>words</p>
-                        <Button variant="outlined" color="white">
-                            Start Nano Adventure
+                            <p className ="backgroundButtonColor">
+                        <Button color="white">
+                              <Nav.Link href="/Nano" className ="buttonColor">Start Nano Adventure</Nav.Link>
                         </Button>
+                        </p>
                     </div>
                     <div class="article">
                         <img style = {{height: '100%', width: '100%'}} src ={require('../assets/nano.jpg')} ></img>
