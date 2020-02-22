@@ -50,7 +50,7 @@ const home = () => {
                         <p>words</p>
                         <p className ="backgroundButtonColor">
                         <Button color ="white" >
-                              <Nav.Link href="/Micro" className ="buttonColor">Start Micro Adventure</Nav.Link>
+                              <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
                         </Button>
                         </p>
                     </div>
