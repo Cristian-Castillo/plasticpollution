@@ -6,6 +6,10 @@
   padding: 1.5rem;
 }
 
+.body{
+  background-color: black;
+}
+
 .colorText{
   border-top-style: solid;
   font-size: 3.7rem;
@@ -14,6 +18,20 @@
   margin-top: -97.5px;
   align-content: center;
 }
+
+.paraDiv{
+  margin-left:24%;
+}
+
+.introInfo{
+  padding-top:55px;
+  font-family: serif;
+  font-size: 1.3em;
+  font-stretch: expanded;
+  text-align: center;
+  -webkit-font-smoothing: auto;
+  width:70%;
+    }
 
 
 .parallax {
