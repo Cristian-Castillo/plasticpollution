@@ -1,18 +1,27 @@
 .backgroundNano{
-  background: #95cfff;
   padding: 1.5rem;
 }
 
 .backgroundNanoC2{
-  background: #568fbe;
   padding: 1.5rem;
 }
 
-.mainFill{
-  border-radius: 1rem;
-
+.colorText{
+  border-top-style: solid;
+  font-size: 3.7rem;
+  color: white;
+  font-family: serif;
+  margin-top: -97.5px;
+  align-content: center;
 }
 
-.fillUp{
-  width:50px;
+
+.parallax {
+
+  background-image: url('https://static01.nyt.com/images/2019/10/22/science/11PLASTIC1/11PLASTIC1-superJumbo.jpg');
+  height: 76px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
