@@ -1,0 +1,18 @@
+.backgroundNano{
+  background: #95cfff;
+  padding: 1.5rem;
+}
+
+.backgroundNanoC2{
+  background: #568fbe;
+  padding: 1.5rem;
+}
+
+.mainFill{
+  border-radius: 1rem;
+
+}
+
+.fillUp{
+  width:50px;
+}
