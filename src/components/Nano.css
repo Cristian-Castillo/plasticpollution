@@ -6,6 +6,23 @@
   padding: 1.5rem;
 }
 
+A:hover{ COLOR: white;}
+
+.nanoButton{
+
+  margin-top: 4%;
+  padding-left: 23px;
+  margin-left: 17%;
+  color: #4a4d4f;
+  background-color: lightblue;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 10px 45px 10px 38px;
+  border-color:lightblue;
+}
+
+
 .body{
   background-color: black;
 }
@@ -17,6 +34,11 @@
   font-family: serif;
   margin-top: -97.5px;
   align-content: center;
+}
+
+.passageOrigin{
+  font-family: serif;
+  font-size: 1.2em;
 }
 
 .paraDiv{
@@ -33,13 +55,37 @@
   width:70%;
     }
 
+.nanoInfo{
+
+  font-size: 1.2em;
+  font-stretch: expanded;
+  text-align: right;
+  -webkit-font-smoothing: auto;
+  width: 38%;
+  margin-left: 54%;
+  margin-top: -35%;
+}
+
 
 .parallax {
-
   background-image: url('https://static01.nyt.com/images/2019/10/22/science/11PLASTIC1/11PLASTIC1-superJumbo.jpg');
   height: 76px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallaxOrigin {
+      background-image: url(https://www.greatlakesnow.org/wp-content/uploads/2018/01/microplastics.jpg);
+      margin-left: 5%;
+      margin-top: 20%;
+      height: 22em;
+      width: 35em;
+      background-attachment: fixed;
+      background-position: fixed;
+      background-repeat: no-repeat;
+      background-size:auto;
+
+
 }
