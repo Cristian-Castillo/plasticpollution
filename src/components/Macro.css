@@ -1,0 +1,10 @@
+.scene_container {
+	position: relative;
+  width: 50%;
+  margin: auto;
+}
+.scene {
+
+  width: 100%;
+  height: auto;
+}
