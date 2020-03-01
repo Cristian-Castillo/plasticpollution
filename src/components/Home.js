@@ -3,72 +3,31 @@ import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Button from '@material-ui/core/Button';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Nav from 'react-bootstrap/Nav';
 import 'react-awesome-slider/dist/styles.css';
 import Home from './Home.css'
+import {useSpring, animated} from 'react-spring'
+
 
 
 
 const home = () => {
     let parallax;
     return (
-        <Parallax pages={4} scrolling= {true} vertical ref={ref => parallax = ref} style= {{background: '#4f4f4f'}} >
+        <Parallax pages={6} scrolling= {true} vertical ref={ref => parallax = ref} style= {{background: '#4f4f4f'}} >
             <ParallaxLayer offset={0} speed={0}>
                 <span>{slider}</span>
             </ParallaxLayer>
-            <ParallaxLayer offset={1.1} speed= {0.5}>
-                <div style={{position: 'absolute', width: '100%'}}>
-                <div>
-                <h1 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}> We produce about 300 million tons of plastic per year</h1>
-                <iframe src="https://ourworldindata.org/grapher/global-plastics-production" style={{ margin: 50, width: '90%', height: 600, border: '0 none'}}></iframe>
-                <h1 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}> 17.6 billion pounds of plastic leaks into the marine environment from land-based sources every year</h1>
-                </div>
-                </div>
+            <ParallaxLayer offset={1.2} speed= {0}>
+                <Infographics/>
             </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={0.5}>
-                <div class="article-container">
-                    <div class="article">
-                        <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Macros</h3>
-                        <p>words</p>
-                        <p className ="backgroundButtonColor">
-                        <Button color="light" >
-                          <Nav.Link href="/Macro" className ="buttonColor">Start Macro Adventure</Nav.Link>
-                        </Button>
-                        </p>
-                    </div>
-                    <div class="article">
-                        <img style = {{height: '100%', width: '100%'}} src ={require('../assets/macro.jpg')} ></img>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article">
-                        <img style = {{height: '100%', width: '100%'}} src ={require('../assets/micro.jpg')} ></img>
-                    </div>
-                    <div class="article">
-                        <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Micros</h3>
-                        <p>words</p>
-                        <p className ="backgroundButtonColor">
-                        <Button color ="white" >
-                              <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
-                        </Button>
-                        </p>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article">
-                        <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Nanos</h3>
-                        <p>words</p>
-                            <p className ="backgroundButtonColor">
-                        <Button color="white">
-                              <Nav.Link href="/Nano" className ="buttonColor">Start Nano Adventure</Nav.Link>
-                        </Button>
-                        </p>
-                    </div>
-                    <div class="article">
-                        <img style = {{height: '100%', width: '100%'}} src ={require('../assets/nano.jpg')} ></img>
-                    </div>
-                </div>
+            <ParallaxLayer offset={2.7} speed={0}>
+                <Circles/> 
+            </ParallaxLayer>
+            <ParallaxLayer offset={3} speed={0}>
+                <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="words"/>
+                <ContainerWithtextonLeft/>
+                <ContainerWithtextonRight name= "Nanos" namehref= "/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="words"/>
             </ParallaxLayer>
         </Parallax>
     );
@@ -92,5 +51,82 @@ const slider = (
   </AutoplaySlider>
 );
 
+function Circles(props) {
+    return <div class="container">
+    <div class="circle">
+        <div class="aligner">
+        Production
+        </div>
+    </div>
+    <div class="circle">
+        <div class="aligner">
+        Time
+        </div>
+    </div>
+    <div class="circle">
+        <div class="aligner">
+        Waste
+        </div>
+    </div>
+    </div>  ;
+  }
+
+  function Infographics(props){
+      return  <div style={{position: 'absolute', width: '100%'}}>
+      <div>
+      <h1 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}> We produce about 300 million tons of plastic per year</h1>
+      <iframe src="https://ourworldindata.org/grapher/global-plastics-production" style={{ margin: 50, width: '90%', height: 600, border: '0 none'}}></iframe>
+      <h1 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}> 17.6 billion pounds of plastic leaks into the marine environment from land-based sources every year</h1>
+      </div>
+      </div>;
+  }
+
+  function ContainerWithtextonRight(props){
+      return      <div class="article-container">
+      <div class="article">
+          <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>{props.name}</h3>
+          <p>{props.text}</p>
+          <p className ="backgroundButtonColor">
+          <Button color="light" >
+            <Nav.Link href={props.namehref} className ="buttonColor">Start {props.name} Adventure</Nav.Link>
+          </Button>
+          </p>
+      </div>
+      <div class="article">
+        <Card class = {props.classname}/>
+      </div>
+  </div>;
+  }
+  function ContainerWithtextonLeft(props){
+      return <div class="article-container">
+      <div class="article">
+          <Card class = "card microCard"/>
+      </div>
+      <div class="article">
+          <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Micros</h3>
+          <p>words</p>
+          <p className ="backgroundButtonColor">
+          <Button color ="white" >
+                <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
+          </Button>
+          </p>
+      </div>
+  </div>;
+  }
+
+  const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
+  const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+  
+  function Card(features) {
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+    return (
+      <animated.div
+        class= {features.class}
+        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+        style={{ transform: props.xys.interpolate(trans) }}
+      />
+    )
+  }
 
 export default home;
