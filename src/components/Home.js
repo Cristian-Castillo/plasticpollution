@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import Nav from 'react-bootstrap/Nav';
 import 'react-awesome-slider/dist/styles.css';
 import Home from './Home.css'
+import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring'
 
 
@@ -22,7 +23,7 @@ const home = () => {
                 <Infographics/>
             </ParallaxLayer>
             <ParallaxLayer offset={2.7} speed={0}>
-                <Circles/> 
+                <Counter/>
             </ParallaxLayer>
             <ParallaxLayer offset={3} speed={0}>
                 <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="words"/>
@@ -50,26 +51,6 @@ const slider = (
         </div>
   </AutoplaySlider>
 );
-
-function Circles(props) {
-    return <div class="container">
-    <div class="circle">
-        <div class="aligner">
-        Production
-        </div>
-    </div>
-    <div class="circle">
-        <div class="aligner">
-        Time
-        </div>
-    </div>
-    <div class="circle">
-        <div class="aligner">
-        Waste
-        </div>
-    </div>
-    </div>  ;
-  }
 
   function Infographics(props){
       return  <div style={{position: 'absolute', width: '100%'}}>
