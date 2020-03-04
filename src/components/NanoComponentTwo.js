@@ -11,7 +11,6 @@ const NanoComponentTwo = () => {
        >
         {props => (
           <div style= {props}>
-
           <div className="backgroundNanoC2 parallax">
             <h1 className ="colorText">Begin A Nano Adventure</h1>
           </div>
@@ -23,9 +22,6 @@ const NanoComponentTwo = () => {
           <div className ="container">
             <NanoFlipCardComponent />
           </div>
-
-
-
           </div>
         )}
        </Spring>

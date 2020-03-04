@@ -22,7 +22,6 @@ A:hover{ COLOR: white;}
   border-color:lightblue;
 }
 
-
 .body{
   background-color: #4f4f4f;
 }
@@ -200,7 +199,7 @@ A:hover{ COLOR: white;}
       padding-left: 0px;
       border-style: inset;
       top: 35%;
-      left: 43%;
+      left: 42.5%;
       width: 100%;
       height: 100%;
       border-radius: 10px;
@@ -239,7 +238,7 @@ A:hover{ COLOR: white;}
   backface-visibility: hidden;
   overflow: hidden;
   background: #fafafa;
-  color: #333;
+  color:#e3e3e3;
   text-align: center;
   transform: rotateY(180deg);
 }
@@ -286,7 +285,7 @@ A:hover{ COLOR: white;}
       padding-left: 0px;
       border-style: inset;
       top: 35%;
-      left: 29%;
+      left: 28.7%;
       width: 100%;
       height: 100%;
       border-radius: 10px;
@@ -343,7 +342,6 @@ A:hover{ COLOR: white;}
   font-size: 24px;
   text-align: center;
 }
-
 
 .thefrontThree p, .thebackThree p{
   font-family: 'zilla slab', sans-serif;
