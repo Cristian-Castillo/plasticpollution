@@ -22,15 +22,8 @@ const NanoComponentTwo = () => {
           </div>
           <div className ="container">
             <NanoFlipCardComponent />
-            <NanoFlipCardComponent />
-            <NanoFlipCardComponent />
           </div>
 
-          <div className ="container">
-            <NanoFlipCardComponent />
-            <NanoFlipCardComponent />
-            <NanoFlipCardComponent />
-          </div>
 
 
           </div>

@@ -10,13 +10,44 @@ const NanoFlipCardComponent = () => {
        config = {{delay:1020, duration: 1020}}
        >
         {props => (
+          <div className="container">
+
           <div class="maincontainer">
           <div class="thecard">
           <div class="thefront">
-          <h1>Front of Card</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div><div class="theback">
-          <h1>Back of Card</h1>
-          <p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
-          <button>Submit</button></div></div>
+          </div>
+          <div class="theback">
+          <h1>Human Nano Consumption</h1>
+          <p>Take a journey and see how nano consumption travels from the ocean into our bodies!</p>
+          <button>Begin Journey</button>
+          </div>
+          </div>
+          </div>
+
+          <div class="maincontainerTwo">
+          <div class="thecardTwo">
+          <div class="thefrontTwo">
+          </div>
+          <div class="thebackTwo">
+          <h1>The Nano Evaporation</h1>
+          <p>Take a journey and see how Nano Plastics impact our enviroment</p>
+          <button>Begin Journey</button>
+          </div>
+          </div>
+          </div>
+
+          <div class="maincontainerThree">
+          <div class="thecardThree">
+          <div class="thefrontThree">
+          </div>
+          <div class="thebackThree">
+          <h1>Nano Prevention</h1>
+          <p>Take a an exciting journey to see what it takes to do your part to help combat Nano Plastics</p>
+          <button>Begin Journey</button>
+          </div>
+          </div>
+          </div>
+
           </div>
         )}
        </Spring>
