@@ -7,10 +7,10 @@ import AnimatedThing from './animationComp.js'
 const popoverProduction = (
   <Popover id="popover-basic">
     <Popover.Title as="h3">Every second 19025lbs of plastic is produced</Popover.Title>
-    <Popover.Content as ="h6">
+    <Popover.Content>
     19025 is about 9US tons. Which is more than the two whole cars every seconds. 
     Or over 285 new cars per minute. 
-    <img src='traffic.jpg'></img>
+    
     </Popover.Content>
   </Popover>
 );
@@ -18,8 +18,16 @@ const popoverProduction = (
 const popoverCountdown = (
   <Popover id="popover-basic">
     <Popover.Title as="h3">Time by the seconds</Popover.Title>
-    <Popover.Content>
-      This shows the seconds of calculations
+    <Popover.Content> 
+    <div class="media">
+      <a href="#" class="pull-left">
+        <img src="./assets/traffic.jpg" alt="Sample Image"></img>
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Jhon Carter</h4>
+        <p>Excellent Bootstrap popover! I really love it.</p>
+      </div>
+    </div>
     </Popover.Content>
   </Popover>
 );
@@ -68,7 +76,7 @@ class Counter extends React.Component {
     render() {
         return <div class="container">
         <div class="circle circleFast">
-        <OverlayTrigger trigger="hover" placement="bottom" overlay={popoverProduction}>
+        <OverlayTrigger trigger="hover" placement="left" overlay={popoverProduction}>
             <div class="aligner">
             <div>{this.state.productionTime}<h5>lbs produced</h5></div>
             </div>
