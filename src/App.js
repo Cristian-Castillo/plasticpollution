@@ -14,6 +14,9 @@ import Activist from './components/Activist';
 import Macro from "./components/Macro";
 import Micro from "./components/Micro";
 import Nano from "./components/Nano";
+import HumanConsumptionNano from "./components/HumanConsumptionNano";
+import PreventionJourney from "./components/PreventionJourney";
+import NanoEvaporation from "./components/NanoEvaporation";
 
 function App() {
   return (
@@ -30,7 +33,10 @@ function App() {
              <Route path="/Micro" component={Micro}/>
               <Route path="/Nano" component={Nano}/>
              <Route path="/activist" component={Activist}/>
-             <Route component={Error}/>
+             <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
+             <Route path="/PreventionJourney" component={PreventionJourney}/>
+             <Route path="/NanoEvaporation" component={NanoEvaporation}/>
+            <Route component={Error}/>
            </Switch>
         </div>
       </BrowserRouter>
