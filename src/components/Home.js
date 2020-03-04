@@ -7,8 +7,8 @@ import Nav from 'react-bootstrap/Nav';
 import 'react-awesome-slider/dist/styles.css';
 import Home from './Home.css'
 import Counter from './TimeCounterComponent';
-import {useSpring, animated} from 'react-spring'
-
+import {useSpring, animated} from 'react-spring';
+import CounterContainer from './containerForCounterComp';
 
 
 
@@ -19,13 +19,13 @@ const home = () => {
             <ParallaxLayer offset={0} speed={0}>
                 <span>{slider}</span>
             </ParallaxLayer>
-            <ParallaxLayer offset={1.2} speed= {0}>
+            <ParallaxLayer offset={1.2} speed= {1}>
                 <Infographics/>
             </ParallaxLayer>
-            <ParallaxLayer offset={2.7} speed={0}>
-                <Counter/>
+            <ParallaxLayer offset={2} speed={1}>
+                <CounterContainer/>
             </ParallaxLayer>
-            <ParallaxLayer offset={3} speed={0}>
+            <ParallaxLayer offset={2.5} speed={1}>
                 <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="words"/>
                 <ContainerWithtextonLeft/>
                 <ContainerWithtextonRight name= "Nanos" namehref= "/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="words"/>

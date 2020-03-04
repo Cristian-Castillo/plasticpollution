@@ -11,6 +11,8 @@
 
 A:hover{ COLOR: white;}
 
+
+
 div { box-sizing: border-box; }
 
 .container {
@@ -26,16 +28,28 @@ div { box-sizing: border-box; }
 .circle {
     border: 5px solid black;
     background-color: white;
+    background: url('../assets/ocean_blue.jpg');
+    background-repeat: no-repeat;
     width: 200px;
     height: 200px;
     border-radius: 1000px; 
     margin: 0.5em;
 }
+.circleFast{
+  animation: fillerbroo 60s infinite;
+}
+.circleMed{
+  animation: fillerbroo 90s infinite;}
+.circleSlow{
+  animation: fillerbroo 200s infinite;}
 
+@keyframes fillerbroo {
+  0% { background-size:100% 0% }
+  100%{background-size: 100% 100%}
+}
 
 .circle:hover {
-  background-color: #008000;
-  border-style: dotted;
+  background-color: lightblue;
 }
 
 .aligner {
@@ -45,6 +59,7 @@ div { box-sizing: border-box; }
   height: 100%;
   text-align: center;
 }
+
 
 .card {
   width: 45ch;
