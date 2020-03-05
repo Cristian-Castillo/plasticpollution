@@ -11,13 +11,17 @@ import Home from './Home.css'
 import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
-
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 
 const NanoFlipCardComponent = () => {
     return (
           <div>
-
-          <div class="maincontainer">
+<Container className="containerNano">
+  <Row>
+    <Col>
+    <div class="maincontainer">
           <div class="thecard">
           <div class="thefront">
           </div>
@@ -27,31 +31,37 @@ const NanoFlipCardComponent = () => {
           <button><Nav.Link href="/HumanConsumptionNano" className ="buttonColor A">Begin Journey</Nav.Link></button>
           </div>
           </div>
-          </div>
+          </div></Col>
+    <Col>  <div class="maincontainerTwo">
+      <div class="thecardTwo">
+      <div class="thefrontTwo">
+      </div>
+      <div class="thebackTwo">
+      <h1>The Nano Evaporation</h1>
+      <p>Take a journey and see how Nano Plastics impact our enviroment</p>
+      <button><Nav.Link href="/NanoEvaporation" className ="buttonColor A">Begin Journey</Nav.Link></button>
+      </div>
+      </div>
+      </div></Col>
+    <Col>    <div class="maincontainerThree">
+        <div class="thecardThree">
+        <div class="thefrontThree">
+        </div>
+        <div class="thebackThree">
+        <h1>Nano Prevention</h1>
+        <p>Take a an exciting journey to see what it takes to do your part to help combat Nano Plastics</p>
+        <button><Nav.Link href="/PreventionJourney" className ="buttonColor A">Begin Journey</Nav.Link></button>
+        </div>
+        </div>
+        </div></Col>
+  </Row>
+</Container>
 
-          <div class="maincontainerTwo">
-          <div class="thecardTwo">
-          <div class="thefrontTwo">
-          </div>
-          <div class="thebackTwo">
-          <h1>The Nano Evaporation</h1>
-          <p>Take a journey and see how Nano Plastics impact our enviroment</p>
-          <button><Nav.Link href="/NanoEvaporation" className ="buttonColor A">Begin Journey</Nav.Link></button>
-          </div>
-          </div>
-          </div>
 
-          <div class="maincontainerThree">
-          <div class="thecardThree">
-          <div class="thefrontThree">
-          </div>
-          <div class="thebackThree">
-          <h1>Nano Prevention</h1>
-          <p>Take a an exciting journey to see what it takes to do your part to help combat Nano Plastics</p>
-          <button><Nav.Link href="/PreventionJourney" className ="buttonColor A">Begin Journey</Nav.Link></button>
-          </div>
-          </div>
-          </div>
+
+
+
+
 
           </div>
 
