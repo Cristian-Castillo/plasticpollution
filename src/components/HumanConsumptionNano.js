@@ -2,6 +2,7 @@ import React from 'react';
 import HumanConsumptionNanoCSS from './HumanConsumptionNano.css';
 import FishCSS from './Fish.css';
 import SunCloud from './sunCloud.css';
+import BlobFish from './NanoBlobFish.css';
 
 const HumanConsumptionNano = () => {
     return(
@@ -229,6 +230,35 @@ const HumanConsumptionNano = () => {
   <div className ="yellowSand">
 
   </div>
+  <div class = "waterMe">
+  <div class="fishMe">
+    <div class="faceMe">
+      <div class = "left-finMe">
+      </div>
+      <div class = "mouthMe">
+      </div>
+      <div class = "noseMe">
+      </div>
+      <div class = "right-finMe">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "water">
+  <div class="fishMe">
+    <div class="face">
+      <div class = "left-fin">
+      </div>
+      <div class = "mouth">
+      </div>
+      <div class = "nose">
+      </div>
+      <div class = "right-fin">
+      </div>
+    </div>
+  </div>
+</div>
     </div>
     );
 }
