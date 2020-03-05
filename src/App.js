@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
-import About from './components/About';
+import About from './https://cse115b-plasticpollution.github.io/plasticpollution/home';
 import Contact from './components/Contact';
 import Error from './components/Error';
 import Faq from './components/Faq';
