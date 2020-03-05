@@ -17,6 +17,7 @@ import Nano from "./components/Nano";
 import HumanConsumptionNano from "./components/HumanConsumptionNano";
 import PreventionJourney from "./components/PreventionJourney";
 import NanoEvaporation from "./components/NanoEvaporation";
+import Macro2 from "./components/Macro2"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
              <Route path="/faq" component={Faq}/>
              <Route path="/adventure" component={Adventure}/>
              <Route path="/Macro" component={Macro}/>
+             <Route path="/Macro2" component={Macro2}/>
              <Route path="/Micro" component={Micro}/>
              <Route path="/Nano" component={Nano}/>
              <Route path="/activist" component={Activist}/>
