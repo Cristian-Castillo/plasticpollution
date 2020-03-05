@@ -18,21 +18,35 @@ const Micro = () => {
         </div>
         <div className="backgroundMicro parallax">
         </div>
-        <MicroComponentTwo />
         <div>
-
-        </div>
-        <div className="parallaxOrigin">
-        </div>
-        <button className="microButton"> Begin Journey </button>
-
-        <div className ="microInfo">
-        <h1> Micro Plastics</h1>
-        <p className ="passageOrigin">info on micros </p>
+        <MicroComponentTwo/>
         </div>
 
+        <div className="bigCont">
+        <div className="oceanCont"> 
+          <div className="parallaxOriginM OceanImg"></div>
+          <div className ="microInfo oceanInfo">
+          <h2> Micro Plastics in the Ocean</h2>
+          <p className ="passageOrigin">info on micros in ocean </p>
+          <button className="microButton"> Dive into a Micro Ocean Adventure </button>
+          </div>
+          </div>
+
+          <div className="oceanCont"> 
+          <div className="parallaxOriginM GrassImg"></div>
+          <div className ="microInfo oceanInfo">
+          <h2> Micro Plastics on Land</h2>
+          <p className ="passageOrigin">info on micros on land </p>
+          <button className="microButton"> Be a micro on land </button>
+          </div>
+          </div>
+
+          </div>
+
+     
       </div>
       )}
+
      </Spring>
   );
 
