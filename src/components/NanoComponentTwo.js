@@ -19,7 +19,7 @@ const NanoComponentTwo = () => {
           For human health, it is the smallest particles – micro- and nano-particles which are small enough to be ingested – that are of greatest concern. There are several ways by which plastic particles can be ingested: orally through water, consumption of marine products which contain microplastics, through the skin via cosmetics (identified as highly unlikely but possible), or inhalation of particles in the air.
           </p>
           </div>
-          <div className ="container">
+          <div className ="containerNano">
             <NanoFlipCardComponent />
           </div>
           </div>

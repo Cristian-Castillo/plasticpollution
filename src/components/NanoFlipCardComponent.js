@@ -15,7 +15,7 @@ import CounterContainer from './containerForCounterComp';
 
 const NanoFlipCardComponent = () => {
     return (
-          <div className="container">
+          <div>
 
           <div class="maincontainer">
           <div class="thecard">

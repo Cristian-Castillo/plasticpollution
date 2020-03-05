@@ -150,8 +150,8 @@ A:hover{ COLOR: white;}
   transform: rotateY(180deg);
 }
 
-.container {
-      margin-left: -23.5%;
+.containerNano{
+      margin-left: -68.5%;
       display: flex;
       justify-content: center;
       align-content: flex-start;
