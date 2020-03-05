@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
-import About from './https://cse115b-plasticpollution.github.io/plasticpollution/home';
+import About from './components/About';
 import Contact from './components/Contact';
 import Error from './components/Error';
 import Faq from './components/Faq';
@@ -25,7 +25,7 @@ function App() {
           <Navigation />
             <Switch>
              <Route path="/" component={Home} exact/>
-             <Route path="/https://cse115b-plasticpollution.github.io/plasticpollution/about" component={About}/>
+             <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
              <Route path="/faq" component={Faq}/>
              <Route path="/adventure" component={Adventure}/>
