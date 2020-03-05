@@ -54,15 +54,8 @@ const NanoFlipCardComponent = () => {
         </div>
         </div>
         </div></Col>
-  </Row>
-</Container>
-
-
-
-
-
-
-
+        </Row>
+        </Container>
           </div>
 
     );

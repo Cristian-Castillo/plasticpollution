@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navigation from './Navigation'
-import {BrowserRouter,Switch,Route,Link} from 'react-router-dom';
+import {HashRouter as Router,BrowserRouter,Switch,Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
@@ -38,7 +38,24 @@ function App() {
              <Route path="/PreventionJourney" component={PreventionJourney}/>
              <Route path="/NanoEvaporation" component={NanoEvaporation}/>
              <Route path ="/Error" component={Error}/>
-            </div>
+             </div>
+             <div>
+             <Router>
+                <Route path="/" component={Home} exact/>
+                <Route path="/about" component={About}/>
+                <Route path="/contact" component={Contact}/>
+                <Route path="/faq" component={Faq}/>
+                <Route path="/adventure" component={Adventure}/>
+                <Route path="/Macro" component={Macro}/>
+                <Route path="/Micro" component={Micro}/>
+                <Route path="/Nano" component={Nano}/>
+                <Route path="/activist" component={Activist}/>
+                <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
+                <Route path="/PreventionJourney" component={PreventionJourney}/>
+                <Route path="/NanoEvaporation" component={NanoEvaporation}/>
+                <Route path ="/Error" component={Error}/>
+             </Router>
+             </div>
             </Switch>
         </BrowserRouter>
   );
