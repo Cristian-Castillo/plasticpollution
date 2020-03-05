@@ -24,7 +24,7 @@ function App() {
         <div>
           <Navigation />
             <Switch>
-             <Route path="https://cse115b-plasticpollution.github.io/plasticpollution/" component={Home} exact/>
+             <Route path="/" component={Home} exact/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
              <Route path="/faq" component={Faq}/>
