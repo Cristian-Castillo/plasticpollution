@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navigation from './Navigation'
-import {Route} from 'react-router-dom';
+import {BrowserRouter,Switch,Route, Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
@@ -21,9 +21,10 @@ import NanoEvaporation from "./components/NanoEvaporation";
 function App() {
   return (
 
-        <div>
+          <BrowserRouter>
+          <Switch>
+            <div>
           <Navigation />
-
              <Route path="/" component={Home} exact/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
@@ -31,13 +32,15 @@ function App() {
              <Route path="/adventure" component={Adventure}/>
              <Route path="/Macro" component={Macro}/>
              <Route path="/Micro" component={Micro}/>
-              <Route path="/Nano" component={Nano}/>
+             <Route path="/Nano" component={Nano}/>
              <Route path="/activist" component={Activist}/>
              <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
              <Route path="/PreventionJourney" component={PreventionJourney}/>
              <Route path="/NanoEvaporation" component={NanoEvaporation}/>
             <Route component={Error}/>
-        </div>
+            </div>
+            </Switch>
+        </BrowserRouter>
   );
 }
 

@@ -9,6 +9,7 @@ import Home from './Home.css'
 import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
+import {Route, Link} from 'react-router-dom';
 
 
 
@@ -97,7 +98,7 @@ const slider = (
 
   const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
   const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-  
+
   function Card(features) {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
     return (
