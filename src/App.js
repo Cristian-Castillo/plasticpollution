@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navigation from './Navigation'
-import {BrowserRouter,Switch,Route, Link} from 'react-router-dom';
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
@@ -37,7 +37,7 @@ function App() {
              <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
              <Route path="/PreventionJourney" component={PreventionJourney}/>
              <Route path="/NanoEvaporation" component={NanoEvaporation}/>
-            <Route component={Error}/>
+             <Route path ="/Error" component={Error}/>
             </div>
             </Switch>
         </BrowserRouter>
