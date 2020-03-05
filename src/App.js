@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navigation from './Navigation'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home';
@@ -20,10 +20,10 @@ import NanoEvaporation from "./components/NanoEvaporation";
 
 function App() {
   return (
-    <BrowserRouter>
+
         <div>
           <Navigation />
-            <Switch>
+
              <Route path="/" component={Home} exact/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
@@ -37,9 +37,7 @@ function App() {
              <Route path="/PreventionJourney" component={PreventionJourney}/>
              <Route path="/NanoEvaporation" component={NanoEvaporation}/>
             <Route component={Error}/>
-           </Switch>
         </div>
-      </BrowserRouter>
   );
 }
 

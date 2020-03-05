@@ -16,7 +16,6 @@ const Nano = () => {
      <Spring from ={{ opacity: 0, marginTop: -500}}
              to ={{ opacity: 1, marginTop:0 }}>
       {props => (
-
       <div style= {props}>
         <div className="backgroundNano parallax">
         </div>
