@@ -9,8 +9,9 @@ body {
   width:100%;
   height:100%;
    background-image:
-    linear-gradient(
-      #0d0a42, #030032
+      linear-gradient(
+          #000000, #000000
+      
     );
 }
 
@@ -19,7 +20,7 @@ body {
   position: absolute;
   left:10%;
   width:80%;
-  height:100%;
+  height:54%;
   animation-name: fishMe;
     -webkit-animation-name: fishMe;
     animation-duration: 5s;

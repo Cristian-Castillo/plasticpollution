@@ -3,7 +3,7 @@ import './App.css';
 import Navigation from './Navigation'
 import {HashRouter as Router,BrowserRouter,Switch,Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Particles from 'react-particles-js';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -20,6 +20,18 @@ import PreventionJourney from "./components/PreventionJourney";
 import NanoEvaporation from "./components/NanoEvaporation";
 import Macro2 from "./components/Macro2"
 
+const particleOpt = {particles:{
+  line_link: {
+    number: {
+      value: 2000,
+      density: {
+        enable: true,
+        value_area: 2000
+      }
+    }
+  }
+}}
+
 function App() {
   return (
 
@@ -27,6 +39,7 @@ function App() {
           <Switch>
             <div>
           <Navigation />
+
              <Route path="/" component={Home} exact/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
@@ -59,6 +72,11 @@ function App() {
                 <Route path="/NanoEvaporation" component={NanoEvaporation}/>
                 <Route path ="/Error" component={Error}/>
              </Router>
+             </div>
+             <div className ="particleBody">
+             <Particles
+       params={particleOpt}
+       />
              </div>
             </Switch>
         </BrowserRouter>
