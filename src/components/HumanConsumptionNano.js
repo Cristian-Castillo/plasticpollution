@@ -3,6 +3,11 @@ import HumanConsumptionNanoCSS from './HumanConsumptionNano.css';
 import FishCSS from './Fish.css';
 import SunCloud from './sunCloud.css';
 import BlobFish from './NanoBlobFish.css';
+import Particles from 'react-particles-js';
+import NanoEvaporationCSS from './NanoEvaporation.css';
+import NanoEvap from './NanoEvaporation.js';
+import Container from 'react-bootstrap/Container';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const HumanConsumptionNano = () => {
     return(
@@ -101,50 +106,49 @@ const HumanConsumptionNano = () => {
           </div>
     </div>
 
-<div className =" bottleAlignment">
-    <ul>
-
-   <li class="water-bottle">
-       <div class="cap">
-           <div class="cap-top">
-           </div>
-           <div class="cap-seal">
-           </div>
-       </div>
+    <div className =" bottleAlignment">
+     <ul>
+     <li class="water-bottle">
+     <div class="cap">
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
+    </div>
       <div class="bottle">
-           <div class="water-empty"> </div>
-       </div>
+      <div class="water-empty"> </div>
+    </div>
    </li>
-         <li class="water-bottle">
-       <div class="cap">
-           <div class="cap-top">
-           </div>
-           <div class="cap-seal">
-           </div>
-       </div>
-      <div class="bottle">
-           <div class="water-low"> </div>
-       </div>
+    <li class="water-bottle">
+     <div class="cap">
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
+     </div>
+    <div class="bottle">
+      <div class="water-low"> </div>
+      </div>
    </li>
    <li class="water-bottle">
-       <div class="cap">
-           <div class="cap-top">
-           </div>
-           <div class="cap-seal">
-           </div>
-       </div>
-      <div class="bottle">
+     <div class="cap">
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
+     </div>
+    <div class="bottle">
            <div class="water-medium"> </div>
        </div>
    </li>
 
-       <li class="water-bottle">
-       <div class="cap">
-           <div class="cap-top">
-           </div>
-           <div class="cap-seal">
-           </div>
-       </div>
+      <li class="water-bottle">
+      <div class="cap">
+      <div class="cap-top">
+      </div>
+      <div class="cap-seal">
+      </div>
+      </div>
       <div class="bottle">
            <div class="water-full"> </div>
        </div>
@@ -155,10 +159,10 @@ const HumanConsumptionNano = () => {
 
  <li class="water-bottle">
      <div class="cap">
-         <div class="cap-top">
-         </div>
-         <div class="cap-seal">
-         </div>
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
      </div>
     <div class="bottle">
          <div class="water-empty"> </div>
@@ -166,10 +170,10 @@ const HumanConsumptionNano = () => {
  </li>
        <li class="water-bottle">
      <div class="cap">
-         <div class="cap-top">
-         </div>
-         <div class="cap-seal">
-         </div>
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
      </div>
     <div class="bottle">
          <div class="water-low"> </div>
@@ -177,10 +181,10 @@ const HumanConsumptionNano = () => {
  </li>
  <li class="water-bottle">
      <div class="cap">
-         <div class="cap-top">
-         </div>
-         <div class="cap-seal">
-         </div>
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
      </div>
     <div class="bottle">
          <div class="water-medium"> </div>
@@ -189,10 +193,10 @@ const HumanConsumptionNano = () => {
 
      <li class="water-bottle">
      <div class="cap">
-         <div class="cap-top">
-         </div>
-         <div class="cap-seal">
-         </div>
+     <div class="cap-top">
+     </div>
+     <div class="cap-seal">
+     </div>
      </div>
     <div class="bottle">
          <div class="water-full"> </div>
@@ -203,10 +207,10 @@ const HumanConsumptionNano = () => {
 
 <li class="water-bottle">
    <div class="cap">
-       <div class="cap-top">
-       </div>
-       <div class="cap-seal">
-       </div>
+   <div class="cap-top">
+   </div>
+   <div class="cap-seal">
+   </div>
    </div>
   <div class="bottle">
        <div class="water-empty"> </div>
@@ -214,10 +218,10 @@ const HumanConsumptionNano = () => {
 </li>
      <li class="water-bottle">
    <div class="cap">
-       <div class="cap-top">
-       </div>
-       <div class="cap-seal">
-       </div>
+   <div class="cap-top">
+   </div>
+   <div class="cap-seal">
+   </div>
    </div>
   <div class="bottle">
        <div class="water-low"> </div>
@@ -244,8 +248,23 @@ const HumanConsumptionNano = () => {
     </div>
   </div>
 </div>
+<div className ="divJumbo">
+<Jumbotron fluid className ="divJumbo">
+  <Container>
+
+    <h1 className ="divTextColor">Nano Plastic Particles</h1>
+    <p className ="divTextColor">
+      disentigrate onto the ocean floor, where later plankton feed on the nano particles. Once plankton digest these particles into their system, fish feed on the plankton, and eventually end up consumed by humans.
+    </p>
+  </Container>
+</Jumbotron>
+</div>
+
 
 <div class = "water">
+<div className="particleBody">
+<Particles />
+</div>
   <div class="fishMe">
     <div class="face">
       <div class = "left-fin">
@@ -260,6 +279,7 @@ const HumanConsumptionNano = () => {
   </div>
 </div>
     </div>
+
     );
 }
 

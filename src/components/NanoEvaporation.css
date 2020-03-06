@@ -1,0 +1,20 @@
+
+.particleBody{
+  position: relative;
+  margin: -13%;
+  width: auto%;
+  height: 14%;
+  padding: -32px;
+  font-color: white;
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(21, 20, 18), rgb(18,18,10));
+}
+
+.divJumbo{
+     background: linear-gradient(to right, rgb(110, 106, 103), rgb(18,18,10));
+
+}
+
+.divTextColor{
+  color:white;
+}
