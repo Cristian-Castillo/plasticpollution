@@ -74,25 +74,25 @@ class Counter extends React.Component {
     }
 
     render() {
-        return <div class="container">
+        return <div class="containerCircle">
         <div class="circle circleFast">
         <OverlayTrigger trigger="hover" placement="left" overlay={popoverProduction}>
             <div class="aligner">
-            <div>{this.state.productionTime}<h5>lbs produced</h5></div>
+            <p className="circleText">{this.state.productionTime}<br></br>lbs produced</p>
             </div>
             </OverlayTrigger>
         </div>
         <OverlayTrigger trigger="hover" placement="top" overlay={popoverCountdown}>
         <div class="circle circleSlow">
             <div class="aligner">
-                <div onload= {this.startCounting}>{this.state.elapsedTime}<h5>seconds</h5></div>
+                <p onload= {this.startCounting} className="circleText">{this.state.elapsedTime} <br></br> seconds</p>
             </div>
         </div>
         </OverlayTrigger>
         <div class="circle circleMed">
         <OverlayTrigger trigger="hover" placement="right" overlay={popoverWaste}>
             <div class="aligner">
-            <div>{this.state.WasteTime}<h5>pounds dumped</h5></div>
+            <p className="circleText">{this.state.WasteTime} <br></br>pounds dumped</p>
             </div>
             </OverlayTrigger>
         </div>

@@ -16,17 +16,17 @@ import {Route, Link} from 'react-router-dom';
 const home = () => {
     let parallax;
     return (
-        <Parallax pages={6} scrolling= {true} vertical ref={ref => parallax = ref} style= {{background: '#4f4f4f'}} >
+        <Parallax pages={3.2} scrolling= {true} vertical ref={ref => parallax = ref} className="homeBody">
             <ParallaxLayer offset={0} speed={0}>
-                <span>{slider}</span>
+                <span classname="slideshowContainer">{slider}</span>
             </ParallaxLayer>
             <ParallaxLayer offset={1.2} speed= {1}>
                 <Infographics/>
             </ParallaxLayer>
-            <ParallaxLayer offset={2} speed={1}>
+            <ParallaxLayer offset={1.999} speed={.3}>
                 <CounterContainer/>
             </ParallaxLayer>
-            <ParallaxLayer offset={2.5} speed={1}>
+            <ParallaxLayer offset={2} speed={4}>
                 <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="words"/>
                 <ContainerWithtextonLeft/>
                 <ContainerWithtextonRight name= "Nanos" namehref= "/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="words"/>
@@ -39,14 +39,15 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const slider = (
   <AutoplaySlider
+    bullets={false}
     play={true}
     cancelOnInteraction={false} // should stop playing on user interaction
     interval={6000}>
-    <div>
+    <div className="slideshowContainer">
         <img style = {{height: '100%', width: '100%', position: 'relative'}} src ={require('../assets/lotsOfPlastic.jpg')} ></img>
         <h1 style= {{ fontSize: 100, color: 'white', fontFamily: 'Orbitron', position:'absolute', width: '100%', top: 200, textAlign: 'center'}}>In a world full of plastic</h1>
     </div>
-    <div>
+    <div className="slideshowContainer">
         <img style = {{height: '100%', width: '100%'}} src={require('../assets/platicBottle.jpg')}/>
         <h1 style= {{ fontSize: 100, color: 'white', fontFamily: 'Orbitron', position:'absolute', width: '100%', top: 200, textAlign: 'center'}}>What's YOUR impact?</h1>
         </div>
@@ -54,43 +55,48 @@ const slider = (
 );
 
   function Infographics(props){
-      return  <div style={{position: 'absolute', width: '100%'}}>
-      <div>
-      <h1 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}> We produce about 300 million tons of plastic per year</h1>
-      <iframe src="https://ourworldindata.org/grapher/global-plastics-production" style={{ margin: 50, width: '90%', height: 600, border: '0 none'}}></iframe>
-      <h1 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}> 17.6 billion pounds of plastic leaks into the marine environment from land-based sources every year</h1>
-      </div>
+      return  <div className= "infoContainer">
+      <iframe src="https://ourworldindata.org/grapher/global-plastics-production" className="infograph"></iframe>
+      <div className="infoTextContainer">
+        <h3 className="titleforinfo">Plastic Production</h3>
+        <b></b>
+        <p className="parforinfo"> We produce about 300 million tons of plastic per year. 17.6 billion pounds of plastic leaks into the marine environment from land-based sources every year</p>
+        </div>
       </div>;
   }
 
   function ContainerWithtextonRight(props){
-      return      <div class="article-container">
-      <div class="article">
-          <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>{props.name}</h3>
+      return  <div class="plasticContainer">
+        <div className="article">
+        <p className="articleText">
+          <h3>{props.name}</h3>
           <p>{props.text}</p>
           <p className ="backgroundButtonColor">
           <Button color="light" >
             <Nav.Link href={props.namehref} className ="buttonColor">Start {props.name} Adventure</Nav.Link>
           </Button>
           </p>
+      </p>
       </div>
-      <div class="article">
+      <div class="articleC">
         <Card class = {props.classname}/>
       </div>
   </div>;
   }
   function ContainerWithtextonLeft(props){
-      return <div class="article-container">
-      <div class="article">
+      return <div class="plasticContainer">
+      <div class="articleC">
           <Card class = "card microCard"/>
       </div>
       <div class="article">
-          <h3 style= {{fontSize: 50, fontFamily: 'Orbitron', color: 'white' }}>Micros</h3>
+      <p className="articleText">
+          <h3 >Micros</h3>
           <p>words</p>
           <p className ="backgroundButtonColor">
           <Button color ="white" >
                 <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
           </Button>
+          </p>
           </p>
       </div>
   </div>;

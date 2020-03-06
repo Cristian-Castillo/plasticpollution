@@ -19,22 +19,23 @@ export default class CounterContainer extends React.Component {
       });
     }
     InitialStatement(){
-        return <div>
-            <h1>Plastic Production and Waste by the numbers</h1>
-        <p>See how much plastic is being produced and wasted every second.</p>
-        <p> 
+        return <Jumbotron className="counterContainer"><div className="counterTextContainer">
+            <h2 className="counterTitleText">Plastic Production and Waste by the numbers</h2>
+          <p className="counterTitleText">See how much plastic is being produced and wasted every second.</p>
+          <p> 
           <Button color= "lightblue" variant="primary" onClick={this.handleClick}>See the numbers</Button>
-        </p>
-        </div>
+          </p>
+          </div>
+          </Jumbotron>
     }
     render () {
-        return <Jumbotron>
+        return <div>
              {this.state.clicked ? (
           <Counter/>
         ) : (
             this.InitialStatement()
         )}
-        </Jumbotron>
+        </div>
     }
 }
 
