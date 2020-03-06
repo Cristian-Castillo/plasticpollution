@@ -13,6 +13,7 @@ import Adventure from './components/Adventure';
 import Activist from './components/Activist';
 import Macro from "./components/Macro";
 import Micro from "./components/Micro";
+import MicroOcean from "./components/microOcean";
 import Nano from "./components/Nano";
 import HumanConsumptionNano from "./components/HumanConsumptionNano";
 import PreventionJourney from "./components/PreventionJourney";
@@ -34,6 +35,7 @@ function App() {
              <Route path="/Macro" component={Macro}/>
              <Route path="/Macro2" component={Macro2}/>
              <Route path="/Micro" component={Micro}/>
+             <Route path="/Ocean" component={MicroOcean}/>
              <Route path="/Nano" component={Nano}/>
              <Route path="/activist" component={Activist}/>
              <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>

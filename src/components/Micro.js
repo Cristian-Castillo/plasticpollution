@@ -1,6 +1,7 @@
 import React from 'react';
 import MicroCss from './Micro.css'
 import MicroComponentTwo from './MicroComponentTwo';
+import Nav from 'react-bootstrap/Nav';
 import { Spring } from 'react-spring/renderprops';
 import {Transition} from 'react-spring/renderprops'
 import {useTransition} from 'react-spring'
@@ -28,7 +29,7 @@ const Micro = () => {
           <div className ="microInfo oceanInfo">
           <h2> Micro Plastics in the Ocean</h2>
           <p className ="passageOrigin">info on micros in ocean </p>
-          <button className="microButton"> Dive into a Micro Ocean Adventure </button>
+          <button className="microButton"><Nav.Link href="/Ocean">Dive into a Micro Ocean Adventure </Nav.Link></button>
           </div>
           </div>
 
