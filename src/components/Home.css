@@ -3,11 +3,13 @@
 }
 
 .backgroundButtonColor{
-  background-color:lightblue;
-  width:fit-content;
+  background-color:white;
+  width: fit-content;
   border-radius:50px 50px 50px 50px;
   border-width: 50px 50px 50px 50px;
+  display: inline-block;
 }
+
 
 A:hover{ COLOR: white;
   }
@@ -19,7 +21,7 @@ A:hover{ COLOR: white;
 }
 
 .infoContainer{
-  background-color: #0c0163;
+  background-color: transparent;
   display: flex;
   flex-flow: row nowrap;
   margin: 40px;
@@ -55,7 +57,7 @@ A:hover{ COLOR: white;
 }
 
 .counterContainer{
-  background:#0c0163;
+  background:transparent;
 
 }
 .counterTextContainer{
@@ -68,7 +70,7 @@ A:hover{ COLOR: white;
   color:white;
 }
 
-div { box-sizing: border-box; }
+
 
 .containerCircle{
   display: flex;
@@ -126,10 +128,11 @@ div { box-sizing: border-box; }
   
 }
 .article{
-  background: #0c0163;
+  background: transparent;
   display: flex;
   align-items: center;
   flex-flow: column;
+  justify-content: center;
   width: 50%;
   margin: 25px;
 

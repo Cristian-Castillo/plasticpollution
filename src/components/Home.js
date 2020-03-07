@@ -27,9 +27,13 @@ const home = () => {
                 <CounterContainer/>
             </ParallaxLayer>
             <ParallaxLayer offset={2} speed={4}>
-                <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="words"/>
+                <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
+
+In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui."/>
                 <ContainerWithtextonLeft/>
-                <ContainerWithtextonRight name= "Nanos" namehref= "/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="words"/>
+                <ContainerWithtextonRight name= "Nanos" namehref= "/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
+
+In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui."/>
             </ParallaxLayer>
         </Parallax>
     );
@@ -70,7 +74,7 @@ const slider = (
         <div className="article">
         <p className="articleText">
           <h3>{props.name}</h3>
-          <p>{props.text}</p>
+          <p className="articleText">{props.text}</p>
           <p className ="backgroundButtonColor">
           <Button color="light" >
             <Nav.Link href={props.namehref} className ="buttonColor">Start {props.name} Adventure</Nav.Link>
@@ -91,10 +95,17 @@ const slider = (
       <div class="article">
       <p className="articleText">
           <h3 >Micros</h3>
-          <p>words</p>
+          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, 
+            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. 
+            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. 
+            Fugit clita in vel, usu ne quas delenit. 
+            Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
+In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, 
+te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem 
+gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui.</p>
           <p className ="backgroundButtonColor">
-          <Button color ="white" >
-                <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
+          <Button color="light" >
+          <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
           </Button>
           </p>
           </p>

@@ -22,9 +22,9 @@ export default class CounterContainer extends React.Component {
         return <Jumbotron className="counterContainer"><div className="counterTextContainer">
             <h2 className="counterTitleText">Plastic Production and Waste by the numbers</h2>
           <p className="counterTitleText">See how much plastic is being produced and wasted every second.</p>
-          <p> 
+          <p className ="backgroundButtonColor">
           <Button color= "lightblue" variant="primary" onClick={this.handleClick}>See the numbers</Button>
-          </p>
+          </p> 
           </div>
           </Jumbotron>
     }
