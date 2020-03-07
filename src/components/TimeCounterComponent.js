@@ -5,40 +5,30 @@ import Popover from 'react-bootstrap/Popover'
 import AnimatedThing from './animationComp.js'
 
 const popoverProduction = (
-  <Popover id="popover-basic">
-    <Popover.Title as="h3">Every second 19025lbs of plastic is produced</Popover.Title>
-    <Popover.Content>
-    19025 is about 9US tons. Which is more than the two whole cars every seconds. 
-    Or over 285 new cars per minute. 
-    
-    </Popover.Content>
-  </Popover>
+    <div className="popoverdiv">
+        <img className= "popoverImg" src= "https://images.pexels.com/photos/7674/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Sample Image"></img>
+        <p className="popovertext">9025 is about 9US tons. Which is more than the two whole cars every seconds. 
+        Or over 285 new cars per minute. </p>
+      </div>
 );
+
+
+
 
 const popoverCountdown = (
-  <Popover id="popover-basic">
-    <Popover.Title as="h3">Time by the seconds</Popover.Title>
-    <Popover.Content> 
-    <div class="media">
-      <a href="#" class="pull-left">
-        <img src="./assets/traffic.jpg" alt="Sample Image"></img>
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">Jhon Carter</h4>
-        <p>Excellent Bootstrap popover! I really love it.</p>
-      </div>
-    </div>
-    </Popover.Content>
-  </Popover>
+      <div className="popoverdiv">
+        <img className= "popoverImg" src= "https://images.pexels.com/photos/707676/pexels-photo-707676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Sample Image"></img>
+        <p className="popovertext"> Every second 19025lbs of plastic are produced, and 558lbs of plastic are thrown into the ocean</p>
+        </div>
 );
 
+
+
 const popoverWaste = (
-  <Popover id="popover-basic">
-    <Popover.Title as="h3">Waste by the second</Popover.Title>
-    <Popover.Content>
-      This shows how much plastic is being wasted everysecond
-    </Popover.Content>
-  </Popover>
+    <div className="popoverdiv">
+        <img className= "popoverImg" src= "https://images.pexels.com/photos/2768961/pexels-photo-2768961.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Sample Image"></img>
+        <p className="popovertext">afbks dbfkn dfenfknfenjsn jdfndsnfnoidn ngowngns lkdng knionfkafnasj alnflnf akfnafn an afnaonf ja baubfasb bsf ajfa sjfnsa d </p>
+      </div>
 );
 
 class Counter extends React.Component {
@@ -76,13 +66,13 @@ class Counter extends React.Component {
     render() {
         return <div class="containerCircle">
         <div class="circle circleFast">
-        <OverlayTrigger trigger="hover" placement="left" overlay={popoverProduction}>
+        <OverlayTrigger trigger="hover" placement="bottom" overlay={popoverProduction}>
             <div class="aligner">
             <p className="circleText">{this.state.productionTime}<br></br>lbs produced</p>
             </div>
             </OverlayTrigger>
         </div>
-        <OverlayTrigger trigger="hover" placement="top" overlay={popoverCountdown}>
+        <OverlayTrigger trigger="hover" placement="bottom" overlay={popoverCountdown}>
         <div class="circle circleSlow">
             <div class="aligner">
                 <p onload= {this.startCounting} className="circleText">{this.state.elapsedTime} <br></br> seconds</p>
@@ -90,7 +80,7 @@ class Counter extends React.Component {
         </div>
         </OverlayTrigger>
         <div class="circle circleMed">
-        <OverlayTrigger trigger="hover" placement="right" overlay={popoverWaste}>
+        <OverlayTrigger trigger="hover" placement="bottom" overlay={popoverWaste}>
             <div class="aligner">
             <p className="circleText">{this.state.WasteTime} <br></br>pounds dumped</p>
             </div>

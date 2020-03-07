@@ -168,3 +168,22 @@ background-image: url('../assets/macro.jpg');
 .nanoCard{
   background-image: url('../assets/nano.jpg');
 }
+.popoverdiv{
+  width: 400px;
+  height: 400px;
+  background: transparent;
+  
+}
+
+.popoverImg{
+  float: top;
+  width: 100%;
+  height: 75%;
+  opacity: 1;
+  border-radius: 50%
+}
+.popovertext{
+  float: bottom;
+  color: white;
+  opacity: 1;
+}
