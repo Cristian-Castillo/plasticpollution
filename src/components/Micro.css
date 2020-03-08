@@ -9,9 +9,6 @@
   A:hover{ COLOR: white;}
   
   .microButton{
-    margin-top: 4%;
-    padding-left: 23px;
-    margin-left: 17%;
     color: #4a4d4f;
     background-color: lightblue;
     width: -moz-fit-content;
@@ -19,13 +16,11 @@
     border-radius: 10px 10px 10px 10px;
     border-width: 10px 45px 10px 38px;
     border-color:lightblue;
+    align-self: center;
   }
   
   
-  
-  .body{
-    background-color: black;
-  }
+
   
   .colorText{
     border-top-style: solid;
@@ -55,13 +50,7 @@
     width:70%;
       }
   
-  .microInfo{
-    font-size: 1.2em;
-    font-stretch: expanded;
-    text-align: right;
-    -webkit-font-smoothing: auto;
-    width: 38%;
-  }
+ 
   
   
   .parallax {
@@ -78,22 +67,31 @@
     align-content: flex-start;
     justify-content: space-between;
     flex-flow: column nowrap;
-    height: 900px;
+    height: fit-content;
   }
   .oceanCont{
+    margin: 30px;
   display: flex;
   align-content: flex-start;
   justify-content: space-around;
   flex-flow: row nowrap;
-  height: 100px;
+  height: fit-content;
   }
 
   .oceanInfo{
   display: flex;
-  justify-content: space-evenly center;
-  align-content: flex-start center;
+  justify-content: center;
+  align-content: space-evenly, center;
   flex-flow: column nowrap;
-  height: 200px;
+  height: fit-content;
+
+  }
+  .microInfo{
+    font-size: 1.2em;
+    font-stretch: expanded;
+    text-align: center;
+    -webkit-font-smoothing: auto;
+    width: 38%;
   }
   .parallaxOriginM0{      
     background-attachment: fixed;
