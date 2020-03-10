@@ -7,7 +7,6 @@ body {
 body * {
   box-sizing: border-box;
 }
-
 .sushi-machine {
   position: relative;
   display: flex;

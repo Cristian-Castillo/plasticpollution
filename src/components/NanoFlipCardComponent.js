@@ -21,7 +21,6 @@ const NanoFlipCardComponent = () => {
 <Container className="containerNano">
   <Row>
     <Col>
-    
     <div class="maincontainer">
           <div class="thecard">
           <div class="thefront">
