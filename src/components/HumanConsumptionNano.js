@@ -130,17 +130,6 @@ const HumanConsumptionNano = () => {
       <div class="water-low"> </div>
       </div>
    </li>
-   <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-     </div>
-    <div class="bottle">
-           <div class="water-medium"> </div>
-       </div>
-   </li>
 
       <li class="water-bottle">
       <div class="cap">
@@ -179,17 +168,7 @@ const HumanConsumptionNano = () => {
          <div class="water-low"> </div>
      </div>
  </li>
- <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-     </div>
-    <div class="bottle">
-         <div class="water-medium"> </div>
-     </div>
- </li>
+
 
      <li class="water-bottle">
      <div class="cap">
@@ -215,17 +194,7 @@ const HumanConsumptionNano = () => {
   <div class="bottle">
        <div class="water-empty"> </div>
    </div>
-</li>
-     <li class="water-bottle">
-   <div class="cap">
-   <div class="cap-top">
-   </div>
-   <div class="cap-seal">
-   </div>
-   </div>
-  <div class="bottle">
-       <div class="water-low"> </div>
-   </div>
+
 </li>
 </ul>
 
@@ -264,6 +233,15 @@ const HumanConsumptionNano = () => {
 <div class = "water">
 <div className="particleBody">
 <Particles />
+
+<div className ="sushi-machine sushiBack">
+<h1>Fish Become A Food Source</h1>
+<p>The nano particles continue the cycle into the human body upon digestion, and cause potential harm upon entry and accumulation.</p>
+<div className ="neta"></div>
+<div className ="rice"></div>
+<div className ="sushi"></div>
+<div className ="table"></div>
+</div>
 </div>
   <div class="fishMe">
     <div class="face">
@@ -278,8 +256,12 @@ const HumanConsumptionNano = () => {
     </div>
   </div>
 </div>
+<div>
     </div>
 
+
+
+</div>
     );
 }
 
