@@ -13,7 +13,7 @@ const NanoComponentTwo = () => {
        config = {{delay:1020, duration: 1020}}
        >
         {props => (
-          <div style= {props}>
+          <div style= {props} className ="backColor">
           <div className="backgroundNanoC2 parallax">
             <h1 className ="colorText">Begin A Nano Adventure</h1>
           </div>

@@ -1,13 +1,12 @@
 import React from 'react';
-import NanoEvaporationCSS from './NanoEvaporation.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Particles from 'react-particles-js';
+import $ from 'jquery';
+import sushi from './Sushi.css';
 
 const NanoEvaporation = () => {
-    return(
-      <div className="particleBody">
-  <Particles />
-      </div>
+return(
+<div> <h1> Hello </h1> </div>
+
     );
 }
 

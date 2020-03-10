@@ -1,12 +1,17 @@
 .backgroundFish{
   background-color: lightblue;
-  height: 370px;
+  height: 620px;
 }
 
+.sushiBack{
+
+background:#155ba7;
+
+}
 .bottleAlignment{
   display: -webkit-inline-box;
-  position: absolute;
-  top: 550px;
+      position: relative;
+      top: 100px;
 }
 .yellowSand{
   background-color:#bebe1f;

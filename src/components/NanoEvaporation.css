@@ -1,11 +1,10 @@
 
 .particleBody{
   position: relative;
-  margin: -13%;
+  margin: -2%;
   width: auto%;
-  height: 14%;
+  height: 0%;
   width: 113%;
-
   padding: -32px;
   font-color: white;
   font-family: sans-serif;
@@ -14,6 +13,7 @@
 
 .divJumbo{
      background: linear-gradient(to right, rgb(110, 106, 103), rgb(18,18,10));
+     height:300px;
 
 }
 
