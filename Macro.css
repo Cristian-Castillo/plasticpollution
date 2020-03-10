@@ -1,0 +1,51 @@
+.scene_container {
+	position: relative;
+  width: 100%;
+  margin: auto;
+}
+.scene {
+ 
+  
+  width: 60%;
+  content:url("./assets/bins.jpg");
+  margin-left: auto;
+  margin-right:auto;
+  display:block;
+}
+
+/*.scene:hover{
+	content:url("./assets/binstrash.jpg");
+}*/
+.area2 {
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	left: 54%;
+	top: 23%;
+}
+.area1 {
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+	left: 35%;
+	top: 25%;
+}
+.description {
+	display:block;
+	margin:auto;
+	width: 80%;
+	visibility: hidden;
+}
+.area2:hover ~ .description{visibility: visible;}
+
+.area2:hover + .scene{content:url("./assets/binstrash.jpg"); }
+
+.area1:hover ~ .description{visibility: visible;}
+
+.area1:hover + .scene{content:url("./assets/binstrash.jpg"); }
+
+
+
+
