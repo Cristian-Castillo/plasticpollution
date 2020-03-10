@@ -4,7 +4,7 @@
   width: 150px;
   height: 100px;
   animation: swim 5s 2;
-  animation: swim 1s infinite; 
+  animation: swim 1s infinite;
   animation: swimAll 11.5s infinite;
 }
 
@@ -17,6 +17,7 @@
   border-radius: 70%;
   width: 300px;
   height: 100px;
+
 }
 
 .finLeftRed {

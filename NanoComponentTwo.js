@@ -25,6 +25,7 @@ const NanoComponentTwo = () => {
           <div>
             <NanoFlipCardComponent />
           </div>
+
           </div>
         )}
        </Spring>

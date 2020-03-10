@@ -131,7 +131,6 @@ const HumanConsumptionNano = () => {
       </div>
    </li>
 
-
       <li class="water-bottle">
       <div class="cap">
       <div class="cap-top">
