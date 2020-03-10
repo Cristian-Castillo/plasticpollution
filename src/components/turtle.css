@@ -1,0 +1,167 @@
+.turtle {
+    width: 500px;
+    height: 500px;
+    animation: walking-turtle-03 2s ease-in-out infinite alternate;
+    position: relative;
+    left: 50%;
+    top: 35%;
+    z-index: 100;
+    transform: translate3d(50%, 50%, 0);}
+    
+.head {
+    width: 85px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #82C49F;
+    position: relative;
+    top: 50%;
+    left: 79%;
+    transform: translate(-50%, -50%);}
+      
+.head:before, head:after {
+    top: 20px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6A757A;
+    content: '';
+    position: absolute;
+    }
+      
+.head:before {left: 13px}
+.head:after {right: 13px}
+    
+    
+.shell {
+    width: 250px;
+    height: 220px;
+    background-color: #8B4513;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+      
+.shell:before, 
+.shell:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+  
+.shell:before {
+        width: 235px;
+        height: 200px;
+        background-color: #8B4513;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      
+.shell:after {
+        width: 5%;
+        height: 100%;
+        background-color: white;
+        opacity: 0.1;
+        top: 0;
+      }
+  
+  
+      .div {
+        width: 120px;
+        height: 80px;
+        background: #636E72;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);}
+        
+        .div:before, 
+        .div:after {
+          content: '';
+          position: absolute;
+          left: 0;
+        }
+        
+        .div:before {
+          top: -30px;
+          border-left: 60px solid transparent;
+          border-right: 60px solid transparent;
+          border-bottom: 30px solid #636E72;
+        }
+        
+        .div:after {
+          bottom: -30px;
+          left: 0;
+          border-left: 60px solid transparent;
+          border-right: 60px solid transparent;
+          border-top: 30px solid #636E72;
+        }
+    
+    .tail {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 35px solid #84C3A0;
+      position: absolute;
+      top: 50%;
+      left: 19%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .legs {
+      width: 30px;
+      height: 300px;
+      border-radius: 20%;
+      background-color: #82C49F;
+      position: absolute;
+      top: 50%;
+      left: 50%;}
+      
+    .-left {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        animation: walking-turtle-01 2s ease-in-out infinite alternate;
+      
+      }
+      
+    .-right {
+        transform: translate(-50%, -50%) rotate(45deg);
+        animation: walking-turtle-02 2s ease-in-out infinite alternate;
+        
+      }
+    
+  
+  
+  
+  @keyframes walking-turtle-01 {
+      0% 	 {transform: translate(-50%, -50%) rotate(-40deg)}
+      25%  {transform: translate(-50%, -50%) rotate(-45deg)}
+    50%  {transform: translate(-50%, -50%) rotate(-30deg)}
+      75%  {transform: translate(-50%, -50%) rotate(-45deg)}
+      100% {transform: translate(-50%, -50%) rotate(-40deg)}
+  }
+  
+  @keyframes walking-turtle-02 {
+      0% 	 {transform: translate(-50%, -50%) rotate(40deg)}
+      25%  {transform: translate(-50%, -50%) rotate(45deg)}
+    50%  {transform: translate(-50%, -50%) rotate(35deg)}
+      75%  {transform: translate(-50%, -50%) rotate(45deg)}
+      100% {transform: translate(-50%, -50%) rotate(30deg)}
+  }
+  
+  @keyframes walking-turtle-03 {
+      0% 	 {transform: translate(-50%, -50%) rotate(0deg)}
+      25%  {transform: translate(-50%, -50%) rotate(3deg)}
+    50%  {transform: translate(-50%, -50%) rotate(-1deg)}
+      75%  {transform: translate(-50%, -50%) rotate(2deg)}
+      100% {transform: translate(-50%, -50%) rotate(-1deg)}
+  }
+  @keyframes swimming {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+  }
