@@ -6,12 +6,13 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.leftcolumn {
+.leftcolumn, .rightcolumn {
 	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
 }
-.rightcolumn {
-	width: 20%;
-}
+
 
 .middle {
 	width:60%;
@@ -31,8 +32,35 @@
 	margin:auto;
 	width: 80%;
 }
+.buttonContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.backButton {
+	background-color: white;
+	height: 50px;
+	width: 60px;
+	border-radius: 10px;
+	text-decoration: none;
+  padding: 0px 0px 0px 20px;
+  font-size: 30px;
 
 
-.button {
-	color: black;
+}
+
+.finishButton {
+	background-color: white;
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	text-align: center;
+
+  font-size: 30px;
+
+
+}
+
+.backButton:hover {
+	background-color: grey;
 }

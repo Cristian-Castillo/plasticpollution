@@ -8,7 +8,9 @@ const Macro = (myRef) => {
       <div>
       <div className="scene_container2">
         <div className='leftcolumn'>
-          <button className="backButton"variant="primary" href='./Macro'>hello</button>
+          <div className='buttonContainer'>
+            <a className="backButton" href='./Macro'>&#8249;</a>
+          </div>
         </div>
         <div className="middle">
           <h1>Landfill</h1>
@@ -17,6 +19,9 @@ const Macro = (myRef) => {
 
         </div>
         <div className='rightcolumn'>
+          <div className='buttonContainer'>
+            <a className="finishButton" href='/'>Finish</a>
+          </div>
         </div>
         
       </div>

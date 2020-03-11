@@ -19,6 +19,9 @@ import HumanConsumptionNano from "./components/HumanConsumptionNano";
 import PreventionJourney from "./components/PreventionJourney";
 import NanoEvaporation from "./components/NanoEvaporation";
 import Macro2 from "./components/Macro2"
+import MacroReuse from "./components/MacroReuse"
+import MacroDump from "./components/MacroDump"
+import MacroOcean from "./components/MacroOcean"
 
 const particleOpt = {particles:{
   line_link: {
@@ -47,6 +50,9 @@ function App() {
              <Route path="/adventure" component={Adventure}/>
              <Route path="/Macro" component={Macro}/>
              <Route path="/Macro2" component={Macro2}/>
+             <Route path="/MacroReuse" component={MacroReuse}/>
+             <Route path="/MacroDump" component={MacroDump}/>
+             <Route path="/MacroOcean" component={MacroOcean}/>
              <Route path="/Micro" component={Micro}/>
              <Route path="/Ocean" component={MicroOcean}/>
              <Route path="/Nano" component={Nano}/>
