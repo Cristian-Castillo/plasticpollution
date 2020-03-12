@@ -22,6 +22,8 @@ import Macro2 from "./components/Macro2"
 import MacroReuse from "./components/MacroReuse"
 import MacroDump from "./components/MacroDump"
 import MacroOcean from "./components/MacroOcean"
+import MacroRecycle from "./components/MacroRecycle"
+import MacroAsia from "./components/MacroAsia"
 
 const particleOpt = {particles:{
   line_link: {
@@ -53,6 +55,8 @@ function App() {
              <Route path="/MacroReuse" component={MacroReuse}/>
              <Route path="/MacroDump" component={MacroDump}/>
              <Route path="/MacroOcean" component={MacroOcean}/>
+             <Route path="/MacroRecycle" component={MacroRecycle}/>
+             <Route path="/MacroAsia" component={MacroAsia}/>
              <Route path="/Micro" component={Micro}/>
              <Route path="/Ocean" component={MicroOcean}/>
              <Route path="/Nano" component={Nano}/>

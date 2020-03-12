@@ -14,7 +14,7 @@ const Macro = (myRef) => {
 
          <h1>The Journey of Macro-Plastics</h1>
           <p>Macro information</p>
-          <a id="area" className="area1" href="/Macro2"></a>
+          <a id="area" className="area1" href="/MacroRecycle"></a>
           <a id="area" className="area2" href="/Macro2"></a>
           <a id="area" className="area3" href="/MacroReuse"></a>
           <a id="area" className="area4" href="/MacroDump"></a>
