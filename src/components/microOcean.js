@@ -1,6 +1,7 @@
 import React from 'react';
 import MicroOceanCss from './microOcean.css'
 import Turtle from './turtle';
+import TurtleMove from './turtleAnimation';
 
 const MicroOcean = () => {
     return <div className="main-div">
@@ -10,7 +11,7 @@ const MicroOcean = () => {
       </div>
       <div className="container_grid">
       <div class="ocean">
-        <Turtle/>
+        <TurtleMove/>
   </div>
   </div>
   </div>
