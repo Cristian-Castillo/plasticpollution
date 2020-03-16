@@ -6,7 +6,7 @@ import range from 'lodash-es/range'
 
 const items = range(1)
 const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`
-
+/*
 export default function BagFloat() {
   const { radians } = useSpring({
     to: async next => {
@@ -14,8 +14,11 @@ export default function BagFloat() {
     },
     from: { radians: 0 },
     config: { duration: 3500 },
-    reset: true,
   })
   return items.map(i => <animated.div key={i} className="water_bot" style={{ transform: radians.interpolate(interp(i)) }} />)
+}
+*/
+export default function BagFloat() {
+  return <div className="water_bot object"></div>
 }
 

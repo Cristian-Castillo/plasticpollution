@@ -5,6 +5,7 @@ import BagPopUp from './microPopBoxBag';
 import NetFloat from './microNet';
 import BagFloat from './plasticBag';
 import MicroFloat from './microPiece';
+import singleMicro from './microSingle';
 
 const MicroOcean = () => {
     return <div className="main-div">
@@ -14,8 +15,10 @@ const MicroOcean = () => {
       </div>
       <div className="container_grid">
       <div className="ocean">
-      <TurtleMove></TurtleMove>
-      <BagFloat></BagFloat>
+      <TurtleMove/>
+      <BagPopUp title="popoverBag"/>
+      <BagPopUp title="popoverMicro"/>
+      <BagPopUp title="popoverNet"/>
       </div>
       </div>
     </div>

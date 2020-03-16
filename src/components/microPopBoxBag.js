@@ -13,23 +13,24 @@ export default function BagPopUp(props) {
 
     const popoverBag =
         <div className="popoverbox">
-            <h3>Macros eventually become micros</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
-            <img  src="https://static1.squarespace.com/static/54d3a62be4b068e9347ca880/t/566a048869a91a506fec43ee/1449788556521/?format=1500w" className="popoverImg"></img>
+            <h3 className="popoverTxt">Macros eventually become micros</h3>
+            <p className="popoverTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+            <img  src="https://gephardtdaily.com/wp-content/uploads/2019/02/Even-deep-sea-creatures-are-eating-plastic.jpg" className="popoverImg"></img>
+
         </div>;
 
   const popoverMicro = 
       <div className="popoverbox">
-        <h3> Marine animals consume free microplastics, with varying effects</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
-        <img  src="https://i7.pngguru.com/preview/770/789/275/fishing-net-wedding-invitation-fishing-net-material.jpg" className="popoverImg"></img>
+        <h3 className="popoverTxt"> Marine animals consume free microplastics, with varying effects</h3>
+        <p className="popoverTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+        <img  src="https://static1.squarespace.com/static/54d3a62be4b068e9347ca880/t/566a048869a91a506fec43ee/1449788556521/?format=1500w" className="popoverImg"></img>
       </div>;
 
   const popoverNet = 
     <div className="popoverbox">
-      <h3> Marine animals consume free microplastics, with varying effects</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
-      <img  src="https://i7.pngguru.com/preview/770/789/275/fishing-net-wedding-invitation-fishing-net-material.jpg" className="popoverImg"></img>
+      <h3 className="popoverTxt"> Marine animals consume free microplastics, with varying effects</h3>
+      <p className="popoverTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+      <img  src="https://www.captainjohnwhalewatchingma.com/wp-content/uploads/6163195.jpg" className="popoverImg"></img>
     </div>;
 
     switch(title) {
@@ -38,48 +39,8 @@ export default function BagPopUp(props) {
         <Button className= "floatButton"><BagFloat/></Button>
         </OverlayTrigger>
       case "popoverMicro":
-        return <><OverlayTrigger trigger="click" placement="top" overlay={popoverMicro}>
-        <Button className= "floatButton2">
-          <div className="manyMicros">
-            <MicroFloat shape="shape1" color="lightblue" />
-            <MicroFloat shape="shape2" color="red"/>
-            <MicroFloat shape="shape3" color="green"/>
-            <MicroFloat shape="shape1" color="red"/>
-            <MicroFloat shape="shape1" color="lightblue" />
-            <MicroFloat shape="shape2" color="red"/>
-            <MicroFloat shape="shape3" color="green"/>
-            <MicroFloat shape="shape1" color="red"/>
-          </div>
-          <div className="manyMicros">
-            <MicroFloat shape="shape1" color="yellow" /> 
-            <MicroFloat shape="shape2" color="orange"/>
-            <MicroFloat shape="shape3" color="red"/>
-            <MicroFloat shape="shape1" color="orange"/>
-            <MicroFloat shape="shape1" color="yellow" />
-            <MicroFloat shape="shape2" color="green"/>
-            <MicroFloat shape="shape3" color="purple"/>
-            <MicroFloat shape="shape1" color="lightblue"/>
-          </div>
-          <div className="manyMicros">
-            <MicroFloat shape="shape1" color="red" />
-            <MicroFloat shape="shape2" color="purple"/>
-            <MicroFloat shape="shape3" color="green"/>
-            <MicroFloat shape="shape1" color="red"/>
-            <MicroFloat shape="shape1" color="yellow" />
-            <MicroFloat shape="shape2" color="red"/>
-            <MicroFloat shape="shape3" color="purple"/>
-            <MicroFloat shape="shape1" color="green"/>
-          </div>
-          <div className="manyMicros">
-            <MicroFloat shape="shape1" color="lightblue" />
-            <MicroFloat shape="shape2" color="orange"/>
-            <MicroFloat shape="shape3" color="green"/>
-            <MicroFloat shape="shape1" color="red"/>
-            <MicroFloat shape="shape1" color="yellow" />
-            <MicroFloat shape="shape2" color="red"/>
-            <MicroFloat shape="shape3" color="purple"/>
-            <MicroFloat shape="shape1" color="red"/>
-          </div>
+        return <><OverlayTrigger trigger="click" placement="left" overlay={popoverMicro}>
+        <Button className= "floatButton2"><MicroFloat/><MicroFloat/>
         </Button>
         </OverlayTrigger></>
         case "popoverNet":
