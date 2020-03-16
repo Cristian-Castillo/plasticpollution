@@ -1,14 +1,20 @@
+@font-face {
+  font-family: 'Oribtron';
+  src: local('Orbitron'), url(../fonts/Orbitron-Regular.ttf) format('truetype');
+}
+
 .backgroundMicro{
     padding: 1.5rem;
-  }
+    background-color: black;}
   
-  .backgroundMicroC2{
-    padding: 1.5rem;
-  }
+.backgroundMicroC2{
+  padding: 1.5rem;
+  background-color: black;
+}
   
   A:hover{ COLOR: white;}
   
-  .microButton{
+  .microButtonMicro{
     color: #4a4d4f;
     background-color: lightblue;
     width: -moz-fit-content;
@@ -22,84 +28,94 @@
   
 
   
-  .colorText{
+  .colorTextMicro{
     border-top-style: solid;
     font-size: 3.7rem;
     color: white;
-    font-family: serif;
     margin-top: -97.5px;
     align-content: center;
+    font-family: serif;
   }
   
-  .passageOrigin{
-    font-family: serif;
+  .passageOriginMicro{
     font-size: 1.2em;
+    color: #ffffff;
+    font-family: 'Oribtron';
   }
   
-  .paraDiv{
+  .paraDivMicro{
     margin-left:24%;
+
+    
+  }
+  .title_backgroundMicro{
+    background-color: black;
   }
   
-  .introInfo{
+  .introInfoMicro{
     padding-top:55px;
-    font-family: serif;
-    font-size: 1.3em;
     font-stretch: expanded;
     text-align: center;
-    -webkit-font-smoothing: auto;
     width:70%;
+    font-family: 'Oribtron';
+    color: #ffffff;
       }
   
  
   
-  
-  .parallax {
+  /*top parallax*/
+  .parallaxMicro{
     background-image: url('https://static01.nyt.com/images/2019/10/22/science/11PLASTIC1/11PLASTIC1-superJumbo.jpg');
     height: 76px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
+
   }
-  .bigCont{
-    padding: 50px;
+  .bigContMicro{
     display: flex;
+    background-color: black;
     align-content: flex-start;
     justify-content: space-between;
     flex-flow: column nowrap;
     height: fit-content;
   }
-  .oceanCont{
+  .oceanContMicro{
     margin: 30px;
   display: flex;
   align-content: flex-start;
   justify-content: space-around;
   flex-flow: row nowrap;
   height: fit-content;
+  font-family: 'Oribtron';
   }
 
-  .oceanInfo{
+  .oceanInfoMicro{
   display: flex;
   justify-content: center;
   align-content: space-evenly, center;
   flex-flow: column nowrap;
   height: fit-content;
+  font-family: 'Oribtron';
 
   }
-  .microInfo{
-    font-size: 1.2em;
+  .microInfoMicro{
     font-stretch: expanded;
     text-align: center;
-    -webkit-font-smoothing: auto;
     width: 38%;
+    color: white;
+    font-family: 'Oribtron';
   }
-  .parallaxOriginM0{      
+
+  .parallaxOriginMicro{      
     background-attachment: fixed;
     background-position: fixed;
     background-repeat: no-repeat;
     background-size:auto;
   }
-.OceanImg{
+.OceanImgMicro{
   background-image: url("../assets/ocean.jpg");
   height: 22em;
   width: 35em;  
@@ -108,12 +124,12 @@
   background-repeat: no-repeat;
   background-size:auto;
 }
-.GrassImg{
-  background-image: url("../assets/plains.jpg");  
-  width: 35em;
-  height: 45em;
+.GrassImgMicro{
+  background-image: url("https://asunow.asu.edu/sites/default/files/styles/asu_news_article_hero/public/shutterstock_426187984-sized.jpg?itok=ieZmcOHk");  
+  width: 22em;
+  height: 35em;
   background-attachment: fixed;
-  background-position: fixed;
+  background-position: center;
   background-repeat: no-repeat;
 
 }
