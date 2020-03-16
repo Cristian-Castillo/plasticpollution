@@ -1,8 +1,6 @@
 import React from 'react';
 import Home from './Home.css'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import Popover from 'react-bootstrap/Popover'
-import AnimatedThing from './animationComp.js'
 
 const popoverProduction = (
     <div className="popoverdiv">
@@ -13,15 +11,12 @@ const popoverProduction = (
 );
 
 
-
-
 const popoverCountdown = (
       <div className="popoverdiv">
         <img className= "popoverImg" src= "https://images.pexels.com/photos/707676/pexels-photo-707676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Sample Image"></img>
         <p className="popovertext"> Every second 19025lbs of plastic are produced, and 558lbs of plastic are thrown into the ocean</p>
         </div>
 );
-
 
 
 const popoverWaste = (

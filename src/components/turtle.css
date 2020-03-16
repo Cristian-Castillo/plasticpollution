@@ -17,20 +17,7 @@
     top: 50%;
     left: 79%;
     transform: translate(-50%, -50%);}
-      
-.head:before, head:after {
-    top: 20px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #6A757A;
-    content: '';
-    position: absolute;
-    }
-      
-.head:before {left: 13px}
-.head:after {right: 13px}
-    
+
     
 .shell {
     width: 250px;
@@ -42,63 +29,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);}
-      
-.shell:before, 
-.shell:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-      }
-  
-.shell:before {
-        width: 235px;
-        height: 200px;
-        background-color: #8B4513;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-      }
-      
-.shell:after {
-        width: 5%;
-        height: 100%;
-        background-color: white;
-        opacity: 0.1;
-        top: 0;
-      }
-  
-  
-      .div {
-        width: 120px;
-        height: 80px;
-        background: #636E72;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);}
-        
-        .div:before, 
-        .div:after {
-          content: '';
-          position: absolute;
-          left: 0;
-        }
-        
-        .div:before {
-          top: -30px;
-          border-left: 60px solid transparent;
-          border-right: 60px solid transparent;
-          border-bottom: 30px solid #636E72;
-        }
-        
-        .div:after {
-          bottom: -30px;
-          left: 0;
-          border-left: 60px solid transparent;
-          border-right: 60px solid transparent;
-          border-top: 30px solid #636E72;
-        }
-    
+
     .tail {
       width: 0;
       height: 0;
@@ -133,7 +64,10 @@
       }
     
   
-  
+  .main-div{
+    width:fit-content;
+    height: fit-content;
+  }
   
   @keyframes walking-turtle-01 {
       0% 	 {transform: translate(-50%, -50%) rotate(-40deg)}
@@ -158,10 +92,4 @@
       75%  {transform: translate(-50%, -50%) rotate(2deg)}
       100% {transform: translate(-50%, -50%) rotate(-1deg)}
   }
-  @keyframes swimming {
-    0%   { left:0px; top:0px;}
-    25%  { left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  { left:0px; top:200px;}
-    100% { left:0px; top:0px;}
-  }
+
