@@ -64,10 +64,7 @@
       }
     
   
-  .main-div{
-    width:fit-content;
-    height: fit-content;
-  }
+  
   
   @keyframes walking-turtle-01 {
       0% 	 {transform: translate(-50%, -50%) rotate(-40deg)}

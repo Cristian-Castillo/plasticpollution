@@ -1,11 +1,7 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 import './microOcean.css'
-import range from 'lodash-es/range'
 
-
-const items = range(1)
-const interp = i => r => `translate3d(0, ${15 * Math.sin(r + (i * 2 * Math.PI) / 1.6)}px, 0)`
 /*
 export default function MicroFloat(props) {
   const { radians } = useSpring({

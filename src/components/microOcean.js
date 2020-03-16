@@ -8,7 +8,7 @@ import MicroFloat from './microPiece';
 import singleMicro from './microSingle';
 
 const MicroOcean = () => {
-    return <div className="main-div">
+    return <div className="main-divMicro">
       <div className="container_grid">
         <div className="wave"></div>
         <div className="wave"></div>
