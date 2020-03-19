@@ -9,6 +9,12 @@ describe('Testing Nano Route', function() {
         window.cy.url().should('include', 'Nano#/')
 
         window.cy.contains('Nano')
+
+        window.cy.scrollTo('bottom')
+
+        window.cy.get('[href*="HumanConsumptionNano"]').click({ force: true })
+
+
     })
 
 })

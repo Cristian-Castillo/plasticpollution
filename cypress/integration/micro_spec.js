@@ -11,6 +11,12 @@ it('tests start an adventure route: micro', function() {
     window.cy.contains("Dive").click()
 
     window.cy.url().should('include','Ocean#/')
+
+    window.cy.get('[class*= "floatButton2"]').click()
+    window.cy.get('[class*= "floatButton2"]').click()
+
+    window.cy.get('[class*= "floatButton3"]').click()
+    window.cy.get('[class*= "floatButton3"]').click()
 })
 
 })
