@@ -1,10 +1,6 @@
 import React from 'react';
 import ocean from './assets/ocean.jpg'
 import './MacroOcean.css'
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
 
 
 

@@ -1,10 +1,6 @@
 import React from 'react';
 import stormdrain from './assets/stormdrain.jpg'
 import './MacroDump.css'
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
 
 
 

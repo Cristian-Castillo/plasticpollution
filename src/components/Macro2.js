@@ -1,9 +1,6 @@
 import React from 'react';
 import landfill from './assets/landfill.jpg'
 import './Macro2.css'
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 

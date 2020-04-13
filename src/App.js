@@ -44,9 +44,7 @@ function App(){
       <Switch>
         <div>
       <Navigation />
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-
+        
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}/>
