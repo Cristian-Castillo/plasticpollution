@@ -21,7 +21,7 @@ const Macro = (myRef) => {
         </div>
         <div className='rightcolumn'>
           <div className='buttonContainer'>
-            <a className="finishButton" href='/'>Finish</a>
+            <a className="finishButton" href='/plasticpollution/#/'>Finish</a>
           </div>
         </div>
 
