@@ -1,6 +1,9 @@
 import React from 'react';
 import kitchen from './assets/kitchen.jpg'
 import './MacroReuse.css'
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 

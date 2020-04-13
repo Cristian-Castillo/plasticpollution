@@ -16,8 +16,8 @@ class Navigation extends React.Component{
 			  		<Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 					   <Navbar.Collapse id="responsive-navbar-nav">
 					    <Nav className="mr-auto">
-					      <Nav.Link href="/plasticpollution/#/"></Nav.Link>
-					      <Nav.Link href="/plasticpollution/#/about"></Nav.Link>
+					      <Nav.Link href="/plasticpollution/#/">Home</Nav.Link>
+					      <Nav.Link href="/plasticpollution/#/about">About</Nav.Link>
 								<Nav.Link href="/plasticpollution/#/faq">FAQ</Nav.Link>
 								<Nav.Link href="/plasticpollution/#/Contact">Contact</Nav.Link>
 								<Nav.Link href="/plasticpollution/#/Activist">Become an Activist</Nav.Link>

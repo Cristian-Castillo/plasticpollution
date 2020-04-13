@@ -3,6 +3,10 @@ import './Micro.css'
 import MicroComponentTwo from './MicroComponentTwo';
 import Nav from 'react-bootstrap/Nav';
 import { Spring } from 'react-spring/renderprops';
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 
 

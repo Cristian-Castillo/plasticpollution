@@ -1,6 +1,10 @@
 import React from 'react';
 import rcenter from './assets/recyclingfactory.jpg'
 import './MacroRecycle.css'
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 
 

@@ -25,6 +25,10 @@ import MacroOcean from "./components/MacroOcean"
 import MacroRecycle from "./components/MacroRecycle"
 import MacroAsia from "./components/MacroAsia"
 import { HashRouter, Route, Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 const particleOpt = {particles:{
   line_link: {
@@ -44,7 +48,7 @@ function App(){
       <Switch>
         <div>
       <Navigation />
-        
+
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}/>

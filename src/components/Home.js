@@ -10,6 +10,9 @@ import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
 import {Route, Link} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 const home = () => {
