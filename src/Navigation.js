@@ -17,7 +17,7 @@ class Navigation extends React.Component{
 					   <Navbar.Collapse id="responsive-navbar-nav">
 					    <Nav className="mr-auto">
 					      <Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/">Home</Nav.Link>
-					      <Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/about">About</Nav.Link>
+					      <Nav.Link href="plasticpollution/#/about">About</Nav.Link>
 								<Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/faq">FAQ</Nav.Link>
 								<Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Contact">Contact</Nav.Link>
 								<Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Activist">Become an Activist</Nav.Link>
