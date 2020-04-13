@@ -4,8 +4,6 @@ import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import Button from '@material-ui/core/Button';
 import Nav from 'react-bootstrap/Nav';
-import 'react-awesome-slider/dist/styles.css';
-import Home from './Home.css'
 import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
