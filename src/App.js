@@ -1,10 +1,5 @@
 import React from 'react';
 import './App.css';
-import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Navigation.css';
 import Navigation from './Navigation'
 import {BrowserRouter,Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -49,6 +44,9 @@ function App(){
       <Switch>
         <div>
       <Navigation />
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}/>
