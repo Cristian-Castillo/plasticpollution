@@ -24,7 +24,7 @@ class Navigation extends React.Component{
 								<NavDropdown title="Start an Adventure" id="collasible-nav-dropdown">
 								<NavDropdown.Item href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Macro">Macro</NavDropdown.Item>
 								<NavDropdown.Item href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Micro">Micro</NavDropdown.Item>
-								<NavDropdown.Item href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Nano">Nano</NavDropdown.Item>
+								<NavDropdown.Item href="plasticpollution/#/Nano">Nano</NavDropdown.Item>
 							  </NavDropdown>
 					    </Nav>
 					  </Navbar.Collapse>
