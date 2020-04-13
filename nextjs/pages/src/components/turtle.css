@@ -1,0 +1,92 @@
+.turtle {
+    width: 500px;
+    height: 500px;
+    animation: walking-turtle-03 2s ease-in-out infinite alternate;
+    position: relative;
+    left: 50%;
+    top: 35%;
+    z-index: 100;
+    transform: translate3d(50%, 50%, 0);}
+    
+.head {
+    width: 85px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #82C49F;
+    position: relative;
+    top: 50%;
+    left: 79%;
+    transform: translate(-50%, -50%);}
+
+    
+.shell {
+    width: 250px;
+    height: 220px;
+    background-color: #8B4513;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+    .tail {
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 35px solid #84C3A0;
+      position: absolute;
+      top: 50%;
+      left: 19%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .legs {
+      width: 30px;
+      height: 300px;
+      border-radius: 20%;
+      background-color: #82C49F;
+      position: absolute;
+      top: 50%;
+      left: 50%;}
+      
+    .-left {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        animation: walking-turtle-01 2s ease-in-out infinite alternate;
+      
+      }
+      
+    .-right {
+        transform: translate(-50%, -50%) rotate(45deg);
+        animation: walking-turtle-02 2s ease-in-out infinite alternate;
+        
+      }
+    
+  
+  
+  
+  @keyframes walking-turtle-01 {
+      0% 	 {transform: translate(-50%, -50%) rotate(-40deg)}
+      25%  {transform: translate(-50%, -50%) rotate(-45deg)}
+    50%  {transform: translate(-50%, -50%) rotate(-30deg)}
+      75%  {transform: translate(-50%, -50%) rotate(-45deg)}
+      100% {transform: translate(-50%, -50%) rotate(-40deg)}
+  }
+  
+  @keyframes walking-turtle-02 {
+      0% 	 {transform: translate(-50%, -50%) rotate(40deg)}
+      25%  {transform: translate(-50%, -50%) rotate(45deg)}
+    50%  {transform: translate(-50%, -50%) rotate(35deg)}
+      75%  {transform: translate(-50%, -50%) rotate(45deg)}
+      100% {transform: translate(-50%, -50%) rotate(30deg)}
+  }
+  
+  @keyframes walking-turtle-03 {
+      0% 	 {transform: translate(-50%, -50%) rotate(0deg)}
+      25%  {transform: translate(-50%, -50%) rotate(3deg)}
+    50%  {transform: translate(-50%, -50%) rotate(-1deg)}
+      75%  {transform: translate(-50%, -50%) rotate(2deg)}
+      100% {transform: translate(-50%, -50%) rotate(-1deg)}
+  }
+
