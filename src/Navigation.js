@@ -16,14 +16,14 @@ class Navigation extends React.Component{
 			  		<Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 					   <Navbar.Collapse id="responsive-navbar-nav">
 					    <Nav className="mr-auto">
-					      <Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/">Home</Nav.Link>
+					      <Nav.Link href="/plasticpollution/#/">Home</Nav.Link>
 					      <Nav.Link href="/plasticpollution/#/about">About</Nav.Link>
-								<Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/faq">FAQ</Nav.Link>
-								<Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Contact">Contact</Nav.Link>
-								<Nav.Link href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Activist">Become an Activist</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/faq">FAQ</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/Contact">Contact</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/Activist">Become an Activist</Nav.Link>
 								<NavDropdown title="Start an Adventure" id="collasible-nav-dropdown">
-								<NavDropdown.Item href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Macro">Macro</NavDropdown.Item>
-								<NavDropdown.Item href="/https://cse115b-plasticpollution.github.io/plasticpollution/#/Micro">Micro</NavDropdown.Item>
+								<NavDropdown.Item href="/plasticpollution/#/Macro">Macro</NavDropdown.Item>
+								<NavDropdown.Item href="/plasticpollution/#/Micro">Micro</NavDropdown.Item>
 								<NavDropdown.Item href="/plasticpollution/#/Nano">Nano</NavDropdown.Item>
 							  </NavDropdown>
 					    </Nav>
