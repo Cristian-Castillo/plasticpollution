@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "711adee46cfabfb7f7c244551ec58f09",
+    "revision": "f682523249f99b5e356391eb2b04c85e",
     "url": "/plasticpollution/index.html"
   },
   {
-    "revision": "23079fc2973b89ad67af",
+    "revision": "b6c5fff3841381615a10",
     "url": "/plasticpollution/static/css/2.9df9867b.chunk.css"
   },
   {
-    "revision": "ba6ad24754256babe295",
+    "revision": "fb58273b22e887d83609",
     "url": "/plasticpollution/static/css/main.4ce8a06d.chunk.css"
   },
   {
-    "revision": "23079fc2973b89ad67af",
-    "url": "/plasticpollution/static/js/2.2f0766e5.chunk.js"
+    "revision": "b6c5fff3841381615a10",
+    "url": "/plasticpollution/static/js/2.870ddc46.chunk.js"
   },
   {
     "revision": "4a0ac888c6b653f9e92f027147a06b1b",
-    "url": "/plasticpollution/static/js/2.2f0766e5.chunk.js.LICENSE.txt"
+    "url": "/plasticpollution/static/js/2.870ddc46.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba6ad24754256babe295",
-    "url": "/plasticpollution/static/js/main.2f2a947a.chunk.js"
+    "revision": "fb58273b22e887d83609",
+    "url": "/plasticpollution/static/js/main.a23bc635.chunk.js"
   },
   {
     "revision": "674042159570c5a8a734",
