@@ -40,7 +40,7 @@ const particleOpt = {particles:{
 function App() {
   return (
 
-          <BrowserRouter>
+          <HashRouter>
           <Switch>
             <div>
           <Navigation />
@@ -89,7 +89,7 @@ function App() {
        />
              </div>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
   );
 }
 
