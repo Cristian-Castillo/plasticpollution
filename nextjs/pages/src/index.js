@@ -5,8 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './fonts/Orbitron-Regular.ttf'
 import {HashRouter as Router} from 'react-router-dom'
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Head from 'next/head'
 
 
 ReactDOM.render(
