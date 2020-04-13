@@ -10,8 +10,7 @@ import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
 import {Route, Link} from 'react-router-dom';
-
-
+import Head from 'next/head'
 
 const home = () => {
     let parallax;
@@ -95,13 +94,13 @@ const slider = (
       <div class="article">
       <p className="articleText">
           <h3 >Micros</h3>
-          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, 
-            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. 
-            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. 
-            Fugit clita in vel, usu ne quas delenit. 
+          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens,
+            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi.
+            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in.
+            Fugit clita in vel, usu ne quas delenit.
             Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
-In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, 
-te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem 
+In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo,
+te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem
 gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui.</p>
           <p className ="backgroundButtonColor">
           <Button color="light" >
