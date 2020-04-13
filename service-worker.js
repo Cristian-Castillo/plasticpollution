@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/plasticpollution/precache-manifest.663252653d4c52295c433f8622f4579d.js"
+  "/plasticpollution/precache-manifest.d1562664cae3829b2dc8160c57b57335.js"
 );
 
 self.addEventListener('message', (event) => {
