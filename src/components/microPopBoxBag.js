@@ -4,6 +4,7 @@ import MicroOceanCss from './microOcean.css'
 import BagFloat from './plasticBag';
 import NetFloat from './microNet';
 import MicroFloat from './microPiece';
+import ManyMicroFloat from './microMedium';
 import Button from '@material-ui/core/Button';
 
 

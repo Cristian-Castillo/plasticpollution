@@ -10,19 +10,26 @@ html{
 /*general*/
 .main-divMicro{
   /*background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);*/
-  height: 1000px; 
+  height: 3000px; 
 }
 
 /* ocean + waves*/
-.ocean { 
-  height: 1000px;
+.oceanMain { 
+  position: absolute;
+  height: 3000px;
   width:100%;
-  z-index: 0;
-  background: #1f37e8;
+  z-index: 2;
+  background: linear-gradient(#1f37e8,#00008b);
 }
 
 .container_grid{
   display: grid;
+}
+
+.MarianaText{
+  font-size: 30;
+  color:white;
+  font-family: 'Orbitron';
 }
 
 .wave {
@@ -91,7 +98,33 @@ html{
   will-change: transform;
   background: url("../assets/micropieces.svg") no-repeat center;
   background-size: contain;
+}
+.water_micro_many{
+  z-index: 15;
+  width:100%;
+  height: 200px;
+  will-change: transform;
+  background: url("../assets/manyMicros.svg") repeat;
+  background-size: contain;
+}
+.depthContainer36000{
+  position: relative;
+  z-index: 15;
+  left: 200px;
+  top:2500px;
+}
+.depthContainer650{
+  position: relative;
+  z-index: 15;
+  left: 200px;
+  top:300px;
+}
 
+.depthContainer2000{
+  position: relative;
+  z-index: 15;
+  left: 200px;
+  top:1000px;
 }
 
 
@@ -147,6 +180,34 @@ html{
   height: 300px;
   right: 100px;
   top:100px;
+  display: flex;
+}
+.containerForMicrosTop{
+  position: relative;
+  background: transparent;
+  width: 100%;
+  top: 600px;
+}
+.containerForMicrosBottom{
+  position: relative;
+  background: transparent;
+  width: 100%;
+  top: 1050px;
+}
+
+.containerForMicrosTxt{
+  position: relative;
+  background: transparent;
+  width: 100%;
+  top: 600px;
+  padding-left: 100px;
+
+}
+.textinwater{
+  margin-right: 100px;
+}
+
+.containerforSlider{
   display: flex;
 }
 
