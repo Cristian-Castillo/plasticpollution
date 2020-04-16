@@ -14,9 +14,7 @@ export default function BagPopUp(props) {
 
     const popoverBag =
         <div className="popoverbox">
-            <h3 className="popoverTxt">Macros eventually become micros</h3>
-            <p className="popoverTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
-            <img  src="https://gephardtdaily.com/wp-content/uploads/2019/02/Even-deep-sea-creatures-are-eating-plastic.jpg" className="popoverImg"></img>
+            <img  src="https://www.nippon.com/en/ncommon/contents/currents/49423/49423.jpg" className="popoverImg"></img>
 
         </div>;
 
@@ -36,8 +34,8 @@ export default function BagPopUp(props) {
 
     switch(title) {
       case "popoverBag":
-        return <OverlayTrigger trigger="click" placement="left" overlay={popoverBag}>
-        <Button className= "floatButton"><BagFloat/></Button>
+        return <OverlayTrigger trigger="click" placement="top" overlay={popoverBag}>
+        <Button className= "floatButton2"><div className= "plastic_bag"></div></Button>
         </OverlayTrigger>
       case "popoverMicro":
         return <><OverlayTrigger trigger="click" placement="left" overlay={popoverMicro}>
@@ -46,7 +44,7 @@ export default function BagPopUp(props) {
         </OverlayTrigger></>
         case "popoverNet":
           return <OverlayTrigger trigger="click" placement="right" overlay={popoverNet}>
-          <Button className= "floatButton3"><NetFloat/></Button>
+          <Button className= "floatButton"><NetFloat/></Button>
           </OverlayTrigger>
         default: 
           return <><OverlayTrigger trigger="click" placement="left" overlay={popoverBag}>

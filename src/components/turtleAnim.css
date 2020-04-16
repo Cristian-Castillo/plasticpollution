@@ -1,15 +1,10 @@
 .hooks-main > div {
-    background: url(./turtle.svg) no-repeat;
+    background: url(../assets/fish.png) no-repeat;
     z-index: 15;
-    width: 259px;
-    height:228px;
+    background-size: contain;
+    height: 100px;
   }
-  
-  .hooks-main > div:nth-child(3) {
-    width: 150px;
-    height: 150px;
-  }
-  
+
   .hooks-main {
     position: absolute;
     width: 100%;

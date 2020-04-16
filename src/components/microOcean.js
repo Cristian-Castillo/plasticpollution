@@ -8,6 +8,9 @@ import BagFloat from './plasticBag';
 import MicroFloat from './microPiece';
 import singleMicro from './microSingle';
 import oceanCarousel from './carouselForMicroOcean'
+import Button from '@material-ui/core/Button';
+import Nav from 'react-bootstrap/Nav';
+import oceanCarouselMariana from './carouselforMariana'
 
 const MicroOcean = () => {
     return <div className="main-divMicro">
@@ -17,15 +20,15 @@ const MicroOcean = () => {
       </div>
       <div className="oceanMain">
       <TurtleMove/>
-      <BagPopUp title="popoverBag"/>
-      <BagPopUp title="popoverMicro"/>
-      <BagPopUp title="popoverNet"/>
+      <Button className= "floatButton3"><Nav.Link href="/FoodWeb"><BagFloat/></Nav.Link></Button>
+      <Button className= "floatButton"><Nav.Link href="/FishMarket"><NetFloat/></Nav.Link></Button>
       <div className="depthContainer650"><h2 className="MarianaText">650ft</h2></div>
       <div className="containerForMicrosTop"><ManyMicroFloat/><ManyMicroFloat/></div>
       <div className="containerForMicrosBottom"><ManyMicroFloat/><ManyMicroFloat/></div>
-
-      <div className="containerForMicrosTxt">{oceanCarousel}</div>
+      <div className="containerForGarbage">{oceanCarousel}</div>
       <div className="depthContainer2000"><h2 className="MarianaText">2000ft</h2></div>
+      <div className="containerForMariana">{oceanCarouselMariana}</div>
+      <BagPopUp title="popoverBag"/>
       <div className="depthContainer36000"><h2 className="MarianaText">36,000ft</h2></div>
 
       </div>
