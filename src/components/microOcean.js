@@ -1,5 +1,5 @@
 import React from 'react';
-import MicroOceanCss from './microOcean.css'   
+import MicroOceanCss from './microOcean.css'
 import TurtleMove from './turtleAnimation';
 import BagPopUp from './microPopBoxBag';
 import ManyMicroFloat from './microMedium';
@@ -19,9 +19,8 @@ const MicroOcean = () => {
         <div className="wave"></div>
       </div>
       <div className="oceanMain">
-      <TurtleMove/>
-      <Button className= "floatButton3"><Nav.Link href="/FoodWeb"><BagFloat/></Nav.Link></Button>
-      <Button className= "floatButton"><Nav.Link href="/FishMarket"><NetFloat/></Nav.Link></Button>
+      <Button className= "floatButton3"><Nav.Link href="/plasticpollution/#/FoodWeb"><BagFloat/></Nav.Link></Button>
+      <Button className= "floatButton"><Nav.Link href="/plasticpollution/#/FishMarket"><NetFloat/></Nav.Link></Button>
       <div className="depthContainer650"><h2 className="MarianaText">650ft</h2></div>
       <div className="containerForMicrosTop"><ManyMicroFloat/><ManyMicroFloat/></div>
       <div className="containerForMicrosBottom"><ManyMicroFloat/><ManyMicroFloat/></div>
