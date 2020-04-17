@@ -24,11 +24,12 @@ import MacroDump from "./components/MacroDump"
 import MacroOcean from "./components/MacroOcean"
 import MacroRecycle from "./components/MacroRecycle"
 import MacroAsia from "./components/MacroAsia"
+import FoodWeb from "./components/FoodWeb"
+import FrozenFish from "./components/frozenFish"
 import { HashRouter, Route, Link } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
 
 const particleOpt = {particles:{
   line_link: {
@@ -48,36 +49,54 @@ function App(){
       <Switch>
         <div>
       <Navigation />
-
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact}/>
-          <Route path="/faq" component={Faq}/>
-          <Route path="/adventure" component={Adventure}/>
-          <Route path="/Macro" component={Macro}/>
-          <Route path="/Macro2" component={Macro2}/>
-          <Route path="/MacroReuse" component={MacroReuse}/>
-          <Route path="/MacroDump" component={MacroDump}/>
-          <Route path="/MacroOcean" component={MacroOcean}/>
-          <Route path="/MacroRecycle" component={MacroRecycle}/>
-          <Route path="/MacroAsia" component={MacroAsia}/>
-          <Route path="/Micro" component={Micro}/>
-          <Route path="/Ocean" component={MicroOcean}/>
-          <Route path="/Nano" component={Nano}/>
-          <Route path="/activist" component={Activist}/>
-          <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
-          <Route path="/PreventionJourney" component={PreventionJourney}/>
-          <Route path="/NanoEvaporation" component={NanoEvaporation}/>
-          <Route path ="/Error" component={Error}/>
-        </div>
-        <div className ="particleBody">
-        <Particles
-  params={particleOpt}
-  />
-        </div>
-       </Switch>
-      </HashRouter>
-    );
+             <Route path="/" component={Home} exact/>
+             <Route path="/about" component={About}/>
+             <Route path="/contact" component={Contact}/>
+             <Route path="/faq" component={Faq}/>
+             <Route path="/adventure" component={Adventure}/>
+             <Route path="/Macro" component={Macro}/>
+             <Route path="/Macro2" component={Macro2}/>
+             <Route path="/MacroReuse" component={MacroReuse}/>
+             <Route path="/MacroDump" component={MacroDump}/>
+             <Route path="/MacroOcean" component={MacroOcean}/>
+             <Route path="/MacroRecycle" component={MacroRecycle}/>
+             <Route path="/MacroAsia" component={MacroAsia}/>
+             <Route path="/Micro" component={Micro}/>
+             <Route path="/Ocean" component={MicroOcean}/>
+             <Route path="/FoodWeb" component={FoodWeb}/>
+             <Route path="/FishMarket" component={FrozenFish}/>
+             <Route path="/Nano" component={Nano}/>
+             <Route path="/activist" component={Activist}/>
+             <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
+             <Route path="/PreventionJourney" component={PreventionJourney}/>
+             <Route path="/NanoEvaporation" component={NanoEvaporation}/>
+             <Route path ="/Error" component={Error}/>
+             </div>
+             <div>
+             <Router>
+                <Route path="/" component={Home} exact/>
+                <Route path="/about" component={About}/>
+                <Route path="/contact" component={Contact}/>
+                <Route path="/faq" component={Faq}/>
+                <Route path="/adventure" component={Adventure}/>
+                <Route path="/Macro" component={Macro}/>
+                <Route path="/Micro" component={Micro}/>
+                <Route path="/Nano" component={Nano}/>
+                <Route path="/activist" component={Activist}/>
+                <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
+                <Route path="/PreventionJourney" component={PreventionJourney}/>
+                <Route path="/NanoEvaporation" component={NanoEvaporation}/>
+                <Route path ="/Error" component={Error}/>
+             </Router>
+             </div>
+             <div className ="particleBody">
+             <Particles
+       params={particleOpt}
+       />
+             </div>
+            </Switch>
+        </BrowserRouter>
+  );
 }
 
 export default App;

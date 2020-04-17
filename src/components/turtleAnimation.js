@@ -5,7 +5,7 @@ import './turtleAnim.css'
 
 const fast = { tension: 40, friction: 20 }
 const slow = { mass: 100, tension: 200, friction: 0 }
-const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
+const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(0%,-50%,0)`
 
 
 export default function TurtleMove() {
