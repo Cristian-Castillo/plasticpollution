@@ -1,0 +1,12 @@
+.hooks-main > div {
+  background:url('https://i.imgur.com/dvVxaU0.png') no-repeat;
+  z-index: 1;
+  background-size: contain;
+  height: 100px;
+}
+
+.hooks-main {
+  position: absolute;
+  width: 100%;
+  height: 3000px;
+}

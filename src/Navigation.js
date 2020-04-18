@@ -6,16 +6,17 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Navigation.css';
 
-
 class Navigation extends React.Component{
 	render() {
 		return(
 			<div>
 					<Navbar bg="light" expand="lg" collapseOnSelect>
+						{/*UCSC LOGO Image link */}
 					  <Navbar.Brand href="/plasticpollution/#/"><img src={logo} className="logo"></img></Navbar.Brand>
 			  		<Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 					   <Navbar.Collapse id="responsive-navbar-nav">
 					    <Nav className="mr-auto">
+							{/*Add Link here of the page you want displayed on site, follow format! /plastic/#/foo.js*/}
 					      <Nav.Link href="/plasticpollution/#/">Home</Nav.Link>
 					      <Nav.Link href="/plasticpollution/#/about">About</Nav.Link>
 								<Nav.Link href="/plasticpollution/#/faq">FAQ</Nav.Link>
@@ -27,6 +28,7 @@ class Navigation extends React.Component{
 								<NavDropdown.Item href="/plasticpollution/#/Nano">Nano</NavDropdown.Item>
 							  </NavDropdown>
 					    </Nav>
+							{/* End of Links */}
 					  </Navbar.Collapse>
 					</Navbar>
       </div>
