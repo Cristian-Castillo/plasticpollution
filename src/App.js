@@ -36,6 +36,7 @@ import MacroRecycle from "./components/MacroRecycle"
 import MacroAsia from "./components/MacroAsia"
 import FoodWeb from "./components/FoodWeb"
 import FrozenFish from "./components/frozenFish"
+import popOverNano from "./components/popOverNano"
 /* End of JS & CSS FILES */
 
 //Hash Router:
@@ -68,6 +69,7 @@ function App(){
           <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>
           <Route path="/PreventionJourney" component={PreventionJourney}/>
           <Route path="/NanoEvaporation" component={NanoEvaporation}/>
+          <Route path="/popOverNano" component={popOverNano}/>
           <Route path ="/Error" component={Error}/>
         </div>
             </Switch>

@@ -13,18 +13,55 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useTrail, animated} from 'react-spring'
 import HoverImage from "react-hover-image"
-import yourFile from '../assets/blobbyReal.png'
-import yourFileTwo from '../assets/fish.png'
+import yourFile from '../assets/fish.png'
+import yourFileTwo from '../assets/nanoLifeCycle.jpg'
+import plankton from '../assets/planktonOne.jpg'
+import { MDBPopover, MDBPopoverBody, MDBPopoverHeader, MDBBtn, MDBContainer } from "mdbreact";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+import { Fragment } from "react";
 
 const HumanConsumptionNano = () => {
 
     const hoverStyle = {
-       position: "absolute",
+       position: "relative",
        top: "60%",
-       height: "300px",
-       width: "300px"
+       height: "140px",
+       width: "140px",
+       borderRadius: "65%"
      };
-    return(
+     const hoverStyleTwo = {
+       position: "relative",
+       top: "60%",
+       height: "540px",
+       width: "540px",
+       borderRadius: "65%"
+     };
+
+     const styleMe = {
+       height:"200px",
+       width: "230px",
+       backgroundColor: "black",
+       border:"none",
+       padding: "20px",
+       display: "inline-block",
+       font: "20px",
+       margin: "4px 2px",
+       cursor: "pointer",
+       borderRadius: "65%"
+     };
+     const styleMeTwo = {
+
+       backgroundColor: 'black',
+       position: 'absolute',
+       top: '54%',
+       left: '-1%',
+       borderRadius: "35%"
+     };
+
+return(
+
 <div className="pushSkyDown">
   {/* The Sky enclosed by container div */}
   <div id="sky">
@@ -238,8 +275,8 @@ const HumanConsumptionNano = () => {
       <div> {/* Nested 1)cursor Blob Fish User & Image Hover*/}
       <NanoEvaporation /> {/* Blob FIsh Cursor */}
       <div>
-        <HoverImage style={hoverStyle} src={yourFile} hoverSrc={yourFileTwo}/> {/* Hover over */}
-</div>
+
+     </div>
         <div class="fishMe">
             <div class="face">
             <div class = "left-fin">
@@ -251,9 +288,28 @@ const HumanConsumptionNano = () => {
             <div class = "right-fin">
             </div>
             </div>
-        </div> {/* End of Blob Fish */}
-      </div> {/* End of Hover Over Nest div */}
-
+        </div>
+      {/* End of Blob Fish */}
+      {/* End of Hover Over Nest div */}
+      <div style = {styleMeTwo}> {/* Pop Over Image Plankton */}
+        <Fragment>
+        <MDBContainer >
+          <div style={styleMe}>
+          <MDBPopover placement="right"  popover clickable id="popper2" >
+            <MDBBtn color = "dark" >Eat Plankton?<img style = {styleMe} src={plankton}/>
+            </MDBBtn >
+            <div>
+              <MDBPopoverHeader >Nano Impacts On The Human Body</MDBPopoverHeader>
+              <MDBPopoverBody >
+              <img src ={yourFileTwo} />
+              </MDBPopoverBody>
+            </div>
+          </MDBPopover>
+        </div>
+      </MDBContainer>
+      </Fragment>
+      </div> {/*  End of Pop Over Image */}
+      </div> {/* End of nested hoveer blob */}
   </div>   {/* End of Black water */}
 {/* End of wrapped div */}
 </div>
