@@ -12,8 +12,18 @@ import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {useTrail, animated} from 'react-spring'
+import HoverImage from "react-hover-image"
+import yourFile from '../assets/blobbyReal.png'
+import yourFileTwo from '../assets/fish.png'
 
 const HumanConsumptionNano = () => {
+
+    const hoverStyle = {
+       position: "absolute",
+       top: "60%",
+       height: "300px",
+       width: "300px"
+     };
     return(
 <div className="pushSkyDown">
   {/* The Sky enclosed by container div */}
@@ -225,20 +235,24 @@ const HumanConsumptionNano = () => {
       {/* End of Particles */}
 
       {/* Blob Fish */}
-      <NanoEvaporation />
-
-      <div class="fishMe">
-          <div class="face">
-          <div class = "left-fin">
-          </div>
-          <div class = "mouth">
-          </div>
-          <div class = "nose">
-          </div>
-          <div class = "right-fin">
-          </div>
-          </div>
-      </div> {/* End of Blob Fish */}
+      <div> {/* Nested 1)cursor Blob Fish User & Image Hover*/}
+      <NanoEvaporation /> {/* Blob FIsh Cursor */}
+      <div>
+        <HoverImage style={hoverStyle} src={yourFile} hoverSrc={yourFileTwo}/> {/* Hover over */}
+</div>
+        <div class="fishMe">
+            <div class="face">
+            <div class = "left-fin">
+            </div>
+            <div class = "mouth">
+            </div>
+            <div class = "nose">
+            </div>
+            <div class = "right-fin">
+            </div>
+            </div>
+        </div> {/* End of Blob Fish */}
+      </div> {/* End of Hover Over Nest div */}
 
   </div>   {/* End of Black water */}
 {/* End of wrapped div */}

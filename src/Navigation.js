@@ -22,6 +22,8 @@ class Navigation extends React.Component{
 								<Nav.Link href="/plasticpollution/#/faq">FAQ</Nav.Link>
 								<Nav.Link href="/plasticpollution/#/Contact">Contact</Nav.Link>
 								<Nav.Link href="/plasticpollution/#/Activist">Become an Activist</Nav.Link>
+										<Nav.Link href="/plasticpollution/#/FoodWeb"></Nav.Link>
+												<Nav.Link href="/plasticpollution/#/FishMarket"></Nav.Link>
 								<NavDropdown title="Start an Adventure" id="collasible-nav-dropdown">
 								<NavDropdown.Item href="/plasticpollution/#/Macro">Macro</NavDropdown.Item>
 								<NavDropdown.Item href="/plasticpollution/#/Micro">Micro</NavDropdown.Item>
