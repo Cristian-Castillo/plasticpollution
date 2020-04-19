@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 /* Tools Imported - Boot Strap React-Springs*/
+import Navigation from './Navigation'
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useTrail, animated } from 'react-spring';
 /* End of Tools Imported - Boot Strap React-Springs*/
@@ -38,6 +40,12 @@ import FoodWeb from "./components/FoodWeb"
 import FrozenFish from "./components/frozenFish"
 import popOverNano from "./components/popOverNano"
 /* End of JS & CSS FILES */
+import { HashRouter, Router, Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
 
 //Hash Router:
 //A <Router> that uses the hash portion of the URL (i.e. window.location.hash)
@@ -115,6 +123,7 @@ export class particles extends React.Component {
 export class NanoEvaporation extends React.Component {
     render(){
       return(NanoEvaporation())}
+
 }
 
 export default App;
