@@ -8,29 +8,25 @@ import {useTransition} from 'react-spring'
 import {useSprings, animated} from 'react-spring'
 import {Trail} from 'react-spring/renderprops'
 
-
 const Nano = () => {
 
-
   return (
-     <Spring from ={{ opacity: 0, marginTop: -500}}
-             to ={{ opacity: 1, marginTop:0 }}>
+     <Spring from ={{ opacity: 0, marginTop: -500}} to ={{ opacity: 1, marginTop:0 }}>
       {props => (
       <div style= {props}>
-        <div className="backgroundNano parallax">
-        </div>
-        <div className="backgroundNano parallax">
-        </div>
-        <NanoComponentTwo />
-        <div>
-        </div>
-        <div className ="nanoInfo">
-        </div>
+      <div className="backgroundNano parallax">
+      </div>
+      <div className="backgroundNano parallax">
+      </div>
+      <NanoComponentTwo />
+      <div>
+      </div>
+      <div className ="nanoInfo">
+      </div>
       </div>
       )}
      </Spring>
   );
-
 }
 
 

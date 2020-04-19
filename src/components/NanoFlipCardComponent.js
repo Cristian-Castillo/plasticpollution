@@ -43,7 +43,7 @@ const NanoFlipCardComponent = () => {
       <div class="thebackTwo">
       <h1>The Nano Evaporation</h1>
       <p>Take a journey and see how Nano Plastics impact our enviroment</p>
-      <button><Nav.Link href="/plasticpollution/#/NanoEvaporation" className ="buttonColor A">Begin Journey</Nav.Link></button>
+      <button><Nav.Link href="/plasticpollution/#/NanoEvaporation" className ="buttonColor A"></Nav.Link></button>
       </div>
       </div>
       </div></Col>

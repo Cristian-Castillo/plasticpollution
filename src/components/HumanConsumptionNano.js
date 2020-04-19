@@ -5,18 +5,67 @@ import SunCloud from './sunCloud.css';
 import BlobFish from './NanoBlobFish.css';
 import Particles from 'react-particles-js';
 import NanoEvaporationCSS from './NanoEvaporation.css';
-import NanoEvap from './NanoEvaporation.js';
+import NanoEvaporation from './NanoEvaporation.js';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {useTrail, animated} from 'react-spring'
+import HoverImage from "react-hover-image"
+import yourFile from '../assets/fish.png'
+import yourFileTwo from '../assets/nanoLifeCycle.jpg'
+import plankton from '../assets/planktonOne.jpg'
+import { MDBPopover, MDBPopoverBody, MDBPopoverHeader, MDBBtn, MDBContainer } from "mdbreact";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+import { Fragment } from "react";
 
 const HumanConsumptionNano = () => {
-    return(
+
+    const hoverStyle = {
+       position: "relative",
+       top: "60%",
+       height: "140px",
+       width: "140px",
+       borderRadius: "65%"
+     };
+     const hoverStyleTwo = {
+       position: "relative",
+       top: "60%",
+       height: "540px",
+       width: "540px",
+       borderRadius: "65%"
+     };
+
+     const styleMe = {
+       height:"200px",
+       width: "230px",
+       backgroundColor: "black",
+       border:"none",
+       padding: "20px",
+       display: "inline-block",
+       font: "20px",
+       margin: "4px 2px",
+       cursor: "pointer",
+       borderRadius: "65%"
+     };
+     const styleMeTwo = {
+
+       backgroundColor: 'black',
+       position: 'absolute',
+       top: '54%',
+       left: '-1%',
+       borderRadius: "35%"
+     };
+
+return(
+
 <div className="pushSkyDown">
-<div id="sky">
-	<div class="theSun">
+  {/* The Sky enclosed by container div */}
+  <div id="sky">
+	 <div class="theSun">
 		<div class="ray_box">
 			<div class="ray ray1"></div>
 			<div class="ray ray2"></div>
@@ -38,8 +87,8 @@ const HumanConsumptionNano = () => {
 	    <div class="cloudwrapperThree">
 		  <div class="cloud c3"></div>
 	    </div>
-
       </div>
+      {/* Beginning of fish */}
       <div className ="backgroundFish">
       <div >
       <div className="fish">
@@ -73,7 +122,6 @@ const HumanConsumptionNano = () => {
         </div>
         </div>
         </div>
-
         <div className="fishRed">
         <div className="fish-bodyRed"></div>
         <div className="finLeftRed">
@@ -104,167 +152,166 @@ const HumanConsumptionNano = () => {
           <div className="tailFin6Red"></div>
           </div>
           </div>
+          {/* End of Fish*/}
           </div>
           </div>
-          </div>
-    </div>
-
-    <div className =" bottleAlignment">
-     <ul>
-     <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-    </div>
-      <div class="bottle">
-      <div class="water-empty"> </div>
-    </div>
-   </li>
-    <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-     </div>
-    <div class="bottle">
-      <div class="water-low"> </div>
-      </div>
-   </li>
-
-
-      <li class="water-bottle">
-      <div class="cap">
-      <div class="cap-top">
-      </div>
-      <div class="cap-seal">
-      </div>
-      </div>
-      <div class="bottle">
-           <div class="water-full"> </div>
        </div>
-   </li>
-  </ul>
-
-  <ul>
-
- <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-     </div>
-    <div class="bottle">
-         <div class="water-empty"> </div>
-     </div>
- </li>
+    </div>
+      {/* Water Bottles */}
+  <div className =" bottleAlignment">
+      <ul>
        <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-     </div>
-    <div class="bottle">
+         <div class="cap">
+         <div class="cap-top">
+         </div>
+         <div class="cap-seal">
+         </div>
+         </div>
+          <div class="bottle">
+          <div class="water-empty"> </div>
+          </div>
+      </li>
+      <li class="water-bottle">
+         <div class="cap">
+         <div class="cap-top">
+         </div>
+         <div class="cap-seal">
+         </div>
+         </div>
+         <div class="bottle">
          <div class="water-low"> </div>
-     </div>
- </li>
-
-
+         </div>
+     </li>
      <li class="water-bottle">
-     <div class="cap">
-     <div class="cap-top">
-     </div>
-     <div class="cap-seal">
-     </div>
-     </div>
-    <div class="bottle">
-         <div class="water-full"> </div>
-     </div>
- </li>
-</ul>
-<ul>
-
-<li class="water-bottle">
-   <div class="cap">
-   <div class="cap-top">
-   </div>
-   <div class="cap-seal">
-   </div>
-   </div>
-  <div class="bottle">
+        <div class="cap">
+        <div class="cap-top">
+        </div>
+        <div class="cap-seal">
+        </div>
+        </div>
+        <div class="bottle">
+        <div class="water-full"> </div>
+        </div>
+     </li>
+    </ul>
+    <ul>
+    <li class="water-bottle">
+       <div class="cap">
+       <div class="cap-top">
+       </div>
+       <div class="cap-seal">
+       </div>
+       </div>
+       <div class="bottle">
        <div class="water-empty"> </div>
-   </div>
+       </div>
+    </li>
+    <li class="water-bottle">
+       <div class="cap">
+       <div class="cap-top">
+       </div>
+       <div class="cap-seal">
+       </div>
+       </div>
+       <div class="bottle">
+       <div class="water-low"> </div>
+       </div>
+    </li>
+    <li class="water-bottle">
+       <div class="cap">
+       <div class="cap-top">
+       </div>
+       <div class="cap-seal">
+       </div>
+       </div>
+       <div class="bottle">
+       <div class="water-full"> </div>
+       </div>
+     </li>
+    </ul>
+     <ul>
+      <li class="water-bottle">
+       <div class="cap">
+       <div class="cap-top">
+       </div>
+       <div class="cap-seal">
+       </div>
+       </div>
+       <div class="bottle">
+       <div class="water-empty"> </div>
+       </div>
+      </li>
+    </ul>
+  </div>
+  {/* End of Water Bottles */}
 
-</li>
-</ul>
-
-</div>
-
+  {/* Sand */}
   <div className ="yellowSand">
-
   </div>
-  <div class = "waterMe">
-  <div class="fishMe">
-    <div class="faceMe">
-      <div class = "left-finMe">
-      </div>
-      <div class = "mouthMe">
-      </div>
-      <div class = "noseMe">
-      </div>
-      <div class = "right-finMe">
-      </div>
-    </div>
+  {/* End of Sand*/}
+
+  {/* Nano Plastic Particles Jumbo Tron */}
+  <div className ="divJumbo">
+    <Jumbotron fluid className ="divJumbo">
+      <Container>
+        <h1 className ="divTextColor">Nano Plastic Particles</h1>
+        <p className ="divTextColor">
+          disentigrate onto the ocean floor, where later plankton feed on the nano particles. Once plankton digest these particles into their system, fish feed on the plankton, and eventually end up consumed by humans.
+        </p>
+      </Container>
+    </Jumbotron>
   </div>
-</div>
-<div className ="divJumbo">
-<Jumbotron fluid className ="divJumbo">
-  <Container>
+  {/* End ofNano Plastic Particles Jumbo Tron */}
 
-    <h1 className ="divTextColor">Nano Plastic Particles</h1>
-    <p className ="divTextColor">
-      disentigrate onto the ocean floor, where later plankton feed on the nano particles. Once plankton digest these particles into their system, fish feed on the plankton, and eventually end up consumed by humans.
-    </p>
-  </Container>
-</Jumbotron>
-</div>
-
-
-<div class = "water">
-<div className="particleBody">
-<Particles />
-
-<div className ="sushi-machine sushiBack">
-<h1>Fish Become A Food Source</h1>
-<p>The nano particles continue the cycle into the human body upon digestion, and cause potential harm upon entry and accumulation.</p>
-<div className ="neta"></div>
-<div className ="rice"></div>
-<div className ="sushi"></div>
-<div className ="table"></div>
-</div>
-</div>
-  <div class="fishMe">
-    <div class="face">
-      <div class = "left-fin">
+    {/* Black water */}
+  <div class = "water">
+      {/* Particles */}
+      <div className="particleBody">
+        <Particles />
       </div>
-      <div class = "mouth">
-      </div>
-      <div class = "nose">
-      </div>
-      <div class = "right-fin">
-      </div>
-    </div>
-  </div>
-</div>
-<div>
-    </div>
+      {/* End of Particles */}
 
+      {/* Blob Fish */}
+      <div> {/* Nested 1)cursor Blob Fish User & Image Hover*/}
+      <NanoEvaporation /> {/* Blob FIsh Cursor */}
+      <div>
 
-
+     </div>
+        <div class="fishMe">
+            <div class="face">
+            <div class = "left-fin">
+            </div>
+            <div class = "mouth">
+            </div>
+            <div class = "nose">
+            </div>
+            <div class = "right-fin">
+            </div>
+            </div>
+        </div>
+      {/* End of Blob Fish */}
+      {/* End of Hover Over Nest div */}
+      <div style = {styleMeTwo}> {/* Pop Over Image Plankton */}
+        <Fragment>
+        <MDBContainer >
+          <div style={styleMe}>
+          <MDBPopover placement="right"  popover clickable id="popper2" >
+            <MDBBtn color = "dark" >Eat Plankton?<img style = {styleMe} src={plankton}/>
+            </MDBBtn >
+            <div>
+              <MDBPopoverHeader >Nano Impacts On The Human Body</MDBPopoverHeader>
+              <MDBPopoverBody >
+              <img src ={yourFileTwo} />
+              </MDBPopoverBody>
+            </div>
+          </MDBPopover>
+        </div>
+      </MDBContainer>
+      </Fragment>
+      </div> {/*  End of Pop Over Image */}
+      </div> {/* End of nested hoveer blob */}
+  </div>   {/* End of Black water */}
+{/* End of wrapped div */}
 </div>
     );
 }
