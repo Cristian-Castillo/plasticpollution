@@ -8,8 +8,6 @@ import { useTrail, animated } from 'react-spring';
 /* End of Tools Imported - Boot Strap React-Springs*/
 /* Navigation & Linkage */
 import { HashRouter, Router, Link } from "react-router-dom";
-import Navigation from './Navigation'
-import {Route,Switch} from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -40,12 +38,6 @@ import FoodWeb from "./components/FoodWeb"
 import FrozenFish from "./components/frozenFish"
 import popOverNano from "./components/popOverNano"
 /* End of JS & CSS FILES */
-import { HashRouter, Router, Link } from "react-router-dom";
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
 
 //Hash Router:
 //A <Router> that uses the hash portion of the URL (i.e. window.location.hash)
@@ -102,10 +94,10 @@ function App(){
 const particleOpt = {particles:{
   line_link: {
     number: {
-      value: 2000,
+      value: 2250,
       density: {
         enable: true,
-        value_area: 2000
+        value_area: 2250
       }
     }
   }
