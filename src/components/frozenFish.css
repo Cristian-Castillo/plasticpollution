@@ -1,10 +1,13 @@
+html{
+    overflow-y: scroll; overflow-x:hidden;
+  }
 .frozenContentContainer{
     display: flex;
     flex-direction: column;
     cursor: pointer;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
@@ -26,3 +29,20 @@
     height: 500px;
     
 }
+.pictureofFreshFish2{
+    background: url("https://www.romania-insider.com/sites/default/files/styles/article_large_image/public/featured_images/fish-photo-Alfredo-Seafood.jpg") no-repeat center;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    
+}
+.pictureContainer{
+    display:flex;
+    flex-direction: row;
+
+}
+.graph{
+    width: 100%;
+    height: fit-content;
+}
+
