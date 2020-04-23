@@ -19,6 +19,7 @@ const MicroOcean = () => {
         <div className="wave"></div>
       </div>
       <div className="oceanMain">
+      <TurtleMove/>
       <Button className= "floatButton3"><Nav.Link href="/plasticpollution/#/FoodWeb"><BagFloat/></Nav.Link></Button>
       <Button className= "floatButton"><Nav.Link href="/plasticpollution/#/FishMarket"><NetFloat/></Nav.Link></Button>
       <div className="depthContainer650"><h2 className="MarianaText">650ft</h2></div>
