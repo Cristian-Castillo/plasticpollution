@@ -11,21 +11,27 @@ class Navigation extends React.Component{
 		return(
 			<div>
 					<Navbar bg="light" expand="lg" collapseOnSelect>
-					  <Navbar.Brand href="/"><img src={logo} className="logo"></img></Navbar.Brand>
+						{/*UCSC LOGO Image link */}
+					  <Navbar.Brand href="/plasticpollution/#/"><img src={logo} className="logo"></img></Navbar.Brand>
 			  		<Navbar.Toggle aria-controls="responsive-navbar-nav"/>
 					   <Navbar.Collapse id="responsive-navbar-nav">
 					    <Nav className="mr-auto">
-					      <Nav.Link href="/">Home</Nav.Link>
-					      <Nav.Link href="/about">About</Nav.Link>
-								<Nav.Link href="/faq">FAQ</Nav.Link>
-								<Nav.Link href="/Contact">Contact</Nav.Link>
-								<Nav.Link href="/Activist">Become an Activist</Nav.Link>
+							{/*Add Link here of the page you want displayed on site, follow format! /plastic/#/foo.js*/}
+					      <Nav.Link href="/plasticpollution/#/">Home</Nav.Link>
+					      <Nav.Link href="/plasticpollution/#/about">About</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/faq">FAQ</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/Contact">Contact</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/Activist">Become an Activist</Nav.Link>
+								<Nav.Link href="/plasticpollution/#/FoodWeb"></Nav.Link>
+								<Nav.Link href="/plasticpollution/#/FishMarket"></Nav.Link>
+								<Nav.Link href="/plasticpollution/#/popOverNano"></Nav.Link>
 								<NavDropdown title="Start an Adventure" id="collasible-nav-dropdown">
-								<NavDropdown.Item href="/Macro">Macro</NavDropdown.Item>
-								<NavDropdown.Item href="/Micro">Micro</NavDropdown.Item>
-								<NavDropdown.Item href="/Nano">Nano</NavDropdown.Item>
+								<NavDropdown.Item href="/plasticpollution/#/Macro">Macro</NavDropdown.Item>
+								<NavDropdown.Item href="/plasticpollution/#/Micro">Micro</NavDropdown.Item>
+								<NavDropdown.Item href="/plasticpollution/#/Nano">Nano</NavDropdown.Item>
 							  </NavDropdown>
 					    </Nav>
+							{/* End of Links */}
 					  </Navbar.Collapse>
 					</Navbar>
       </div>
