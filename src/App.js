@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navigation from './Navigation'
-import {BrowserRouter,Switch} from 'react-router-dom';
+import {HashRouter as Router,BrowserRouter,Switch,Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Particles from 'react-particles-js';
 import Home from './components/Home';
@@ -26,10 +26,6 @@ import MacroRecycle from "./components/MacroRecycle"
 import MacroAsia from "./components/MacroAsia"
 import FoodWeb from "./components/FoodWeb"
 import FrozenFish from "./components/frozenFish"
-import { HashRouter, Route, Link } from "react-router-dom";
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const particleOpt = {particles:{
   line_link: {
@@ -43,12 +39,14 @@ const particleOpt = {particles:{
   }
 }}
 
-function App(){
-    return (
-      <HashRouter basename="/">
-      <Switch>
-        <div>
-      <Navigation />
+function App() {
+  return (
+
+          <BrowserRouter>
+          <Switch>
+            <div>
+          <Navigation />
+
              <Route path="/" component={Home} exact/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>

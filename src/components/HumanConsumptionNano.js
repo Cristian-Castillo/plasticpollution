@@ -8,9 +8,6 @@ import NanoEvaporationCSS from './NanoEvaporation.css';
 import NanoEvap from './NanoEvaporation.js';
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const HumanConsumptionNano = () => {
     return(

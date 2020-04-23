@@ -7,11 +7,6 @@ import './fonts/Orbitron-Regular.ttf'
 import {HashRouter as Router} from 'react-router-dom'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
 
 
 ReactDOM.render(
