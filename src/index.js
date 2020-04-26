@@ -12,6 +12,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 /* Dont Touch Renders the Default App which communicates to all Components */
+
 ReactDOM.render(
 <Router>
 <App />
