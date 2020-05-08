@@ -10,9 +10,7 @@ import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
 import {Route, Link} from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 
 const home = () => {
@@ -29,11 +27,11 @@ const home = () => {
                 <CounterContainer/>
             </ParallaxLayer>
             <ParallaxLayer offset={2} speed={4}>
-                <ContainerWithtextonRight name= "Macros" namehref= "/plasticpollution/#/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
+                <ContainerWithtextonRight name= "Macros" namehref= "/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
 
 In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui."/>
                 <ContainerWithtextonLeft/>
-                <ContainerWithtextonRight name= "Nanos" namehref= "/plasticpollution/#/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
+                <ContainerWithtextonRight name= "Nanos" namehref= "/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
 
 In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui."/>
             </ParallaxLayer>
@@ -97,17 +95,17 @@ const slider = (
       <div class="article">
       <p className="articleText">
           <h3 >Micros</h3>
-          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens,
-            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi.
-            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in.
-            Fugit clita in vel, usu ne quas delenit.
+          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, 
+            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. 
+            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. 
+            Fugit clita in vel, usu ne quas delenit. 
             Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
-In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo,
-te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem
+In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, 
+te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem 
 gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui.</p>
           <p className ="backgroundButtonColor">
           <Button color="light" >
-          <Nav.Link href="/plasticpollution/#/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
+          <Nav.Link href="/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>
           </Button>
           </p>
           </p>
