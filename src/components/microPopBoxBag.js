@@ -6,6 +6,10 @@ import NetFloat from './microNet';
 import MicroFloat from './microPiece';
 import ManyMicroFloat from './microMedium';
 import Button from '@material-ui/core/Button';
+import Card from './Card'
+import './cosmetics.css'
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import Nav from 'react-bootstrap/Nav';
 
 
 export default function BagPopUp(props) {
@@ -32,6 +36,38 @@ export default function BagPopUp(props) {
       <img  src="https://www.captainjohnwhalewatchingma.com/wp-content/uploads/6163195.jpg" className="popoverImg"></img>
     </div>;
 
+  const popFreeTooth = 
+    <div className="cosmeticPopUp">
+      <h3 className="popoverText"> Excellent Choice!</h3>
+      <img src="https://plantae.co.nz/_hashes/files/d2969bd67dce539d9d3f95c2da717318f3b11150" className="cosmeticPopUpImg"></img>
+      <p className="popoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+    </div>;
+  const popGreenTooth = 
+  <div className="cosmeticPopUp">
+    <h3 className="popoverText"> Good Choice!</h3>
+    <p className="popoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+  </div>;
+  const popRedTooth = 
+  <div className="cosmeticPopUp">
+    <h3 className="popoverText"> Poor Choice!</h3>
+    <p className="popoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+    <div className="redTPBathroom"></div>
+    <p className= "buttonContinue"><Button startIcon={<ArrowForwardIosIcon/>}><Nav.Link href="/plasticpollution/#/Wastewater">Continue</Nav.Link></Button></p>
+  </div>;
+   const popRedCleanser = 
+   <div className="cosmeticPopUp">
+     <h3 className="popoverText"> Poor Choice!</h3>
+     <p className="popoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+     <div className="redCleanserBathroom"></div>
+     <p className= "buttonContinue"><Button startIcon={<ArrowForwardIosIcon/>}><Nav.Link href="/plasticpollution/#/Wastewater">Continue</Nav.Link></Button></p>
+   </div>;
+   const popRedScrub = 
+   <div className="cosmeticPopUp">
+     <h3 className="popoverText"> Poor Choice!</h3>
+     <p className="popoverText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget lorem dolor sed viverra ipsum. Ullamcorper sit amet risus nullam eget. Volutpat sed cras ornare arcu dui vivamus</p>
+     <div className="redScrubBathroom"></div>
+     <p className= "buttonContinue"><Button startIcon={<ArrowForwardIosIcon/>}><Nav.Link href="/plasticpollution/#/Wastewater">Continue</Nav.Link></Button></p>
+   </div>;
     switch(title) {
       case "popoverBag":
         return <OverlayTrigger trigger="click" placement="top" overlay={popoverBag}>
@@ -45,6 +81,73 @@ export default function BagPopUp(props) {
         case "popoverNet":
           return <OverlayTrigger trigger="click" placement="right" overlay={popoverNet}>
           <Button className= "floatButton"><NetFloat/></Button>
+          </OverlayTrigger>
+        case "greenToothpaste":
+          return <OverlayTrigger trigger="click" placement="left" overlay={popGreenTooth}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard toothpasteGreenCard"></Card>
+            <h2 className="producttxt">Auromere Ayurvedic Mint-free Toothpaste</h2>
+            </div>
+            </Button>
+          </OverlayTrigger>
+        case "freeToothpaste":
+          return <OverlayTrigger trigger="click" placement="left" overlay={popFreeTooth}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard toothpasteFreeCard"></Card>
+            <h2 className="producttxt">Auromere Ayurvedic Mint-free Toothpaste</h2>
+            </div>
+            </Button>
+          </OverlayTrigger>
+        case "redToothpaste":
+          return <OverlayTrigger trigger="click" placement="right" overlay={popRedTooth}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard toothpasteRedCard"></Card>
+            <h2 className="producttxt">Crest: 3D White Radiant Mint Whitening Toothpaste		Polyethylene (PE)</h2>
+            </div>
+          </Button>
+          </OverlayTrigger>
+        case "redCleanser":
+          return <OverlayTrigger trigger="click" placement="right" overlay={popRedCleanser}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard cleanserRedCard"></Card>
+            <h2 className="producttxt">Bioré	KAO	Breakup with blackheads warming anti-blackhead cleanser	Polyethylene (PE);</h2>
+            </div>
+            </Button>
+          </OverlayTrigger>
+        case "greenCleanser":
+          return <OverlayTrigger trigger="click" placement="left" overlay={popGreenTooth}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard cleanserGreenCard"></Card>
+            <h2 className="producttxt">neutrogena hydro boost exfoliating cleanser</h2>
+            </div>
+            </Button>
+          </OverlayTrigger>
+        case "freeCleanser":
+          return <OverlayTrigger trigger="click" placement="left" overlay={popFreeTooth}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard cleanserFreeCard"></Card>
+            <h2 className="producttxt">Silk Therapeutics	Evolved by Nature	Refresh Facial Cleanser</h2>
+            </div>
+            </Button>
+          </OverlayTrigger>
+        case "redScrub":
+          return <OverlayTrigger trigger="click" placement="top" overlay={popRedScrub}>
+          <Button>
+            <div className="twotwo">
+            <Card class="coscard scrubRedCard"></Card>
+            <h2 className="producttxt">neutrogena hydro boost exfoliating cleanser</h2>
+            </div>
+            </Button>
+          </OverlayTrigger>
+        case "freeScrub":
+          return <OverlayTrigger trigger="click" placement="top" overlay={popFreeTooth}>
+          <Button><Card class="coscard scrubFreeCard"></Card></Button>
           </OverlayTrigger>
         default: 
           return <><OverlayTrigger trigger="click" placement="left" overlay={popoverBag}>
