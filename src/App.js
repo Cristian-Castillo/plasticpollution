@@ -111,6 +111,7 @@ const particleOpt = {particles:{
     }
   }
 }}
+
 /* Particle Rendered to Screen */
 export class particles extends React.Component {
   render() {

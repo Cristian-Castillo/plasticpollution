@@ -27,6 +27,7 @@ import 'mdbreact/dist/css/mdb.css';
 import { Fragment } from "react";
 import bubble from '../assets/Water-bubble.mp3'
 
+
 const HumanConsumptionNano = () => {
   /* For Nano Audio */
   const playAudio = () => {

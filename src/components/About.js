@@ -10,9 +10,6 @@ import Ucm from './ucm.png';
 import Ucla from './ucla.png';
 import Uci from './uci.png';
 import AboutPg from './About.css'
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
