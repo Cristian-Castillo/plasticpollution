@@ -12,13 +12,60 @@
     font-size: 25em;
     will-change: transform, opacity;
     text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+
   }
 
+.deathButton{
+    width: 15%;
+    height: 50%;
+    background-color:white;
+    border-radius: 30px 30px 30px 30px;
+    display: inline-block; 
+
+}
+
+.wholeSlide{
+    background: url("https://wildaid.org/wp-content/uploads/2017/09/dark-blue-ocean-surface-seen-from-underwater-looped-slow-motion-fractal-waves-underwater-and-rays-of-sunlight-shining-through-4k-seamless-loop-video_hy1i0dcrl_thumbnail-full01.png") no-repeat;
+}
+.wholeSlideSand{
+    background: url("https://mikeowenmaterials.com/wp-content/uploads/2015/03/sand-background.jpg") no-repeat;
+    
+}
+
 .chainText{
-    font-size: 30;
+    font-size: 30px;
     color:white;
     font-family: 'Orbitron';
-    margin-left: 100px;
+    margin: 20px;
+    text-align: center;
+}
+.titleText{
+    font-size: 50px;
+    color:white;
+    font-family: 'Orbitron';
+    margin: 50px;
+    text-align: center;
+}
+.txtContainer{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to bottom right, #5680E9, #C1C8E4);
+    opacity: .75;
+    box-shadow: 0 0 5px 10px #C1C8E4;
+}
+.StxtContainer{
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(to bottom right, #5680E9, #C1C8E4);
+    opacity: .75;
+    box-shadow: 0 0 5px 10px #5680E9;
+}
+.deathTxtContainer{
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(to bottom right, #5680E9, #C1C8E4);
+    opacity: .75;
+    box-shadow: 0 0 5px 10px #5680E9;
 }
 
 .pictureofsardine{
@@ -38,7 +85,7 @@
     background: url("../assets/whale.png") no-repeat center;
     background-size: contain;
     width: 600px;
-    height: 300px;
+    height: 300px
 }
 
 .pictureofDeath{
@@ -52,4 +99,5 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
