@@ -37,6 +37,11 @@ import MacroAsia from "./components/MacroAsia"
 import FoodWeb from "./components/FoodWeb"
 import FrozenFish from "./components/frozenFish"
 import popOverNano from "./components/popOverNano"
+import Store from "./components/store"
+import Cosmetics from './components/cosmetics'
+import Clothes from './components/clothes'
+import Wastewater from './components/wastewater'
+
 /* End of JS & CSS FILES */
 
 //Hash Router:
@@ -64,6 +69,10 @@ function App(){
           <Route path="/Ocean" component={MicroOcean}/>
           <Route path="/FoodWeb" component={FoodWeb}/>
           <Route path="/FishMarket" component={FrozenFish}/>
+          <Route path="/Store" component={Store}/>
+          <Route path="/Cosmetics" component={Cosmetics}/>
+          <Route path="/Clothes" component={Clothes}/>
+          <Route path="/Wastewater" component={Wastewater}/>
           <Route path="/Nano" component={Nano}/>
           <Route path="/activist" component={Activist}/>
           <Route path="/HumanConsumptionNano" component={HumanConsumptionNano}/>

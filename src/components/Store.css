@@ -1,0 +1,31 @@
+
+.storeBackground{
+    background: url('https://www.thedollarstretcher.com/wp-content/uploads/2020/02/what-to-know-about-grocery-store-aisles.jpg') no-repeat;
+    width: 100%;
+    height: fill;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: space-evenly;
+}
+.storeButton{
+    background-color:white;
+    width: fit-content;
+    border-radius:50px 50px 50px 50px;
+    border-width: 50px 50px 50px 50px;
+    display: inline-block; 
+}
+.foodButton{
+
+}
+.storeText{
+    font-size: 30;
+    color:white;
+    font-family: 'Orbitron';
+    align-self: center;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+}
+
