@@ -148,6 +148,7 @@ export default function BagPopUp(props) {
         case "freeScrub":
           return <OverlayTrigger trigger="click" placement="top" overlay={popFreeTooth}>
           <Button><Card class="coscard scrubFreeCard"></Card></Button>
+
           </OverlayTrigger>
         default: 
           return <><OverlayTrigger trigger="click" placement="left" overlay={popoverBag}>

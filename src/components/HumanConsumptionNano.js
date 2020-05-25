@@ -34,6 +34,12 @@ const HumanConsumptionNano = () => {
     const audioEl = document.getElementsByClassName("audio-element")[0]
     audioEl.play()
   }
+
+
+  const style = {
+    border:'none'
+  }
+
   /* End of Nano Audio */
     const hoverStyle = {
        position: "relative",
@@ -376,6 +382,7 @@ return(
             </Fragment>
             </div> {/*  End of Pop Over Image 1 */}
 
+
               <Fragment> {/*  Begin of Pop Over Image 2 */}
               <MDBContainer >
                 <div style={styleMeNano}>
@@ -389,6 +396,60 @@ return(
                       <source src="http://http.tastyspleen.net/~p1/quake2/weapons/sound/misc/bubbles.wav"></source>
                     </audio>
                   </div> {/* End of sound */}
+
+                <img style = {styleMeNanoFormat} src={nanoPlastic}/>
+                  </MDBBtn>
+                  <div>
+                    <MDBPopoverHeader >Scientists have found microplastics in 114 aquatic species, and more than half of those end up on our dinner plates. Now they are trying to determine what that means for human health. So far science lacks evidence that microplastics—pieces smaller than one-fifth of an inch—are affecting fish at the population level</MDBPopoverHeader>
+                    <MDBPopoverBody >
+                    <img src ={plasticInFish} />
+                    </MDBPopoverBody>
+                  </div>
+                </MDBPopover>
+              </div>
+            </MDBContainer>
+            </Fragment> {/*  End of Pop Over Image 2 */}
+            {/* -------- 3rd picture pop up----------- */}
+            <Fragment>
+            <MDBContainer >
+              <div style={styleMeGo}>
+              <MDBPopover placement="bottom"  popover clickable id="popper7" >
+                <MDBBtn color = "dark" ><sound />
+                <div> {/* Begin of sound */}
+                  <button onClick={playAudio}>
+                    <span>Where do Nanos go?</span>
+                  </button>
+                  <audio className="audio-element">
+                    <source src="http://http.tastyspleen.net/~p1/quake2/weapons/sound/misc/bubbles.wav"></source>
+                  </audio>
+                </div> {/* End of sound */}
+               <img style = {styleMeNanoFormat} src={fishNano}/>
+                </MDBBtn >
+                <div>
+                  <MDBPopoverHeader >Weathering of plastic generates microplastic, releases chemical additives,
+                  and likely also produces nanoplastic and chemical fragments cleaved from the polymer backbone.
+                  The potential impacts of weathering plastic in the oceans pose assessment challenges that are
+                  characterized by both uncertainty and ignorance. It is clear that we must assess the risk of impacts
+                  that are known or that can be anticipated on the basis of our experience with other pollution problems.
+                  Learn how you can help by clicking the activist link.
+                  <div className='buttonContainer'>
+                    <a href='/plasticpollution/#/Activist'>Become An Activist</a>
+                  </div>
+                  </MDBPopoverHeader>
+                  <MDBPopoverBody >
+                  <img style = {styleMeWeather} src ={weatherNanoPic} />
+                  </MDBPopoverBody>
+                </div>
+              </MDBPopover>
+            </div>
+          </MDBContainer>
+          </Fragment>   {/* End of 3rd pop up picture}
+          {/* End of Blob Fish */}
+        </div>
+      </div>            {/* End of nested hoveer blob */}
+
+  </div>                {/* End of Black water */}
+
 
                 <img style = {styleMeNanoFormat} src={nanoPlastic}/>
                   </MDBBtn>

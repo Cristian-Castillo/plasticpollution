@@ -1,20 +1,25 @@
 import React from 'react'
-import { useSpring, animated } from 'react-spring'
-import './cosmetics.css'
+import "./main.css"
 
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+function Card(props){
 
-function Card(features) {
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
-  return (
-    <animated.div
-      class= {features.class}
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-      onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: props.xys.interpolate(trans) }}
-    />
+const dragStart = event => {
+
+  const target = event.target;
+  event.dataTransfer.setData('card_id',target.id);
+  setTimeout(()=> {target.style.display = "none";}, 0);
+
+}
+
+const dragOver = event => {
+  event.stopPropagation();
+}
+  return(
+    <div id = {props.id} onDragStart={dragStart} onDragOver={dragOver} className={props.className} draggable={props.draggable}>
+    {props.children}
+    </div>
   )
 }
 
 export default Card;
+
