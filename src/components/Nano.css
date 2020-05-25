@@ -102,7 +102,9 @@ A:hover{ COLOR: white;}
       height: 320px;
       background: none;
       /* top: 8%; */
+
       left: -6.5%;
+
       transform: translate(-50%, -50%);
 }
 
@@ -127,6 +129,7 @@ A:hover{ COLOR: white;}
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
  .thefront{
+
    background-image: url(https://lh3.googleusercontent.com/proxy/xqy_BSlFk6_3IIybnLDJmP88McJwuh7GaDsSAo9i0eej-3arGwrBx1qrhDRNgKDRu7yTjOQ9vqOBgSrEPBO7bvJKzcNb7nUfNKmCiYG1B0josbecd7OY1BXc);
   position: relative;
   top: 0;

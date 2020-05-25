@@ -13,8 +13,8 @@ import Nano3D from './nano3D.js'
 import FlipCard from './NanoCardFlip'
 import FlipCardTwo from './NanoCardFlipTwo'
 
-
 const Nano = () => {
+
 
   const styleJumbo = {
     backgrondColor:'black'
@@ -64,6 +64,7 @@ const Nano = () => {
 
 
        </div>
+
   );
 }
 

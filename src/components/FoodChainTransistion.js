@@ -6,11 +6,44 @@ import Nav from 'react-bootstrap/Nav';
 import './FoodWeb.css'
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: 'blue' }}><div className="contentContainer"><h2 className="chainText">Small fish mistakenly consume microplastics for food. Accumulating plastic.</h2><div className="pictureofsardine"></div></div></animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'blue' }}><div className="contentContainer"><h2 className="chainText">Bigger fish eat smaller fish as well as the plastic they have consumed</h2><div className="pictureoffish"></div></div></animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'blue' }}><div className="contentContainer"><h2 className="chainText">Bigger marine animals eat the larger fish, and all the plastic they have accumulated.</h2><div className="pictureofwhale"></div></div></animated.div>,
-  ({ style }) => <animated.div style={{ ...style, background: 'blue' }}><div className="contentContainer"><h2 className="chainText">The consumption and accumulation of microplastics through the foodchain can lead to death and a disruption to the food chain.</h2><div className="pictureofDeath"></div>
-  <Button className=""><Nav.Link href="/Ocean">Go Back to Ocean</Nav.Link></Button></div></animated.div>,
+  ({ style }) => <animated.div className="wholeSlide" style={{ ...style }}>
+    <div className="contentContainer">
+      <div className="txtContainer">
+      <h2 className="titleText">PLASTIC ACCUMULATES THROUGH THE FOOD CHAIN</h2>
+      </div>
+      <div className="pictureofsardine"></div>
+      <div className="StxtContainer">
+      <h2 className="chainText">small fish eat plastic mistaking it for smaller fish </h2>
+      </div>
+        </div>
+        </animated.div>,
+  ({ style }) => <animated.div className="wholeSlide" style={{ ...style}}>
+    <div className="contentContainer">
+      <div className="pictureoffish"></div>
+      <div className="StxtContainer">
+      <h2 className="chainText">Bigger fish eat smaller fish as well as the plastic they have consumed</h2>
+      </div>
+        </div>
+        </animated.div>,
+  ({ style }) => <animated.div className="wholeSlide" style={{ ...style}}>
+  <div className="contentContainer">
+    <div className="pictureofwhale"></div>
+    <div className="StxtContainer">
+    <h2 className="chainText">Bigger marine animals eat the larger fish, and all the plastic they have accumulated.</h2>
+    </div>
+      </div>
+      </animated.div>,
+    ({ style }) => <animated.div className="wholeSlideSand" style={{ ...style}}>
+    <div className="contentContainer">
+    <div className="StxtContainer">
+      <h2 className="chainText">Bigger marine animals eat the larger fish, and all the plastic they have accumulated.</h2>
+      </div>
+      <div className="pictureofDeath"></div>
+
+      
+        </div>
+        </animated.div>,
+ 
 ]
 
 export default function App() {

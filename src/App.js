@@ -13,6 +13,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState } from 'react';
 
+
 /* End of Navigation & Linkage */
 /* JS & CSS FILES */
 import Particles from 'react-particles-js';
@@ -59,6 +60,10 @@ import CarouselLandPg from './components/ActivistCarousel'
 import Nano3D from './components/nano3D'
 import NanoFood3D from './components/nanoFood3D'
 import NanoDinner3D from './components/nanoDinner3D'
+import Store from "./components/store"
+import Cosmetics from './components/cosmetics'
+import Clothes from './components/clothes'
+import Wastewater from './components/wastewater'
 /* End of JS & CSS FILES */
 
 
@@ -88,6 +93,10 @@ const App = props => {
           <Route path="/Ocean" component={MicroOcean}/>
           <Route path="/FoodWeb" component={FoodWeb}/>
           <Route path="/FishMarket" component={FrozenFish}/>
+          <Route path="/Store" component={Store}/>
+          <Route path="/Cosmetics" component={Cosmetics}/>
+          <Route path="/Clothes" component={Clothes}/>
+          <Route path="/Wastewater" component={Wastewater}/>
           <Route path="/Nano" component={Nano}/>
           <Route path="/activist" component={activism}/>
           <Route path="/ActivistLinks" component={ActivistLinks} />
@@ -155,6 +164,7 @@ export class particles extends React.Component {
 export class NanoEvaporation extends React.Component {
     render(){
       return(NanoEvaporation())}
+
 
 }
 
@@ -368,6 +378,7 @@ const styleMap = {
       </div>
     )
   }
+
 }
 
 export default App;

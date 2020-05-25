@@ -12,7 +12,7 @@ export default function TurtleMove() {
   const [trail, set] = useTrail(1, () => ({ xy: [0, 0], config: i => (i === 0 ? fast : slow) }))
   return (
     <>
-      <div className="hooks-main" onMouseMove={e => set({ xy: [e.clientX, e.clientY] })}>
+      <div className="hooks-main2" onMouseMove={e => set({ xy: [e.clientX, e.clientY] })}>
         {trail.map((props, index) => (
           <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }}></animated.div>
         ))}

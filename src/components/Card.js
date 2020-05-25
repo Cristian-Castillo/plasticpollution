@@ -22,3 +22,4 @@ const dragOver = event => {
 }
 
 export default Card;
+
