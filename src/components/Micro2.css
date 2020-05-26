@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Oribtron';
+    src: local('Orbitron'), url(../fonts/Orbitron-Regular.ttf) format('truetype');
+  }
+  
+html{
+    overflow-y: scroll; overflow-x:hidden;
+}
+
+  
+.main_div{
+    background: url("../assets/bestBackground.svg") no-repeat center;
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.store{
+    background: transparent;
+    height: 400px;
+    width: 400px;
+    bottom: -50px;
+    position: absolute;
+}
+.road{
+    background: transparent;
+    height: 600px;
+    width: 300px;
+    bottom: -200px;
+    left: 100px;
+    position: absolute;
+}
+.ocean{
+    background: transparent;
+    height: 600px;
+    width: 500px;
+    bottom: -200px;
+    left: 400px;
+    position: absolute;
+}
+.microPopUp{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #5680E9 0%, #C1C8E4 50%, #5680E9 100%);
+    border-radius: 30px 30px 30px 30px;
+}
+.buttonmicro{
+    width: fit-content;
+    height: fit-content;
+    background-color:white;
+    border-radius: 30px 30px 30px 30px;
+    align-self: center; 
+    margin: 50px;
+}
+.MicropopoverImg{
+    border-radius: 30px 30px 30px 30px;
+    flex-grow: 1;
+    width: 100%;
+
+}
+.MicropopoverText{
+    padding: 10px;
+    color: white;
+    text-align: center;
+
+}
+.small{
+    size:20px;
+}
+.big{
+    size:30px;
+}

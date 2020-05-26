@@ -4,6 +4,7 @@ import { useTransition, animated } from 'react-spring'
 import Button from '@material-ui/core/Button';
 import Nav from 'react-bootstrap/Nav';
 import './FoodWeb.css'
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 const pages = [
   ({ style }) => <animated.div className="wholeSlide" style={{ ...style }}>
@@ -36,11 +37,10 @@ const pages = [
     ({ style }) => <animated.div className="wholeSlideSand" style={{ ...style}}>
     <div className="contentContainer">
     <div className="StxtContainer">
-      <h2 className="chainText">Bigger marine animals eat the larger fish, and all the plastic they have accumulated.</h2>
-      </div>
-      <div className="pictureofDeath"></div>
-
-      
+    <h2 className="chainText">Bigger marine animals eat the larger fish, and all the plastic they have accumulated.</h2>
+    </div>
+    <div className="pictureofDeath"></div>
+      <Button className= "fishButton" startIcon={<ArrowForwardIosIcon/>}><Nav.Link href="/plasticpollution/#/Ocean">Continue</Nav.Link></Button>
         </div>
         </animated.div>,
  

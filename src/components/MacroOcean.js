@@ -9,18 +9,18 @@ const Macro = (myRef) => {
       <div className="scene_container2">
         <div className='leftcolumn'>
           <div className='buttonContainer'>
-            <a className="backButton" href='./MacroDump'>&#8249;</a>
+            <a className="backButton" href='./plasticpollution/#/MacroDump'>&#8249;</a>
           </div>
         </div>
         <div className="middle">
           <h1>Your Plastic in the Ocean</h1>
           <p>Macro information</p>
-          <img className="ocean" src={ocean} ></img>
+          <img className="oceanMacro" src={ocean} ></img>
 
         </div>
         <div className='rightcolumn'>
           <div className='buttonContainer'>
-            <a className="finishButton" href='/'>Finish</a>
+            <a className="finishButton" href='./plasticpollution/#/Ocean'>Finish</a>
           </div>
         </div>
         

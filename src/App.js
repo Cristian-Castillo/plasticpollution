@@ -41,6 +41,8 @@ import Store from "./components/store"
 import Cosmetics from './components/cosmetics'
 import Clothes from './components/clothes'
 import Wastewater from './components/wastewater'
+import Micro2 from './components/Micro2'
+import microRoad from './components/microRoad';
 
 /* End of JS & CSS FILES */
 
@@ -65,11 +67,12 @@ function App(){
           <Route path="/MacroOcean" component={MacroOcean}/>
           <Route path="/MacroRecycle" component={MacroRecycle}/>
           <Route path="/MacroAsia" component={MacroAsia}/>
-          <Route path="/Micro" component={Micro}/>
+          <Route path="/Micro" component={Micro2}/>
           <Route path="/Ocean" component={MicroOcean}/>
           <Route path="/FoodWeb" component={FoodWeb}/>
           <Route path="/FishMarket" component={FrozenFish}/>
           <Route path="/Store" component={Store}/>
+          <Route path="/Road" component={microRoad}/>
           <Route path="/Cosmetics" component={Cosmetics}/>
           <Route path="/Clothes" component={Clothes}/>
           <Route path="/Wastewater" component={Wastewater}/>

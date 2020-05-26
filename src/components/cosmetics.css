@@ -1,21 +1,15 @@
-.coscard {
-    width: 45ch;
-    height: 45ch;
-    background: white no-repeat;
-    border-radius: 5px;
-    background-size: contain;
-    background-position: center center;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.5s;
-    will-change: transform;
-    border: 15px solid white;
-  }
   
   .coscard:hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
   .costext{
     font-size: 100px;
+    color:white;
+    font-family: 'Orbitron';
+    text-align: center;
+  }
+  .costextbody{
+    font-size: 30px;
     color:white;
     font-family: 'Orbitron';
     text-align: center;
@@ -45,33 +39,7 @@
     margin: 25px;
     
 }
-.toothpasteRedCard{
-  background-image: url('https://i5.walmartimages.com/asr/ce43b5a6-e1c2-4410-a4c4-21753898f673_1.fd3dab3245c28566e1425879694c3aa6.jpeg');
-}
 
-.toothpasteGreenCard{
-    background-image: url('https://www.riteaid.com/shop/media/catalog/product/cache/2700c2d74e5ecccab57196318d14a1fb/k/j/kjbckeltvu9egkkizmhh.jpg');
-}
-.toothpasteFreeCard{
-    background-image: url('https://www.auromere.com/images/img-Auromere-Toothpaste-Mint-Free-tube.jpg');
-}
-
-.cleanserRedCard{
-    background-image: url("https://images-na.ssl-images-amazon.com/images/I/81CkJi8mTgL._SL1500_.jpg");
-    }
-.cleanserGreenCard{
-    background-image: url("https://ntg-catalog.imgix.net/products/6810123_front.jpg?w=1200&h=1443&sfrm=jpg&fit=crop");
-}  
-.cleanserFreeCard{
-    background-image: url("https://cdn.shopify.com/s/files/1/1685/5373/products/Refresh_Square_cec18216-28d8-45bf-9b50-2c803ca4236b_500x.png?v=1578347206");
-    }
-.scrubRedCard{
-    background-image: url("https://www.elizabetharden.com/on/demandware.static/-/Sites-elizabetharden-master-catalog/default/dwfe0cb054/images/1001prvn40149_a.jpg");
-        }
-    
-.scrubFreeCard{
-    background-image: url("https://cdn11.bigcommerce.com/s-3f3eb/images/stencil/1000x1000/products/43/363/1__71776.1539280054.jpg?c=2");
-        }
   .twoGroup{
     display: flex;
     flex-direction: row;

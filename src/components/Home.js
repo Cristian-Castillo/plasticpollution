@@ -95,14 +95,7 @@ const slider = (
       <div class="article">
       <p className="articleText">
           <h3 >Micros</h3>
-          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, 
-            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. 
-            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. 
-            Fugit clita in vel, usu ne quas delenit. 
-            Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
-In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, 
-te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem 
-gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui.</p>
+          <p className="articleText">Micros are smaller plastic particles, around 50 micrometers to 5mm. The plastics usually come from the natural breakdown of Macroplastics. This stage of plastic is a part of the breakdown of Macroplastics, and may eventually break down into Nanoplastic. There are also a few ways microplastics can be directly manufactured and enter our oceans and landfills that way, such as microbeads that are in some skin care products. Humans also may consume these plastics without realizing it, but this is a topic still up for debate on exact effects on human health. Start this Micros adventure to learn about Micros entry into waterways as well as their journey on land. .</p>
           <p className ="backgroundButtonColor">
           <Button color="light" >
           <Nav.Link href="/plasticpollution/#/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>

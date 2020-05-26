@@ -9,14 +9,14 @@ const Macro = (myRef) => {
       <div className="scene_container2">
         <div className='leftcolumn'>
           <div className='buttonContainer'>
-            <a className="backButton" href='./Macro'>&#8249;</a>
+            <a className="backButton" href='./plasticpollution/#/Macro'>&#8249;</a>
           </div>
         </div>
         <div className="middle">
           <h1>Recycling Center</h1>
           <p>Macro information</p>
-          <a id="area" className="areagood" href="/Macro2"></a>
-          <a id="area" className="areabad" href="/MacroAsia"></a>
+          <a id="area" className="areagood" href="/plasticpollution/#/Macro2"></a>
+          <a id="area" className="areabad" href="/plasticpollution/#/MacroAsia"></a>
           <img className="landfill" src={rcenter} ></img>
 
         </div>

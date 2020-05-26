@@ -1,0 +1,88 @@
+
+.foodcard {
+    width: 25%;
+    height: 45%;
+    border-radius: 5px;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    background-size: contain;
+  }
+  .foodcard:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+.coscard {
+    width: 45ch;
+    height: 45ch;
+    background: white no-repeat;
+    border-radius: 5px;
+    background-size: contain;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 15px solid white;
+  }
+  .coscard:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+  .toothpasteRedCard{
+    background-image: url('https://i5.walmartimages.com/asr/ce43b5a6-e1c2-4410-a4c4-21753898f673_1.fd3dab3245c28566e1425879694c3aa6.jpeg');
+  }
+  
+  .toothpasteGreenCard{
+      background-image: url('https://www.riteaid.com/shop/media/catalog/product/cache/2700c2d74e5ecccab57196318d14a1fb/k/j/kjbckeltvu9egkkizmhh.jpg');
+  }
+  .toothpasteFreeCard{
+      background-image: url('https://www.auromere.com/images/img-Auromere-Toothpaste-Mint-Free-tube.jpg');
+  }
+  
+  .cleanserRedCard{
+      background-image: url("https://images-na.ssl-images-amazon.com/images/I/81CkJi8mTgL._SL1500_.jpg");
+      }
+  .cleanserGreenCard{
+      background-image: url("https://ntg-catalog.imgix.net/products/6810123_front.jpg?w=1200&h=1443&sfrm=jpg&fit=crop");
+  }  
+  .cleanserFreeCard{
+      background-image: url("https://cdn.shopify.com/s/files/1/1685/5373/products/Refresh_Square_cec18216-28d8-45bf-9b50-2c803ca4236b_500x.png?v=1578347206");
+      }
+  .scrubRedCard{
+      background-image: url("https://www.elizabetharden.com/on/demandware.static/-/Sites-elizabetharden-master-catalog/default/dwfe0cb054/images/1001prvn40149_a.jpg");
+          }
+      
+  .scrubFreeCard{
+      background-image: url("https://cdn11.bigcommerce.com/s-3f3eb/images/stencil/1000x1000/products/43/363/1__71776.1539280054.jpg?c=2");
+          }
+  .ceviche{
+      background: url("https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/shrimp-ceviche-2.jpg") no-repeat center;
+      background-size: contain;
+  }
+  .fishandchips{
+    background: url("https://www.rockrecipes.com/wp-content/uploads/2008/02/Super-Crispy-Fish-and-Chips-1.jpg") no-repeat center;
+    background-size: contain;
+}
+.sushi{
+    background: url("https://www.julieslifestyle.com/src/Frontend/Files/blog/images/968x560/mushroom-avocado-sushi-rolls-vegan-gluten-free-inspiration-anett-velsberg-en-662.jpg") no-repeat center;
+    background-size: contain;
+}
+.cajun{
+    background: url("https://patch.com/img/cdn20/users/20883540/20180823/043051/styles/raw/public/processed_images/ccb-1535056233-8118.jpg") no-repeat center;
+    background-size: contain;
+}
+.sashimi{
+    background: url("https://www.thespruceeats.com/thmb/uacAFXnScHsefqv2KvSUZ9mHbWQ=/1885x1414/smart/filters:no_upscale()/Fresh-sashimi-GettyImages-86057409-58a0f05e3df78c475826b7de.jpg") no-repeat center;
+    background-size: contain;
+}
+.salmon{
+    background: url("https://www.thespruceeats.com/thmb/FuibiO8z4Sb74tKWkiEs5IVMHcQ=/1500x996/filters:fill(auto,1)/baked-salmon-with-garlic-3056832-12_preview-5b18288eba6177003d20d706.jpeg") no-repeat center;
+    background-size: contain;
+}
+.sardines{
+    background: url("https://d1nsq2txwd94q7.cloudfront.net/public/files/production/recipes/images/2916/thumb/r_2916_1550832459.jpg") no-repeat center;
+    background-size: contain;
+}
+.oha{
+    background: url("https://cdn.tasteatlas.com/Images/Dishes/76627483ccea495f94d93c18fa444ec6.jpg?w=600&h=450") no-repeat center;
+    background-size: contain;
+}
