@@ -6,7 +6,7 @@ import NetFloat from './microNet';
 import MicroFloat from './microPiece';
 import ManyMicroFloat from './microMedium';
 import Button from '@material-ui/core/Button';
-import Card from './CardMicro'
+import Card from './cardmicro'
 import './cosmetics.css'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Nav from 'react-bootstrap/Nav';
@@ -168,6 +168,7 @@ export default function BagPopUp(props) {
         case "freeScrub":
           return <OverlayTrigger trigger="click" placement="top" overlay={popFreeTooth}>
           <Button><Card class="coscard scrubFreeCard"></Card></Button>
+
           </OverlayTrigger>
         case "Store":
           return <OverlayTrigger trigger="hover" placement="right" overlay={popStore}>

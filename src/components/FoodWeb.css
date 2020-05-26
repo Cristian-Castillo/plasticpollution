@@ -66,6 +66,7 @@
     background: linear-gradient(to bottom right, #5680E9, #C1C8E4);
     opacity: .75;
     box-shadow: 0 0 5px 10px #5680E9;
+
 }
 
 .pictureofsardine{
@@ -85,7 +86,8 @@
     background: url("../assets/whale.png") no-repeat center;
     background-size: contain;
     width: 600px;
-    height: 300px
+    height: 300px;
+
 }
 
 .pictureofDeath{

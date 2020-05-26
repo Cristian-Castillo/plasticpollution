@@ -27,7 +27,7 @@ const Micro = () => {
           <p className ="passageOriginMicro">Lorem ipsum dolor sit amet, te mei
 
 In putant fabulas vix, in mea cibo nullam. Case vulputate nesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui. </p>
-          <button className="microButtonMicro"><Nav.Link href="/plasticpollution/#/Ocean">Dive into Adventure </Nav.Link></button>
+          <button className="microButtonMicro"><Nav.Link href="/Ocean">Dive into Adventure </Nav.Link></button>
           </div>
           </div>
 
@@ -38,6 +38,7 @@ In putant fabulas vix, in mea cibo nullam. Case vulputate nesarchum moderatius e
           <p className ="passageOriginMicro">Lorem ipsum dolor sit amet, te mei petentium efficiendi, te platonem iudicabit
 
 In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui. </p>
+
 
           <button className="microButtonMicro"><Nav.Link href="/plasticpollution/#/Store">Journey through Land</Nav.Link> </button>
 
