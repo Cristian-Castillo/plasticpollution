@@ -12,6 +12,48 @@
   .foodcard:hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
+  .sewagecard {
+    width: 40%;
+    height: 75%;
+    border-radius: 5px;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    background-size: contain;
+  }
+  .sewagecard:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+  .reusecard {
+    width: 40%;
+    height: 75%;
+    border-radius: 5px;
+    padding: 10px;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    background-size: contain;
+  }
+  .reusecard:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+
+  .oceancardmacro {
+    width: 40%;
+    height: 400px;
+    border-radius: 5px;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    background-size: contain;
+    align-self: center;
+  }
+  .oceancardmacro:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
 .coscard {
     width: 45ch;
     height: 45ch;
@@ -86,3 +128,38 @@
     background: url("https://cdn.tasteatlas.com/Images/Dishes/76627483ccea495f94d93c18fa444ec6.jpg?w=600&h=450") no-repeat center;
     background-size: contain;
 }
+
+.sewagepic{
+    background: url("https://thumbnails-visually.netdna-ssl.com/waste-water-and-sewage-treatment-process_5050c695bb73f_w1500.jpeg") no-repeat center;
+    background-size: contain;
+}
+.septicpic{
+    background: url("https://www.thurstontalk.com/wp-content/uploads/2016/09/septic-care-illustration.jpg") no-repeat center;
+    background-size: contain;
+}
+.reusablebottle{
+    background: url("https://www.ncuca.com/wp-content/uploads/2019/09/NCUCA-2020-Sponsorship-Water-Bottles.png") no-repeat center;
+    background-size: cover;
+}
+.reusablebag{
+    background: url("https://wholefoodsmagazine.com/wp-content/uploads/2016/03/Cons-Bulletin-39.jpg") no-repeat center;
+    background-size: cover;
+}
+.reusablemason{
+    background: url("https://i.pinimg.com/originals/23/c8/1e/23c81ea54cc378426561c4bb0381c845.jpg") no-repeat center;
+    background-size: cover;
+}
+.reusablefast{
+    background: url("https://nitrocdn.com/rdVdpjsyHfwtqaZfkMplDiZritrnIecd/assets/static/optimized/wp-content/uploads/2013/12/c526eef22ddbe3f62d8ab7d5010c89cc.Fast-Food-640.jpg") no-repeat center;
+    background-size: cover;
+}
+.oceanbeach{
+    background: url("https://southeastasiaglobe.com/wp-content/uploads/2018/09/Samui_SEA_Globe_shutterstock_267126341.jpg") no-repeat center;
+    background-size: cover;
+}
+.oceangyro{
+    background: url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Oceanic_gyres.png") no-repeat center;
+    background-size: cover;
+}
+
+
