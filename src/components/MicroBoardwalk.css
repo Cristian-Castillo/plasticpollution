@@ -6,44 +6,49 @@
 html{
     overflow-y: scroll; overflow-x:hidden;
 }
+.full_boardwalk_page{
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
+}
 
   
-.main_div{
-    background: url("../assets/bestBackground.svg") no-repeat center;
-    height: 1000px;
+.main_div_boardwalk{
+    background: url("https://www.cityofsantacruz.com/Home/ShowPublishedImage/13326/636728865858370000") no-repeat center;
+    height: 700px;
     width: 100%;
     background-size: cover;
     position: relative;
 }
 .store{
     background: transparent;
-    height: 400px;
+    height: 600px;
     width: 400px;
-    bottom: -50px;
+    bottom: 00px;
     position: absolute;
 }
 .road{
     background: transparent;
     height: 600px;
     width: 300px;
-    bottom: -200px;
+    bottom: 00px;
     left: 100px;
     position: absolute;
 }
 .ocean{
     background: transparent;
-    height: 600px;
+    height: 700px;
     width: 500px;
-    bottom: -200px;
+    bottom: 0px;
     left: 400px;
     position: absolute;
 }
 .microPopUp{
-    height: 400px;
+    height: fit-content;
     width: 400px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right, #5680E9 0%, #C1C8E4 50%, #5680E9 100%);
+    background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
     border-radius: 30px 30px 30px 30px;
 }
 .buttonmicro{

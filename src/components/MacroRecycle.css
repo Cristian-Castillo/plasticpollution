@@ -15,3 +15,93 @@
   left: 20%;
   top: 60%;
 }
+.recyclable_fact_cont_macro{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+
+}
+.recyc_macro_item{
+  width: 100%;
+  height: 200px;
+  will-change: transform, opacity;
+}
+.card_macro_container{
+  width: 30%;
+  height:100%;
+  background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
+}
+
+
+.fabrictxt_macro{
+  font-size: 30px;
+  color:black;
+  font-family: 'Orbitron';
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.bottle_recyc_macro{
+  background: url("https://i.guim.co.uk/img/media/5f1155a189f9682073c34bc64e2915a65a0b8cf8/991_0_3954_3957/3954.jpg?width=620&quality=85&auto=format&fit=max&s=18a3909f7e80ffcd7511d6f2e0c53cf8") no-repeat center;
+  background-size: contain;
+}
+.jug_recyc_macro{
+  background: url("https://images-na.ssl-images-amazon.com/images/I/616mnYOyNHL._AC_SL1500_.jpg") no-repeat center;
+  background-size: contain;
+}
+.tin_recyc_macro{
+  background: url("https://previews.123rf.com/images/homestudio/homestudio1109/homestudio110900017/10465683-empty-tin-cans-on-white-background.jpg") no-repeat center;
+  background-size: contain;
+}
+.paper_recyc_macro{
+  background: url("https://mixedwayproduction.com/wp-content/uploads/2018/11/waste-paper-galler-1.png") no-repeat center;
+  background-size: contain;
+}
+.cardboard_recyc_macro{
+  background: url("https://images-na.ssl-images-amazon.com/images/I/61A%2BI-3LBZL._SL1000_.jpg") no-repeat center;
+  background-size: contain;
+}
+.carton_recyc_macro{
+  background: url("https://img.thrfun.com/img/024/706/uses_for_milk_cartons_2_m1.jpg") no-repeat center;
+  background-size: contain;
+}
+.glass_recyc_macro{
+  background: url("https://lh3.googleusercontent.com/proxy/nsO4lKOSruLB3-0e58C3neCjG-tQwoPTQ8t93_EIIobrxExBYlMyrS5zHJX9TChjyfhBX5kCmL3gv_J2J9vIpYIaG47L4UDuNATAdY_KBs7EqmJABNps-hbrWZXNCgKTsG6hMiBsX9AQralny8LNl3FoSDQs4FvLbUeeIsRIVA") no-repeat center;
+  background-size: contain;
+}
+.wax_recyc_macro{
+  background: url("https://lh3.googleusercontent.com/proxy/PAyz_BZcqmNQQ7glnaMKkMiVdJm2XjGuHqrzCw2RvqKcNklCK_vvcz-Qrx5xx0VbbNdeEHCzv2-nPwEWiaL2o-81vcNklg7Qph-8OukK_mpHd_qhVdN9nrImvTYNn_pSKN-Z91h9Mv9yTRn3ZdEIaZDOxa1KZr9Os_HubyOUSVAS9h5kDkVvLEYlmjyhVCsBjAEzRW904BJncOJshg") no-repeat center;
+  background-size: contain;
+}
+.wax_recyc_macro{
+  background: url("https://lh3.googleusercontent.com/proxy/PAyz_BZcqmNQQ7glnaMKkMiVdJm2XjGuHqrzCw2RvqKcNklCK_vvcz-Qrx5xx0VbbNdeEHCzv2-nPwEWiaL2o-81vcNklg7Qph-8OukK_mpHd_qhVdN9nrImvTYNn_pSKN-Z91h9Mv9yTRn3ZdEIaZDOxa1KZr9Os_HubyOUSVAS9h5kDkVvLEYlmjyhVCsBjAEzRW904BJncOJshg") no-repeat center;
+  background-size: contain;
+}
+.ziploc_recyc_macro{
+  background: url("https://images.homedepot-static.com/productImages/efe56421-ca96-4ced-a43b-823305d7cacb/svn/ziploc-lunch-boxes-lunch-bags-664545-e1_600.jpg") no-repeat center;
+  background-size: contain;
+}
+.bag_recyc_macro{
+  background: url("https://whyy.org/wp-content/uploads/2018/08/bigstock-Multiple-Plastic-Shopping-Bags-239117521-768x512.jpg") no-repeat center;
+  background-size: contain;
+}
+.takeout_recyc_macro{
+  background: url("https://media.mnn.com/assets/images/2018/12/take_out_container.jpg.1440x960_q100_crop-scale_upscale.jpg") no-repeat center;
+  background-size: contain;
+}
+.flex_recyc_macro{
+  background: url("https://www.huhtamaki.com/globalassets/flexible-packaging/pictures/products-750x500/about-us---portfolio.png?width=528") no-repeat center;
+  background-size: contain;
+}
+.recyclingTitleContainer{
+  width: 100%;
+  display:block;
+  margin:auto;
+  background: linear-gradient(to right, #5AB9EA 0%, #5680E9 50%, #5AB9EA 100%);
+}
+
+

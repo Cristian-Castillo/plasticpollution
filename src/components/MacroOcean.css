@@ -6,4 +6,21 @@
   margin:auto;
   display:block;
 }
+.ocean_macro_cards{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  padding: 25px;
+}
+.ocean_macro_cards_txt{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: center;
+}
+.ocean_macro_txt_title{
+    font-size: 45px;
+    color: white;
+}
 

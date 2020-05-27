@@ -46,7 +46,7 @@
     width: 100%;
 }
 .main_road{
-    background: linear-gradient(to left, #5680E9 0%, #C1C8E4 100%);
+    background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
     width: 100%;
     height: fit-content;
     display: flex;

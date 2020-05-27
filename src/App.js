@@ -64,8 +64,8 @@ import Store from "./components/store"
 import Cosmetics from './components/cosmetics'
 import Clothes from './components/clothes'
 import Wastewater from './components/wastewater'
-import Micro2 from './components/Micro2'
 import microRoad from './components/microRoad';
+import MicroBoardwalk from './components/MicroBoardwalk';
 
 /* End of JS & CSS FILES */
 
@@ -92,7 +92,7 @@ const App = props => {
           <Route path="/MacroOcean" component={MacroOcean}/>
           <Route path="/MacroRecycle" component={MacroRecycle}/>
           <Route path="/MacroAsia" component={MacroAsia}/>
-          <Route path="/Micro" component={Micro2}/>
+          <Route path="/Micro" component={MicroBoardwalk}/>
           <Route path="/Ocean" component={MicroOcean}/>
           <Route path="/FoodWeb" component={FoodWeb}/>
           <Route path="/FishMarket" component={FrozenFish}/>

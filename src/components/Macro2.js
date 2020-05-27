@@ -5,7 +5,7 @@ import './Macro2.css'
 
 const Macro = (myRef) => {
     return (
-      <div>
+      <div className="main_div_macro">
       <div className="scene_container2">
         <div className='leftcolumn'>
           <div className='buttonContainer'>
@@ -13,8 +13,7 @@ const Macro = (myRef) => {
           </div>
         </div>
         <div className="middle">
-          <h1>Landfill</h1>
-          <p>Macro information</p>
+          <h1 className="macrotxttitle">Landfill</h1>
           <img className="landfill" src={landfill} ></img>
 
         </div>
@@ -25,8 +24,9 @@ const Macro = (myRef) => {
         </div>
         
       </div>
-      <div>
-        <p id="d1"className="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+      <div> 
+        <p className="description2 macrotxt"> None of the energy or material used can be recovered when plastics are disposed of in landfills [4]. Space constraints are also becoming an issue. Although land in the United States is abundant, smaller countries such as Denmark and Japan already are relying more heavily on incineration to conserve land resources </p>
+        <p className="description2 macrotxt">This constitutes a long-term risk of contamination of soil and groundwater with plastics’ components [4] as well as with other contaminants contained in landfill leachate.</p>
       </div>
       </div>
     );
