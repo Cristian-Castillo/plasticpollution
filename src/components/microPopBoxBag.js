@@ -45,6 +45,8 @@ export default function BagPopUp(props) {
   const popRoad = 
    <div className="microPopUp">
      <h3 className="MicropopoverText"> Micros on the road</h3>
+     <h3 className="MicropopoverText small">Even when you simply drive your car you can be contributing to plastic pollution. Find out more about microrubbers, a type of microplastics </h3>
+
    </div>;
   const popOcean = 
   <div className="microPopUp">

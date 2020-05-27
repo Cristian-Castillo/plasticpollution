@@ -46,13 +46,22 @@ const slider = (
     cancelOnInteraction={false} // should stop playing on user interaction
     interval={6000}>
     <div className="slideshowBox">
-        <Card class1="c nylonimg fabrictxt" title="Nylon" text="Nylon is a man-made synthetic fiber that is strong while very light in weight, properties that lead to a wide variety of uses, such as fabric, rope and luggage." class2="c spandeximg" title2='Spandex'/>
+        <div className="c nylonimg"><p className="fabrictitle">Nylon</p><p className="fabrictxt">Nylon is a man-made synthetic fiber that is strong while very light in weight, properties that lead to a wide variety of uses, such as fabric, rope and luggage.</p></div>
     </div>
     <div className="slideshowBox">
-         <Card class1="c rayonimg" title='Rayon' class2="c acrylicimg" title2="Acrylic"/>
+        <div className="c spandeximg"><p className="fabrictitle">Spandex</p></div>
      </div>
      <div className="slideshowBox">
-         <Card class1="c polyimg" title='Polyster' class2="c acetateimg" title2="Acetate"/>
+     <div className="c rayonimg"><p className="fabrictitle">Rayon</p></div>
+     </div>
+     <div className="slideshowBox">
+     <div className="c acrylicimg"><p className="fabrictitle">Acrylic</p></div>
+     </div>
+     <div className="slideshowBox">
+     <div className="c polyimg"><p className="fabrictitle">Polyster</p></div>
+     </div>
+     <div className="slideshowBox">
+     <div className="c acetateimg"><p className="fabrictitle">Acetate</p></div>
      </div>
   </AutoplaySlider>
 );

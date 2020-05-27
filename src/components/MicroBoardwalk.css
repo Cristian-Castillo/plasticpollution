@@ -7,7 +7,7 @@ html{
     overflow-y: scroll; overflow-x:hidden;
 }
 .full_boardwalk_page{
-    height: 900px;
+    height: 100%;
     width: 100%;
     background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
 }
