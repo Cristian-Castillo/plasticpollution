@@ -1,6 +1,11 @@
 import React from 'react';
 import china from './assets/chinashipping.jpg'
-import './Macro2.css'
+import Trans from './mechanicalRecycling'
+import TransChem from './chemRecycling'
+
+import './MacroAsia.css'
+
+
 
 
 const Macro = (myRef) => {
@@ -14,23 +19,33 @@ const Macro = (myRef) => {
         </div>
         <div className="middle">
           <h1 className="macrotxttitle"> Shipped to China</h1>
-          <p className="macrotxt">Macro information</p>
           <img  src={china} ></img>
 
         </div>
         <div className='rightcolumn'>
           <div className='buttonContainer'>
-            <a className="finishButton" href='/'>Finish</a>
+            <a className="finishButton" href='./plasticpollution/#/'>Finish</a>
           </div>
         </div>
         
       </div>
-      <div>
-        <p className="description2 macrotxt">Broadly, there are two major ways to recycle plastic: (1) mechanical recycling ("chop and wash"), where the plastic is washed, ground into powders and melted, and (2) chemical recycling (things such as pyrolysis), where the plastic is broken down into basic components. (From Wikipedia: source cited: https://resource-recycling.com/plastics/2019/09/05/indorama-will-invest-to-meet-increased-rpet-demand/). 
-Lets talk about a few more recycling misconceptions. 
-In the past, China accepted a large amount of our recycling, but recent purity standards made it so much of this is being rejected. Now, our contaminated recycling is being sent to other areas in Asia. 
-Recycled materials still require new, virgin plastic to make products. This means that even a bottle made with recycled plastic is still contributing to net world plastic increase. 
- </p>
+      <div><p className="description2 macrotxt">
+      In the past, China accepted a large amount of our recycling, but recent purity standards made it so much of this is being rejected. Now, our contaminated recycling is being sent to other areas in Asia. 
+      Recycled materials still require new, virgin plastic to make products. This means that even a bottle made with recycled plastic is still contributing to net world plastic increase. 
+      </p>
+      <p className="description2 macrotxttitle">Broadly, there are two major ways to recycle plastic: </p>
+        <div className="landfill_macro_double_cont">
+          <div>
+          <p className="description2 macrotxt">Mechanical recycling</p>
+            <p className="description2 macrotxt">Plastic is washed, ground into powders and melted, and turned into similar plastic products</p>
+            <Trans/>
+            </div>
+          <div>
+          <p className="description2 macrotxt">Chemical recycling </p>
+        <p className="description2 macrotxt"> Plastic is broken down into basic components, and could be turned into synthetic crude oil </p>
+        <TransChem/>
+        </div>
+      </div>
       </div>
       </div>
     );

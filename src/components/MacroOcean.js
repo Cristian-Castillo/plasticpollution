@@ -1,6 +1,7 @@
 import React from 'react';
 import ocean from './assets/ocean.jpg'
 import Card from './cardmicro'
+import BagPopUp from './microPopBoxBag'
 import './MacroOcean.css'
 
 
@@ -10,7 +11,7 @@ const Macro = (myRef) => {
       <div className="scene_container2">
         <div className='leftcolumn'>
           <div className='buttonContainer'>
-            <a className="backButton" href='./plasticpollution/#/MacroDump'>&#8249;</a>
+            <a className="backButton" href='./#/MacroDump'>&#8249;</a>
           </div>
         </div>
         <div className="middle">
@@ -20,9 +21,7 @@ const Macro = (myRef) => {
 
         </div>
         <div className='rightcolumn'>
-          <div className='buttonContainer'>
-            <a className="finishButton" href='./plasticpollution/#/Ocean'>Finish</a>
-          </div>
+            <BagPopUp title = "Macro2Micro"/>
         </div>
         
       </div>

@@ -10,7 +10,7 @@ const Macro = (myRef) => {
       <div className="scene_container2">
         <div className='leftcolumn'>
           <div className='buttonContainer'>
-            <a className="backButton" href='./plasticpollution/#/Macro'>&#8249;</a>
+            <a className="backButton" href='./#/Macro'>&#8249;</a>
           </div>
         </div>
         <div className="middle">
@@ -20,7 +20,7 @@ const Macro = (myRef) => {
         </div>
         <div className='rightcolumn'>
           <div className='buttonContainer'>
-            <a className="finishButton" href='/'>Finish</a>
+            <a className="finishButton" href='./plasticpollution/#/'>Finish</a>
           </div>
         </div>
         

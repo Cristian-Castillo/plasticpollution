@@ -75,3 +75,229 @@
 .backButton:hover {
 	background-color: grey;
 }
+.landfill_us_map{
+	width: fit-content;
+	height: fit-content;
+	margin: 15px;
+
+}
+.landfill_macro_double_cont{
+	display:flex;
+	flex-direction: row;
+}
+.landfill_map_container{
+	width: 60%;
+	position: relative;
+}
+.landfill_apex{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;
+	
+}
+.landfill_bordo{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;	
+}
+.landfill_laogang{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;	
+}
+.landfill_malagrotta{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;
+}
+.landfill_puenta{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;
+}
+.landfill_sudo{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;
+}
+.landfill_delhi{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;
+}
+.landfill_deonar{
+	width:60%;
+	height:100%;
+	position: absolute;
+	visibility: hidden;
+	left: 100%;
+	top: 0%;
+}
+.apex{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://amariahperez4.weebly.com/uploads/1/1/0/8/110897017/993633570.jpg") no-repeat center;
+	background-size: contain;
+}
+.bordo{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://s.hdnux.com/photos/10/13/74/2146083/3/920x920.jpg") no-repeat center;
+	background-size: contain;
+}
+.lao{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://www.globaltimes.cn/Portals/0/attachment/2016/2016-01-18/35f9503d-00a2-4a6a-a11c-5041407f8a0e.jpeg") no-repeat center;
+	background-size: contain;
+}
+.mala{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://file.ejatlas.org/img/Conflict/1631/radio3.rai.it.jpg") no-repeat center;
+	background-size: contain;
+}
+.puenta{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://capitalandmain.com/wp-content/uploads/2015/12/puente-hills.jpg") no-repeat center;
+	background-size: contain;
+}
+.sudo{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://lh3.googleusercontent.com/proxy/rPfjbzSOb5O6bfn8aQGZQisRdpZTkjgbOyRcHfkK9iJs8DRD199-yR-5UyFDjOT2f_Kv7Ba0BlMPMx9bgUigd8lu6afisWNPqxrAwIl1BvKWpPK2K3cOReK9mSf9WUuCv5F3KQ") no-repeat center;
+	background-size: contain;
+}
+.delhi{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://www.thecivilengineer.org/media/k2/items/cache/0e10dc31a783038aaa2ac17353b1949b_XL.jpg") no-repeat center;
+	background-size: contain;
+}
+.deonar{
+	margin: 10px;
+	width: 100%;
+	height:50%;
+	background: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i5lIiU8iO8vg/v4/1000x-1.jpg") no-repeat center;
+	background-size: contain;
+}
+.centerlandfill{
+	text-align: center;
+}
+
+.area1_landfill{
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	left: 5%;	
+	top:18%;
+	z-index: 2px;
+	
+	
+}
+.area5_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 4%;
+	top: 27%;	
+	
+}
+.area2_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 7%;
+	top: 37%;	
+	
+}
+.area4_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 49%;
+	top: 24%;	
+	
+}
+.area3_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 88%;
+	top: 30%;	
+	
+}
+.area6_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 88%;
+	top: 18%;	
+	
+}
+.area7_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 71%;
+	top: 24%;	
+	
+}
+.area8_landfill{
+	width: 100px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	left: 70%;
+	top: 37%;	
+	
+}
+
+.macrotxtsmall{
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+.area1_landfill:hover ~ .landfill_apex{visibility: visible;}
+.area2_landfill:hover ~ .landfill_bordo{visibility: visible;}
+.area3_landfill:hover ~ .landfill_laogang{visibility: visible;}
+.area4_landfill:hover ~ .landfill_malagrotta{visibility: visible;}
+.area5_landfill:hover ~ .landfill_puenta{visibility: visible;}
+.area6_landfill:hover ~ .landfill_sudo{visibility: visible;}
+.area7_landfill:hover ~ .landfill_delhi{visibility: visible;}
+.area8_landfill:hover ~ .landfill_deonar{visibility: visible;}

@@ -1,23 +1,40 @@
 import React from 'react';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import MicroOceanCss from './microOcean.css'
 import BagFloat from './plasticBag';
 import NetFloat from './microNet';
 import MicroFloat from './microPiece';
-import ManyMicroFloat from './microMedium';
 import Button from '@material-ui/core/Button';
 import Card from './cardmicro'
 import './cosmetics.css'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Nav from 'react-bootstrap/Nav';
 import "./Macro2.css"
+import './MacroOcean.css'
 
 
 export default function BagPopUp(props) {
 
     const title = props.title
 
-    const popoverBag =
+  const Macro2Micro= 
+  <div className="popoverM2M">
+    <p className="macrotxtMicroTitle">Wait!</p>
+    <p className="macrotxtMicro">The plastic doesn't just disappear</p>
+    <div className="double_m2m">
+    <p className="macrotxtMicro">The sun</p>
+    <div className="m2msun"></div>
+    <div className="m2mwaves"></div>
+    <p className="macrotxtMicro">Or Ocean Waves</p>
+    </div>
+    <p className="macrotxtMicro">Break down the macro plastics into micro plastics</p>
+    <div className="m2mmicros"></div>
+    <p className="macrotxtMicro">Continue onto the micro journey</p>
+  </div>
+
+  ;
+
+
+  const popoverBag =
         <div className="popoverbox">
             <img  src="https://www.nippon.com/en/ncommon/contents/currents/49423/49423.jpg" className="popoverImg"></img>
 
@@ -180,6 +197,12 @@ export default function BagPopUp(props) {
         case "Ocean":
           return <OverlayTrigger trigger="hover" placement="left" overlay={popOcean}>
             <Button className="ocean" href="/plasticpollution/#/Ocean"></Button>
+          </OverlayTrigger>
+        case "Macro2Micro":
+          return <OverlayTrigger trigger="hover" placement="left" overlay={Macro2Micro}>
+            <div className='buttonContainer'>
+            <a className="finishButton" href='./#/Ocean'>Finish</a>
+            </div>
           </OverlayTrigger>
         default: 
           return <><OverlayTrigger trigger="click" placement="left" overlay={popoverBag}>
