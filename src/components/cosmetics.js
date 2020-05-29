@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Nav from 'react-bootstrap/Nav';
-import Card from './cardmicro'
+import Card from './CardMicro'
 import BagPopUp from "./microPopBoxBag"
 import './cosmetics.css'
 

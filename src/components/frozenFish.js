@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MapChart from "./FishConsumptionMap"
 import './frozenFish.css'
-import Card from "./cardmicro"
+import Card from "./CardMicro"
 import Button from "react-bootstrap/Button";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 

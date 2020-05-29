@@ -3,7 +3,7 @@ import './wastewater.css'
 import Button from '@material-ui/core/Button';
 import Nav from 'react-bootstrap/Nav';
 import Icon from '@material-ui/core/Icon';
-import Card from './cardmicro'
+import Card from './CardMicro'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 

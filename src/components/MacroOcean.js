@@ -1,6 +1,6 @@
 import React from 'react';
 import ocean from './assets/ocean.jpg'
-import Card from './cardmicro'
+import Card from './CardMicro'
 import BagPopUp from './microPopBoxBag'
 import './MacroOcean.css'
 

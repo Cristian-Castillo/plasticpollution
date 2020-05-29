@@ -4,7 +4,7 @@ import BagFloat from './plasticBag';
 import NetFloat from './microNet';
 import MicroFloat from './microPiece';
 import Button from '@material-ui/core/Button';
-import Card from './cardmicro'
+import Card from './CardMicro'
 import './cosmetics.css'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Nav from 'react-bootstrap/Nav';
