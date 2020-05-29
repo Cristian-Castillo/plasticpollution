@@ -1,6 +1,6 @@
 import React from 'react';
 import kitchen from './assets/kitchen.jpg'
-import Card from './cardmicro'
+import Card from './CardMicro'
 import './MacroReuse.css'
 
 
