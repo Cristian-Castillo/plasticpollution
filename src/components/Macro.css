@@ -1,18 +1,44 @@
+.main_div_macro{
+	background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
+	width: 100%;
+	height: 100%;
+}
 .scene_container {
-	position: relative;
+  position: relative;
   width: 100%;
   margin: auto;
+  background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
 }
-.scene {
- 
-  
+.macrotxttitle{
+	color: white;
+	font-size: 50px;
+	padding: 25px;
+}
+
+.macrotxt{
+	color: white;
+	font-size: 30px;
+	padding: 15px;
+}
+.macrotxtdesc{
+	margin: auto;
+	color: white;
+	font-size: 30px;
+	padding: 15px;
+}
+.scene {  
   width: 60%;
   content:url("./assets/bins.jpg");
   margin-left: auto;
   margin-right:auto;
   display:block;
 }
-
+.textholderMacro{
+	width: 100%;
+	height:200px;
+	position: relative;
+	z-index: 0;
+}
 
 .area2 {
 	width: 225px;
@@ -20,7 +46,7 @@
 	display: block;
 	position: absolute;
 	left: 54%;
-	top: 23%;
+	top: 40%;
 	
 }
 .area1 {
@@ -29,7 +55,7 @@
 	display: block;
 	position: absolute;
 	left: 35%;
-	top: 25%;
+	top: 42%;
 }
 
 .area3  {
@@ -38,7 +64,7 @@
 	display: block;
 	position: absolute;
 	left: 60%;
-	top: 60%;
+	top: 70%;
 }
 
 .area4  {
@@ -47,19 +73,73 @@
 	display: block;
 	position: absolute;
 	left: 30%;
-	top: 70%;
+	top: 80%;
 }
-.description {
-	display:block;
-	margin:auto;
-	width: 80%;
+.description{
+	position:absolute;
+	height: 100px;
+	width: 80%;	
+	z-index: 15;
+	
+}
+#d0{
+	background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
+	height: 200px;
+	position:absolute;
+	width: 100%;	
+	margin: auto;
+	
+}
+#d1{
 	visibility: hidden;
+	height: 100px;
+	position:absolute;
+	width: 100%;	
+	text-align: center;
+
+	
 }
-#area:hover ~ .description{visibility: visible;}
+#d2{
+	visibility: hidden;
+	position:absolute;
+	height: 100px;
+	width: 100%;	
+	text-align: center;
+	
+	
+}
+#d3{
+	visibility: hidden;
+	position:absolute;
+	height: 100px;
+	width: 100%;	
+	text-align: center;
+	
+
+
+	
+	
+}
+#d4{
+	visibility: hidden;
+	position:absolute;
+	height: 100px;
+	width: 100%;	
+	text-align: center;
+	
+	
+}
+
+.area1:hover ~ #d1{visibility: visible;}
+.area2:hover ~ #d2{visibility: visible;}
+.area3:hover ~ #d3{visibility: visible;}
+.area4:hover ~ #d4{visibility: visible;}
+
 #area:hover {
 	background-size: cover;
 	background-image:url("./assets/redcircle.png")
 }
+
 
 
 

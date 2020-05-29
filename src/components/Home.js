@@ -10,9 +10,7 @@ import Counter from './TimeCounterComponent';
 import {useSpring, animated} from 'react-spring';
 import CounterContainer from './containerForCounterComp';
 import {Route, Link} from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 
 const home = () => {
@@ -29,9 +27,7 @@ const home = () => {
                 <CounterContainer/>
             </ParallaxLayer>
             <ParallaxLayer offset={2} speed={4}>
-                <ContainerWithtextonRight name= "Macros" namehref= "/plasticpollution/#/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
-
-In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo, te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui."/>
+                <ContainerWithtextonRight name= "Macros" namehref= "/plasticpollution/#/Macro" classname = "card macroCard" url={require('../assets/macro.jpg')} text="Macro plastics are defined as plastics with a diameter greater than 5mm in size. That's about the size of the diameter of a common plastic straw. Plastic’s are incredibly versatile materials that can be used in a variety of ways. Whether it be car parts, plastic bottles, toys, or even everyday appliances; plastic is often used in many everyday essential objects. Plastics have an incredibly long lifespan, and never truly break down without the help of human recycling measures. Start this Macros adventure to learn more about the paths a single use plastic can take after you’ve finished using it. "/>
                 <ContainerWithtextonLeft/>
                 <ContainerWithtextonRight name= "Nanos" namehref= "/plasticpollution/#/Nano" classname = "card nanoCard" url={require('../assets/nano.jpg')} text="Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens, te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi. Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in. Fugit clita in vel, usu ne quas delenit. Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
 
@@ -97,14 +93,7 @@ const slider = (
       <div class="article">
       <p className="articleText">
           <h3 >Micros</h3>
-          <p className="articleText">Lorem ipsum dolor sit amet, te mei petentium efficiendi, ei mel aeque ornatus insolens,
-            te platonem iudicabit sea. Affert accusamus dissentiunt cu vel, ex vel minim nominavi disputationi.
-            Ex mel dolorum recteque, cu cum torquatos interesset. Tempor doctus explicari vis in.
-            Fugit clita in vel, usu ne quas delenit.
-            Ut eros duis qualisque nam, ei vel paulo civibus. Est nostro senserit intellegat et.
-In putant fabulas vix, in mea cibo nullam. Case vulputate no vel, eu aliquip utroque convenire duo,
-te veri mnesarchum moderatius est. Sea ex quod vero. An munere numquam quaestio duo. Postea equidem
-gloriatur vis ne, ne harum essent forensibus usu, esse essent epicurei ne qui.</p>
+          <p className="articleText">Micros are smaller plastic particles, around 50 micrometers to 5mm. The plastics usually come from the natural breakdown of Macroplastics. This stage of plastic is a part of the breakdown of Macroplastics, and may eventually break down into Nanoplastic. There are also a few ways microplastics can be directly manufactured and enter our oceans and landfills that way, such as microbeads that are in some skin care products. Humans also may consume these plastics without realizing it, but this is a topic still up for debate on exact effects on human health. Start this Micros adventure to learn about Micros entry into waterways as well as their journey on land. .</p>
           <p className ="backgroundButtonColor">
           <Button color="light" >
           <Nav.Link href="/plasticpollution/#/Micro" className ="buttonColor A">Start Micro Adventure</Nav.Link>

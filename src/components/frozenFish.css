@@ -1,0 +1,73 @@
+html{
+    overflow-y: scroll; overflow-x:hidden;
+  }
+.frozenContentContainer{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #5680E9 0%, #5AB9EA 50%, #5680E9 100%);
+    font-weight: 800;
+    font-size: 25em;
+    text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+}
+.frozenText{
+    font-size: 40px;
+    color: white;
+    font-family: 'Orbitron';
+    margin: 50px;
+    text-align: center;
+}
+.pictureofFreshFish{
+    background: url("https://www.romania-insider.com/sites/default/files/styles/article_large_image/public/featured_images/fish-photo-Alfredo-Seafood.jpg") no-repeat center;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    
+}
+.pictureofFreshFish2{
+    background: url("https://www.romania-insider.com/sites/default/files/styles/article_large_image/public/featured_images/fish-photo-Alfredo-Seafood.jpg") no-repeat center;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+}
+.pictureContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.seafood{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.graph{
+    width: 100%;
+    height: fit-content;
+    margin: 20px;
+}
+
+  .foodtext{
+    font-size: 100px;
+    color:white;
+    font-family: 'Orbitron';
+    text-align: center;
+  }
+
+  .frozenbuttonContainer{
+    width: fit-content;
+    height: fit-content;
+    background: white;
+  }
+  .frozenbutton{
+    width: 25%;
+    height: fit-content; 
+    border-radius: 40px;
+    margin: 25px;
+  }

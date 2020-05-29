@@ -4,7 +4,7 @@
   width: 150px;
   height: 100px;
   animation: swim 5s 2;
-  animation: swim 1s infinite; 
+  animation: swim 1s infinite;
   animation: swimAll 11.5s infinite;
 }
 
@@ -268,12 +268,12 @@
   height: 25px;
 }
 
-/*#### Animations ####*/
+/*#### Animations For Fishes  ####*/
 
 /* Simple Swim Animation */
 @keyframes swim {
   100% {
-    transform: translateY(170px) translateX(1200px) rotate(20deg);
+    transform: translateY(170px) translateX(1200px) rotate(30deg);
   }
 }
 /* Left Fin Animation */

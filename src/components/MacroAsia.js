@@ -1,32 +1,51 @@
 import React from 'react';
 import china from './assets/chinashipping.jpg'
+import Trans from './mechanicalRecycling'
+import TransChem from './chemRecycling'
+
 import './MacroAsia.css'
+
+
 
 
 const Macro = (myRef) => {
     return (
-      <div>
+      <div className="main_div_macro">
       <div className="scene_container2">
         <div className='leftcolumn'>
           <div className='buttonContainer'>
-            <a className="backButton" href='/plasticpollution/#/MacroRecycle'>&#8249;</a>
+            <a className="backButton" href='./#/MacroRecycle'>&#8249;</a>
           </div>
         </div>
         <div className="middle">
-          <h1>Shipped to China</h1>
-          <p>Macro information</p>
-          <img className="ocean" src={china} ></img>
+          <h1 className="macrotxttitle"> Shipped to China</h1>
+          <img  src={china} ></img>
 
         </div>
         <div className='rightcolumn'>
           <div className='buttonContainer'>
-            <a className="finishButton" href='/'>Finish</a>
+            <a className="finishButton" href='./#/'>Finish</a>
           </div>
         </div>
-
+        
       </div>
-      <div>
-        <p id="d1"className="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+      <div><p className="description2 macrotxt">
+      In the past, China accepted a large amount of our recycling, but recent purity standards made it so much of this is being rejected. Now, our contaminated recycling is being sent to other areas in Asia. 
+      Recycled materials still require new, virgin plastic to make products. This means that even a bottle made with recycled plastic is still contributing to net world plastic increase. 
+      </p>
+      <p className="description2 macrotxttitle">Broadly, there are two major ways to recycle plastic: </p>
+        <div className="landfill_macro_double_cont">
+          <div>
+          <p className="description2 macrotxt">Mechanical recycling</p>
+            <p className="description2 macrotxt">Plastic is washed, ground into powders and melted, and turned into similar plastic products</p>
+            <Trans/>
+            </div>
+          <div>
+          <p className="description2 macrotxt">Chemical recycling </p>
+        <p className="description2 macrotxt"> Plastic is broken down into basic components, and could be turned into synthetic crude oil </p>
+        <TransChem/>
+        </div>
+      </div>
       </div>
       </div>
     );

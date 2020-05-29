@@ -48,6 +48,14 @@
 
 
 }
+.reuse_cards{
+	padding: 20px;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+}
 
 .finishButton {
 	background-color: white;
